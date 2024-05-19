@@ -23,6 +23,12 @@
             display: none;
         }
     }
+    .responsive-image-container {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .feature-container, .benefits-container{
         height: fit-content;
     }

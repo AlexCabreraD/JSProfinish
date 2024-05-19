@@ -40,8 +40,9 @@ const MobileGallery = () => {
                         sx={{
                             boxShadow: 1,
                             position: "relative",
-                            overflow: "hidden", // Hide overflow to cut off images
+                            overflow: "hidden",
                         }}
+                        className={"responsive-image-container"}
                     >
                         <Image
                             src={image.src} // Access the src attribute of the StaticImageData type

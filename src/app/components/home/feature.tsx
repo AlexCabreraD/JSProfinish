@@ -24,6 +24,7 @@ const Feature = () => {
                     xs={12}
                     md={6}
                     sx={{ overflow: "hidden", order: { xs: 2, md: 1 } }}
+                    className={"responsive-image-container"}
                 >
                     <Image
                         src={img7}

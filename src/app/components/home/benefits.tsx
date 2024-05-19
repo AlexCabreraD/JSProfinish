@@ -22,7 +22,13 @@ const Feature = () => {
                 <Grid item xs={12} md={6}>
                     <TextArea />
                 </Grid>
-                <Grid item xs={12} md={6} sx={{ overflow: "hidden" }}>
+                <Grid
+                    item
+                    xs={12}
+                    md={6}
+                    sx={{ overflow: "hidden" }}
+                    className={"responsive-image-container"}
+                >
                     <Image
                         src={img8}
                         alt={"test"}

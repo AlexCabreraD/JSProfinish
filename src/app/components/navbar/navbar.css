@@ -1,0 +1,36 @@
+/* Default styles for links */
+.navbarLinks {
+    display: none;
+}
+
+/* Show menu icon by default */
+.navbarMenuIcon {
+    display: block;
+}
+
+.drawer{
+    padding: 40px;
+    height: 100vh;
+}
+
+.drawerLink{
+    margin: 40px 40px 40px 40px;
+    color: #1C7C54;
+}
+
+.drawerLink:nth-child(1){
+    margin: 80px 40px 20px 40px;
+}
+
+/* Media query for screens larger than a certain size */
+@media only screen and (min-width: 768px) {
+    /* Hide menu icon on larger screens */
+    .navbarMenuIcon {
+        display: none;
+    }
+
+    /* Show links on larger screens */
+    .navbarLinks {
+        display: flex;
+    }
+}

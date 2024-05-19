@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/app/components/navbar";
+import Navbar from "@/app/components/navbar/navbar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/app/theme/theme";
+import BootstrapClient from "@/app/components/bootstrap/bootstrapClient";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
                     <Navbar />
                     {children}
                 </ThemeProvider>
+                <BootstrapClient />
             </body>
         </html>
     );

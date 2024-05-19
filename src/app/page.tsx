@@ -1,47 +1,20 @@
-import { Button, Grid, Stack, Typography } from "@mui/material";
+import { Button, Grid, Stack, Typography, Container, Box } from "@mui/material";
+import { Masonry } from "@mui/lab";
+import ImageMasonry from "@/app/components/home/imageMasonry";
+import Hero from "@/app/components/home/hero";
+import MobileGallery from "@/app/components/home/mobileGallery";
+import Feature from "@/app/components/home/feature";
+import Benefits from "@/app/components/home/benefits";
+import HowWorks from "@/app/components/home/howWorks";
 
 export default function Home() {
     return (
-        <div>
+        <Box className={"secondary-background"} sx={{ width: "100vw" }}>
             <Hero />
-        </div>
+            <MobileGallery />
+            <Feature />
+            <Benefits />
+            <HowWorks />
+        </Box>
     );
 }
-
-const Hero = () => {
-    return (
-        <Grid
-            container
-            className={"secondary-background"}
-            sx={{ paddingX: "64px" }}
-        >
-            <Grid item xs={6}>
-                <Stack spacing={"24px"}>
-                    <Typography variant={"h1"}>
-                        Premier Basement Finishing Serving Northern Utah
-                        Communities
-                    </Typography>
-                    <Typography variant={"body1"}>
-                        At JS ProFinish, we are Utah's premier experts in
-                        basement finishing and remodeling services. Our team
-                        specializes in transforming basements into beautiful
-                        spaces tailored to your needs. Whether you're in Ogden,
-                        Clearfield, Layton, or anywhere in northern Utah, trust
-                        us to deliver top-quality results with our attention to
-                        detail and craftsmanship.
-                    </Typography>
-                    <Stack spacing={"16px"} direction={"row"}>
-                        <Button>Learn More</Button>
-                        <Button
-                            variant={"outlined"}
-                            sx={{ background: "none" }}
-                        >
-                            Contact Us
-                        </Button>
-                    </Stack>
-                </Stack>
-            </Grid>
-            <Grid item xs={6}></Grid>
-        </Grid>
-    );
-};

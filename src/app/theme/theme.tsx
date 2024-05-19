@@ -85,7 +85,7 @@ let theme = createTheme({
 
         MuiCssBaseline: {
             styleOverrides: `
-        body {
+        .primary-background {
           background-color: #F5F5F5;
           color: #000000;
         }
@@ -107,11 +107,23 @@ let theme = createTheme({
         .secondary-background .MuiButton-root:hover, .tertiary-background .MuiButton-root:hover {
           background-color: #145c3f;
         }
-        .secondary-background .MuiButton-root.MuiButton-outlined, .tertiary-background .MuiButton-root.MuiButton-outlined {
+        .primary-background .MuiButton-root.MuiButton-outlined, .secondary-background .MuiButton-root.MuiButton-outlined, .tertiary-background .MuiButton-root.MuiButton-outlined {
           background-color: transparent; /* Set background to transparent for outlined button */
         }
-        .secondary-background .MuiButton-root.MuiButton-outlined:hover, .tertiary-background .MuiButton-root.MuiButton-outlined:hover {
+        .primary-background .MuiButton-root.MuiButton-outlined:hover, .secondary-background .MuiButton-root.MuiButton-outlined:hover, .tertiary-background .MuiButton-root.MuiButton-outlined:hover {
           background-color: transparent; /* Set background to transparent on hover for outlined button */
+        }
+        .primary-background .MuiButton-root.MuiButton-text, .secondary-background .MuiButton-root.MuiButton-outlined, .tertiary-background .MuiButton-root.MuiButton-outlined {
+          background-color: transparent; /* Set background to transparent for outlined button */
+        }
+        .primary-background .MuiButton-root.MuiButton-text:hover, .secondary-background .MuiButton-root.MuiButton-text:hover, .tertiary-background .MuiButton-root.MuiButton-text:hover {
+          background-color: transparent; /* Set background to transparent on hover for outlined button */
+        }
+        .primary-background .MuiButton-root.MuiButton-text, .secondary-background .MuiButton-root.MuiButton-outlined, .tertiary-background .MuiButton-root.MuiButton-outlined {
+          background-color: transparent; /* Set background to transparent for outlined button */
+        }
+        .primary-background .MuiButton-root.MuiButton-text{
+          color: #000000; /* Set background to transparent on hover for outlined button */
         }
       `,
         },

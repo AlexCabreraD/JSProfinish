@@ -21,7 +21,10 @@ const HowWorks = () => {
                 className={"primary-background Home-Content-Container"}
             >
                 <Grid item>
-                    <Stack spacing={"80px"}>
+                    <Stack
+                        spacing={{ xs: "40px", md: "80px" }}
+                        className={"mobile-text"}
+                    >
                         <Stack maxWidth={768}>
                             <Typography
                                 variant={"body1"}
@@ -44,8 +47,11 @@ const HowWorks = () => {
                             </Typography>
                         </Stack>
                         <Grid container>
-                            <Grid item xs={4}>
-                                <Stack spacing={"24px"}>
+                            <Grid item xs={12} md={4}>
+                                <Stack
+                                    spacing={"24px"}
+                                    className={"mobile-section-spacing"}
+                                >
                                     <LuPencil
                                         style={{
                                             width: "36px",
@@ -63,9 +69,13 @@ const HowWorks = () => {
                                     </Typography>
                                 </Stack>
                             </Grid>
-                            <Grid item xs={4}>
-                                <Stack spacing={"24px"}>
+                            <Grid item xs={12} md={4}>
+                                <Stack
+                                    spacing={"24px"}
+                                    className={"mobile-section-spacing"}
+                                >
                                     <MdOutlineDesignServices
+                                        className={"mobile-icon"}
                                         style={{
                                             width: "36px",
                                             height: "40px",
@@ -82,9 +92,13 @@ const HowWorks = () => {
                                     </Typography>
                                 </Stack>
                             </Grid>
-                            <Grid item xs={4}>
-                                <Stack spacing={"24px"}>
+                            <Grid item xs={12} md={4}>
+                                <Stack
+                                    spacing={"24px"}
+                                    className={"mobile-section-spacing"}
+                                >
                                     <IoConstructOutline
+                                        className={"mobile-icon"}
                                         style={{
                                             width: "36px",
                                             height: "40px",
@@ -102,14 +116,11 @@ const HowWorks = () => {
                                 </Stack>
                             </Grid>
                             <div style={{ margin: "64px 0 0 0" }}>
-                                <Button
-                                    variant={"contained"}
-                                    style={{ borderRadius: "0px" }}
-                                >
+                                <Button variant={"contained"}>
                                     Get Started
                                 </Button>
                                 <Button variant={"text"}>
-                                    Learn More{" "}
+                                    Gallery{" "}
                                     <MdArrowForwardIos
                                         style={{
                                             width: "14.12px",

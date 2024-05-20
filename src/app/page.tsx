@@ -1,11 +1,12 @@
-import { Button, Grid, Stack, Typography, Container, Box } from "@mui/material";
-import { Masonry } from "@mui/lab";
-import ImageMasonry from "@/app/components/home/imageMasonry";
+import { Box } from "@mui/material";
 import Hero from "@/app/components/home/hero";
 import MobileGallery from "@/app/components/home/mobileGallery";
 import Feature from "@/app/components/home/feature";
 import Benefits from "@/app/components/home/benefits";
 import HowWorks from "@/app/components/home/howWorks";
+import Cta from "@/app/components/home/cta";
+import Testimonials from "@/app/components/home/testimonials";
+import Contact from "@/app/components/global/contact";
 
 export default function Home() {
     return (
@@ -15,6 +16,9 @@ export default function Home() {
             <Feature />
             <Benefits />
             <HowWorks />
+            <Cta />
+            <Testimonials />
+            <Contact />
         </Box>
     );
 }

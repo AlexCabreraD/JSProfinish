@@ -46,10 +46,9 @@ const TextArea = () => {
     return (
         <Stack
             spacing={3}
-            className={"primary-background feature-text"}
+            className={"primary-background feature-text mobile-text"}
             alignContent={"center"}
             justifyContent={"center"}
-            sx={{ paddingLeft: "80px" }}
         >
             <Typography variant={"h3"}>
                 Our Basement Finishing Services

@@ -82,7 +82,17 @@ const NavDrawer = () => {
                     }}
                     passHref
                 >
-                    <Typography>Counties</Typography>
+                    <Typography>Davis County</Typography>
+                </Link>
+                <Link
+                    href="/public"
+                    className={"drawerLink"}
+                    onClick={() => {
+                        setOpen(false);
+                    }}
+                    passHref
+                >
+                    <Typography>Weber County</Typography>
                 </Link>
             </Drawer>
         </>

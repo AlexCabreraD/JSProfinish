@@ -125,6 +125,9 @@ let theme = createTheme({
         .primary-background .MuiButton-root.MuiButton-text{
           color: #000000; /* Set background to transparent on hover for outlined button */
         }
+        .primary-background .MuiButton-root.MuiInputBase-input{
+          text-color: #000000; /* Set background to transparent on hover for outlined button */
+        }
       `,
         },
     },

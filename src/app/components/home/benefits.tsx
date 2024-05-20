@@ -46,7 +46,7 @@ const TextArea = () => {
     return (
         <Stack
             spacing={3}
-            className={"feature-text"}
+            className={"mobile-text"}
             alignContent={"center"}
             justifyContent={"center"}
             sx={{ paddingRight: "80px" }}

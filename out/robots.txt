@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jsprofinish.com
+
+# Sitemaps
+Sitemap: https://jsprofinish.com/sitemap.xml

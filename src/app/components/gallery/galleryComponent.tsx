@@ -32,13 +32,13 @@ const GalleryComponent = () => {
         {
             src: basement3,
             alt: "Contemporary remodel project with open layout",
-            width: 400,
+            width: 300,
             height: 300,
         },
         {
             src: basement4,
             alt: "Wooden styled modern kitchen",
-            width: 400,
+            width: 300,
             height: 300,
         },
         {

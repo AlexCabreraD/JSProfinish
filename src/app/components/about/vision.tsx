@@ -14,7 +14,7 @@ const Vision = () => {
                     height: "fit-content",
                     maxWidth: "1440px",
                     textAlign: "center",
-                    padding: "0 0 112px 0",
+                    padding: "112px 0",
                 }}
             >
                 <Grid item>

@@ -42,7 +42,7 @@ const Contact = () => {
                     </Typography>
                     <Typography variant="body1" paragraph>
                         Reach out to us today for a complimentary consultation.
-                        Let's discuss your project and how we can turn your
+                        Let&apos;s discuss your project and how we can turn your
                         vision into reality.
                     </Typography>
                     <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>

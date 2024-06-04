@@ -63,8 +63,8 @@ const TextArea = () => {
                 Why Choose Us for Your Basement Project?
             </Typography>
             <Typography variant={"body1"}>
-                When you choose our basement finishing services, you'll enjoy
-                increased home value, additional living space, and endless
+                When you choose our basement finishing services, you&apos;ll
+                enjoy increased home value, additional living space, and endless
                 custom design options. Our team of experts will work closely
                 with you to bring your vision to life, creating a beautiful and
                 functional space that perfectly suits your needs.

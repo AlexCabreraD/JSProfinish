@@ -41,7 +41,7 @@ const NavDrawer = () => {
                         JS ProFinish
                     </Typography>
                 </Link>
-                <Link href="/about" className={"drawerLink"} passHref>
+                <Link href="/about-us" className={"drawerLink"} passHref>
                     <Typography>About Us</Typography>
                 </Link>
                 <Link
@@ -75,7 +75,7 @@ const NavDrawer = () => {
                     <Typography>Gallery</Typography>
                 </Link>
                 <Link
-                    href="/public"
+                    href="/davis-county"
                     className={"drawerLink"}
                     onClick={() => {
                         setOpen(false);
@@ -85,7 +85,7 @@ const NavDrawer = () => {
                     <Typography>Davis County</Typography>
                 </Link>
                 <Link
-                    href="/public"
+                    href="/weber-county"
                     className={"drawerLink"}
                     onClick={() => {
                         setOpen(false);

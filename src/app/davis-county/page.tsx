@@ -7,7 +7,7 @@ import ContactInfo from "@/app/components/weber-county/contactInfo";
 
 const DavisCounty = () => {
     return (
-        <Box width={"100vh"}>
+        <Box width={"100vw"}>
             <Header county={"Davis"} />
             <InfoSection county={"Davis"} />
             <Faq county={"Davis"} />

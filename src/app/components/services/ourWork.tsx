@@ -51,7 +51,7 @@ const OurWork = () => {
                             justifyContent: { xs: "center", md: "flex-start" },
                         }}
                     >
-                        <Link href="/contact-us" passHref>
+                        <Link href="/about-us" passHref>
                             <Button variant="contained">Learn More</Button>
                         </Link>
                         <Link href="/contact-us" passHref>

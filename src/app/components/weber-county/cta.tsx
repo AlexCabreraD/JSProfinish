@@ -45,6 +45,7 @@ const Cta = () => {
                             variant="contained"
                             sx={{
                                 margin: { xs: "0 0 16px 0", md: "0 16px 0 0" },
+                                backgroundColor: "#1C7C54",
                             }}
                         >
                             Contact Us
@@ -52,6 +53,7 @@ const Cta = () => {
                         <Button
                             variant="outlined"
                             endIcon={<IoIosArrowForward />}
+                            sx={{ color: "#1C7C54" }}
                         >
                             Inspiration
                         </Button>

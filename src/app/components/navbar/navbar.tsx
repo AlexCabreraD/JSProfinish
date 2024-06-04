@@ -1,6 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import {
+    AppBar,
+    Box,
+    Button,
+    Toolbar,
+    Typography,
+    useMediaQuery,
+} from "@mui/material";
 import NavDrawer from "@/app/components/navbar/navDrawer";
 import "./navbar.css";
 
@@ -32,6 +39,9 @@ const Navbar = () => {
                                     fontWeight: "bold",
                                     textDecoration: "none",
                                     color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    fontSize: { xs: "1rem", md: "1.4rem" },
                                 }}
                             >
                                 JS ProFinish
@@ -39,15 +49,21 @@ const Navbar = () => {
                         </Link>
                     </Box>
                     <Box
-                        sx={{ display: "flex", gap: 2 }}
+                        sx={{
+                            display: "flex",
+                            gap: 2,
+                            alignItems: "center",
+                        }}
                         className="navbarLinks"
                     >
-                        <Link href="/about" passHref>
+                        <Link href="/about-us" passHref>
                             <Typography
                                 component="p"
                                 sx={{
                                     textDecoration: "none",
                                     color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
                                 }}
                             >
                                 About Us
@@ -59,20 +75,11 @@ const Navbar = () => {
                                 sx={{
                                     textDecoration: "none",
                                     color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
                                 }}
                             >
                                 Services
-                            </Typography>
-                        </Link>
-                        <Link href="/contact" passHref>
-                            <Typography
-                                component="p"
-                                sx={{
-                                    textDecoration: "none",
-                                    color: "inherit",
-                                }}
-                            >
-                                Contact Us
                             </Typography>
                         </Link>
                         <Link href="/gallery" passHref>
@@ -81,21 +88,53 @@ const Navbar = () => {
                                 sx={{
                                     textDecoration: "none",
                                     color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
                                 }}
                             >
                                 Gallery
                             </Typography>
                         </Link>
-                        <Link href="/public" passHref>
+                        <Link href="/weber-county" passHref>
                             <Typography
                                 component="p"
                                 sx={{
                                     textDecoration: "none",
                                     color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
                                 }}
                             >
-                                Counties
+                                Weber County
                             </Typography>
+                        </Link>
+                        <Link href="/davis-county" passHref>
+                            <Typography
+                                component="p"
+                                sx={{
+                                    textDecoration: "none",
+                                    color: "inherit",
+                                    display: "flex",
+                                    alignItems: "center",
+                                }}
+                            >
+                                Davis County
+                            </Typography>
+                        </Link>
+                        <Link
+                            href="/contact-us"
+                            passHref
+                            style={{ marginLeft: "15px" }}
+                        >
+                            <Button
+                                sx={{
+                                    backgroundColor: "#1C7C54",
+                                    fontSize: { xs: "0.75rem", md: "1rem" },
+                                    padding: { xs: "5px 10px", md: "8px 16px" },
+                                }}
+                            >
+                                Contact Us
+                            </Button>
                         </Link>
                     </Box>
                     <NavDrawer />

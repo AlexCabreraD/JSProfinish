@@ -42,12 +42,22 @@ const Cta2 = () => {
                     >
                         <Grid item>
                             <Link href="/contact-us" passHref>
-                                <Button variant="contained">Contact</Button>
+                                <Button
+                                    variant="contained"
+                                    sx={{ backgroundColor: "#1C7C54" }}
+                                >
+                                    Contact
+                                </Button>
                             </Link>
                         </Grid>
                         <Grid item>
                             <Link href="/gallery" passHref>
-                                <Button variant="outlined">Gallery</Button>
+                                <Button
+                                    variant="outlined"
+                                    sx={{ color: "#1C7C54" }}
+                                >
+                                    Gallery
+                                </Button>
                             </Link>
                         </Grid>
                     </Grid>

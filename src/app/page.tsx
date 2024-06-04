@@ -17,7 +17,7 @@ export default function Home() {
             <Benefits />
             <HowWorks />
             <Cta />
-            <Testimonials />
+            <Testimonials padded={false} />
             <Contact />
         </Box>
     );

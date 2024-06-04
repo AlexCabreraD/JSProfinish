@@ -5,6 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/app/theme/theme";
 import BootstrapClient from "@/app/components/bootstrap/bootstrapClient";
 import "./globals.css";
+import Footer from "@/app/components/global/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
                     <CssBaseline />
                     <Navbar />
                     {children}
+                    <Footer />
                 </ThemeProvider>
                 <BootstrapClient />
             </body>

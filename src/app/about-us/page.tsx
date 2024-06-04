@@ -1,13 +1,24 @@
-// pages/about-us.js
-
-import React from 'react';
+import React from "react";
+import { Box } from "@mui/material";
+import Header from "@/app/components/about/header";
+import About from "@/app/components/about/about";
+import WhyUs from "@/app/components/about/whyUs";
+import Vision from "@/app/components/about/vision";
+import Gallery from "@/app/components/about/gallery";
+import Testimonials from "@/app/components/home/testimonials";
+import Cta2 from "@/app/components/about/cta2";
 
 const AboutUs = () => {
     return (
-        <div>
-            <h1>About Us</h1>
-            <p>This is the About Us page content.</p>
-        </div>
+        <Box width={"100vw"}>
+            <Header />
+            <About />
+            <WhyUs />
+            <Testimonials padded={false} />
+            <Gallery />
+            <Vision />
+            <Cta2 />
+        </Box>
     );
 };
 

@@ -18,7 +18,10 @@ const GalleryFaq = () => {
                 className={"secondary-background FAQ-Content-Container"}
                 spacing={"80px"}
             >
-                <Stack spacing={"24px"} sx={{ paddingTop: "112px" }}>
+                <Stack
+                    spacing={"24px"}
+                    sx={{ paddingTop: "112px", textAlign: "center" }}
+                >
                     <Typography variant="h2" gutterBottom>
                         Frequently Asked Questions
                     </Typography>

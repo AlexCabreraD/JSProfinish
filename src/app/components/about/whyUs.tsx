@@ -108,7 +108,12 @@ const WhyUs = () => {
                     <Grid container spacing={2} sx={{ marginTop: "24px" }}>
                         <Grid item>
                             <Link href="/services" passHref>
-                                <Button variant="outlined">Learn More</Button>
+                                <Button
+                                    variant="outlined"
+                                    sx={{ borderColor: "white" }}
+                                >
+                                    Learn More
+                                </Button>
                             </Link>
                         </Grid>
                         <Grid item>

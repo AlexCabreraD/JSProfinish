@@ -35,12 +35,18 @@ const ServiceCta = () => {
                         }}
                     >
                         <Link href="/contact-us" passHref>
-                            <Button variant="contained">Contact Us</Button>
+                            <Button
+                                variant="contained"
+                                sx={{ backgroundColor: "#1C7C54" }}
+                            >
+                                Contact Us
+                            </Button>
                         </Link>
                         <Link href="/gallery" passHref>
                             <Button
                                 variant="outlined"
                                 endIcon={<IoIosArrowForward />}
+                                sx={{ color: "#1C7C54" }}
                             >
                                 Inspiration
                             </Button>

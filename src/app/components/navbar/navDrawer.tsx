@@ -55,7 +55,7 @@ const NavDrawer = () => {
                     <Typography>Services</Typography>
                 </Link>
                 <Link
-                    href="/contact"
+                    href="/contact-us"
                     className={"drawerLink"}
                     onClick={() => {
                         setOpen(false);

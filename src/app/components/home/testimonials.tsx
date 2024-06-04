@@ -26,7 +26,11 @@ const testimonials = [
     },
 ];
 
-const Testimonials = () => {
+interface TestimonialsProps {
+    padded?: boolean;
+}
+
+const Testimonials = ({ padded = true }: TestimonialsProps) => {
     const [current, setCurrent] = useState(0);
 
     const handleNext = () => {
@@ -49,7 +53,7 @@ const Testimonials = () => {
             className={"primary-background benefits-container"}
             sx={{
                 height: "fit-content", // Responsive height
-                padding: { md: "112px 0 0 0" },
+                padding: { md: padded ? "112px 0" : "112px 0 0 0" },
             }}
         >
             <Box

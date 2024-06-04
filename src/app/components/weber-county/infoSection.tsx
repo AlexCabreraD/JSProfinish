@@ -47,7 +47,12 @@ const InfoSection = ({ county }: InfoSectionProps) => {
                         }}
                     >
                         <Link href="/about-us" passHref>
-                            <Button variant={"outlined"}>Learn More</Button>
+                            <Button
+                                variant={"outlined"}
+                                sx={{ color: "#1C7C54" }}
+                            >
+                                Learn More
+                            </Button>
                         </Link>
                         <Link href="/contact-us" passHref>
                             <Button variant={"text"}>

@@ -29,8 +29,7 @@ const Feature = () => {
                     <Image
                         src={img7}
                         alt={"test"}
-                        width={616}
-                        height={640}
+                        layout="responsive"
                         className={"feature-image"}
                     />
                 </Grid>

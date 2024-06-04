@@ -53,7 +53,7 @@ const Testimonials = ({ padded = true }: TestimonialsProps) => {
             className={"primary-background benefits-container"}
             sx={{
                 height: "fit-content", // Responsive height
-                padding: { md: padded ? "112px 0" : "112px 0 0 0" },
+                padding: { xs: padded ? "112px 0" : "112px 0 0 0" },
             }}
         >
             <Box

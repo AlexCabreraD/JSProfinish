@@ -44,7 +44,15 @@ const Cta3 = () => {
                     >
                         <Grid item>
                             <Link href="/gallery" passHref>
-                                <Button variant="contained">Gallery</Button>
+                                <Button
+                                    variant="contained"
+                                    style={{
+                                        backgroundColor: "white",
+                                        color: "#1C7C54",
+                                    }}
+                                >
+                                    Gallery
+                                </Button>
                             </Link>
                         </Grid>
                         <Grid item>

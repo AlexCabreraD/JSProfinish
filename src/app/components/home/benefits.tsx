@@ -8,16 +8,18 @@ const Feature = () => {
     return (
         <Container
             maxWidth={false}
-            className={"tertiary-background benefits-container"}
-            sx={{ height: "63vh" }}
+            className={"tertiary-background"}
+            sx={{ textAlign: "-webkit-center" }}
         >
             <Grid
                 container
                 sx={{
-                    height: "100%",
                     alignItems: "center",
+                    textAlign: { xs: "center", md: "start" },
+                    height: "fit-content",
+                    maxWidth: "1440px",
+                    padding: { xs: "56px 16px", md: "112px 0" },
                 }}
-                className={"tertiary-background Home-Content-Container"}
             >
                 <Grid item xs={12} md={6}>
                     <TextArea />

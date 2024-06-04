@@ -9,16 +9,18 @@ const HowWorks = () => {
     return (
         <Container
             maxWidth={false}
-            className={"primary-background benefits-container"}
-            sx={{ height: "67vh" }}
+            className={"primary-background"}
+            sx={{ textAlign: "-webkit-center" }}
         >
             <Grid
                 container
                 sx={{
-                    height: "100%",
                     alignItems: "center",
+                    textAlign: { xs: "center", md: "start" },
+                    height: "fit-content",
+                    maxWidth: "1440px",
+                    padding: { xs: "56px 16px", md: "112px 0" },
                 }}
-                className={"primary-background Home-Content-Container"}
             >
                 <Grid item>
                     <Stack

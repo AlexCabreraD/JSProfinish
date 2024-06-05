@@ -14,7 +14,7 @@ const AboutUs = () => {
             <Header />
             <About />
             <WhyUs />
-            <Testimonials padded={true} />
+            <Testimonials />
             <Gallery />
             <Vision />
             <Cta2 />

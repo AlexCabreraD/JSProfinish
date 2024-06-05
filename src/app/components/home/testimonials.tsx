@@ -8,30 +8,39 @@ import {
     IoArrowForwardCircleOutline,
 } from "react-icons/io5";
 
+import Image from "next/image";
+import testimonialImage1 from "@/app/assets/home/img/testimonial1.png";
+import testimonialImage2 from "@/app/assets/home/img/testimonial2.png";
+import testimonialImage3 from "@/app/assets/home/img/testimonial3.png";
+
 const testimonials = [
+    {
+        text: "Working with JS ProFinish was a breeze. Great communication and quality work!",
+        name: "James White",
+        title: "Home Owner",
+        image: testimonialImage2,
+    },
     {
         text: "JS ProFinish basement finishing exceeded our expectations. Highly recommended!",
         name: "Adriana Cortés",
         title: "Home Owner",
-    },
-    {
-        text: "Working with JS ProFinish was a breeze. Great communication and quality work!",
-        name: "Richie Reyes",
-        title: "Home Owner",
+        image: testimonialImage1,
     },
     {
         text: "We are extremely happy with our newly finished basement. Thank you!",
-        name: "Jonah Frank",
+        name: "Jonah Ortiz",
         title: "Home Owner",
+        image: testimonialImage3,
     },
 ];
 
-interface TestimonialsProps {
-    padded?: boolean;
+interface TestimonialProps {
+    dark?: boolean;
 }
 
-const Testimonials = ({ padded = true }: TestimonialsProps) => {
+const Testimonials = ({ dark }: TestimonialProps) => {
     const [current, setCurrent] = useState(0);
+    const componentTheme = dark ? "secondary-background" : "primary-background";
 
     const handleNext = () => {
         setCurrent((prev) => (prev + 1) % testimonials.length);
@@ -50,20 +59,19 @@ const Testimonials = ({ padded = true }: TestimonialsProps) => {
     return (
         <Container
             maxWidth={false}
-            className={"primary-background benefits-container"}
+            className={`${componentTheme} benefits-container`}
             sx={{
                 height: "fit-content", // Responsive height
-                padding: { xs: padded ? "112px 0" : "112px 0 0 0" },
             }}
         >
             <Box
                 sx={{
-                    padding: 4,
-                    maxWidth: 600,
+                    padding: { xs: "85px 0 85px 0", md: "112px 0 112px 0" },
+                    maxWidth: "1440px",
                     margin: "0 auto",
                     textAlign: "center",
                 }}
-                className={"primary-background Home-Content-Container"}
+                className={`${componentTheme}`}
             >
                 <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
                     {[...Array(5)].map((_, index) => (
@@ -71,13 +79,19 @@ const Testimonials = ({ padded = true }: TestimonialsProps) => {
                     ))}
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
-                    <IconButton onClick={handlePrev}>
+                    <IconButton
+                        onClick={handlePrev}
+                        sx={dark ? { color: "#ffffff" } : {}}
+                    >
                         <IoArrowBackCircleOutline size={34} />
                     </IconButton>
                     <Typography variant="body1" sx={{ flexGrow: 1, mx: 2 }}>
                         {testimonials[current].text}
                     </Typography>
-                    <IconButton onClick={handleNext}>
+                    <IconButton
+                        onClick={handleNext}
+                        sx={dark ? { color: "#ffffff" } : {}}
+                    >
                         <IoArrowForwardCircleOutline size={34} />
                     </IconButton>
                 </Box>
@@ -89,7 +103,15 @@ const Testimonials = ({ padded = true }: TestimonialsProps) => {
                         mb: 2,
                     }}
                 >
-                    <Avatar sx={{ width: 56, height: 56, mr: 2 }} />
+                    <Avatar sx={{ width: 56, height: 56, mr: 2 }}>
+                        <Image
+                            src={testimonials[current].image}
+                            alt={testimonials[current].name}
+                            width={56}
+                            height={56}
+                            style={{ borderRadius: "50%" }}
+                        />
+                    </Avatar>
                     <Box sx={{ textAlign: "left" }}>
                         <Typography variant="body1" fontWeight="bold">
                             {testimonials[current].name}

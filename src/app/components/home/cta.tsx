@@ -1,6 +1,7 @@
 import img9 from "../../assets/home/img/image9.png";
 import Image from "next/image";
 import { Box, Button, Typography } from "@mui/material";
+import Link from "next/link";
 
 const Cta = () => {
     return (
@@ -67,25 +68,29 @@ const Cta = () => {
                         flexWrap: "wrap",
                     }}
                 >
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        sx={{
-                            minWidth: { xs: "100%", sm: "auto" },
-                            mb: { xs: 1, sm: 0 },
-                        }}
-                    >
-                        Get in Touch
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        color="primary"
-                        sx={{
-                            minWidth: { xs: "100%", sm: "auto" },
-                        }}
-                    >
-                        Gallery
-                    </Button>
+                    <Link href="/contact-us" passHref>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                                minWidth: { xs: "100%", sm: "auto" },
+                                mb: { xs: 1, sm: 0 },
+                            }}
+                        >
+                            Get in Touch
+                        </Button>
+                    </Link>
+                    <Link href="/gallery" passHref>
+                        <Button
+                            variant="outlined"
+                            color="primary"
+                            sx={{
+                                minWidth: { xs: "100%", sm: "auto" },
+                            }}
+                        >
+                            Gallery
+                        </Button>
+                    </Link>
                 </Box>
             </Box>
         </Box>

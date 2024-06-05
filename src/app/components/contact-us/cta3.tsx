@@ -40,7 +40,10 @@ const Cta3 = () => {
                         spacing={2}
                         justifyContent={{ xs: "center", md: "end" }}
                         alignItems="center"
-                        sx={{ marginTop: { xs: "24px", md: "0" } }}
+                        sx={{
+                            marginTop: { xs: "24px", md: "0" },
+                            justifyContent: "center",
+                        }}
                     >
                         <Grid item>
                             <Link href="/gallery" passHref>

@@ -1,5 +1,6 @@
 import { Button, Container, Grid, Stack, Typography } from "@mui/material";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 
 const Cta = () => {
     return (
@@ -41,22 +42,29 @@ const Cta = () => {
                             justifyContent: { xs: "center", md: "flex-end" },
                         }}
                     >
-                        <Button
-                            variant="contained"
-                            sx={{
-                                margin: { xs: "0 0 16px 0", md: "0 16px 0 0" },
-                                backgroundColor: "#1C7C54",
-                            }}
-                        >
-                            Contact Us
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            endIcon={<IoIosArrowForward />}
-                            sx={{ color: "#1C7C54" }}
-                        >
-                            Inspiration
-                        </Button>
+                        <Link href="/contact-us" passHref>
+                            <Button
+                                variant="contained"
+                                sx={{
+                                    margin: {
+                                        xs: "0 0 16px 0",
+                                        md: "0 16px 0 0",
+                                    },
+                                    backgroundColor: "#1C7C54",
+                                }}
+                            >
+                                Contact Us
+                            </Button>
+                        </Link>
+                        <Link href="/gallery" passHref>
+                            <Button
+                                variant="outlined"
+                                endIcon={<IoIosArrowForward />}
+                                sx={{ color: "#1C7C54" }}
+                            >
+                                Inspiration
+                            </Button>
+                        </Link>
                     </Stack>
                 </Grid>
             </Grid>

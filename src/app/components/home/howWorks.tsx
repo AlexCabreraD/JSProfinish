@@ -4,6 +4,7 @@ import { LuPencil } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoConstructOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
+import Link from "next/link";
 
 const HowWorks = () => {
     return (
@@ -118,20 +119,24 @@ const HowWorks = () => {
                                 </Stack>
                             </Grid>
                             <div style={{ margin: "64px 0 0 0" }}>
-                                <Button variant={"contained"}>
-                                    Get Started
-                                </Button>
-                                <Button variant={"text"}>
-                                    Gallery{" "}
-                                    <MdArrowForwardIos
-                                        style={{
-                                            width: "14.12px",
-                                            height: "14.41px",
-                                            color: "#145c3f",
-                                            margin: "4px 6px 4px 6px",
-                                        }}
-                                    />
-                                </Button>
+                                <Link href="/contact-us" passHref>
+                                    <Button variant={"contained"}>
+                                        Get Started
+                                    </Button>
+                                </Link>
+                                <Link href="/gallery" passHref>
+                                    <Button variant={"text"}>
+                                        Gallery{" "}
+                                        <MdArrowForwardIos
+                                            style={{
+                                                width: "14.12px",
+                                                height: "14.41px",
+                                                color: "#145c3f",
+                                                margin: "4px 6px 4px 6px",
+                                            }}
+                                        />
+                                    </Button>
+                                </Link>
                             </div>
                         </Grid>
                     </Stack>

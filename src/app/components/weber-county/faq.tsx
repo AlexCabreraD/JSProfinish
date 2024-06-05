@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Button, Container, Stack } from "@mui/material";
+import Link from "next/link";
 
 interface FAQProps {
     county: string;
@@ -115,15 +116,17 @@ const FAQ = ({ county }: FAQProps) => {
                         <Typography variant="body1" paragraph>
                             Contact us for more information.
                         </Typography>
-                        <Button
-                            variant="outlined"
-                            sx={{
-                                maxWidth: "104px",
-                                borderWidth: "2px",
-                            }}
-                        >
-                            Contact
-                        </Button>
+                        <Link href="/contact-us" passHref>
+                            <Button
+                                variant="outlined"
+                                sx={{
+                                    maxWidth: "104px",
+                                    borderWidth: "2px",
+                                }}
+                            >
+                                Contact
+                            </Button>
+                        </Link>
                     </Stack>
                 </Stack>
             </Stack>

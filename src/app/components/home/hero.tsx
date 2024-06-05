@@ -1,5 +1,6 @@
 import { Button, Container, Grid, Stack, Typography } from "@mui/material";
 import ImageMasonry from "@/app/components/home/imageMasonry";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -43,10 +44,14 @@ const TextSection = () => {
                 results with our attention to detail and craftsmanship.
             </Typography>
             <Stack spacing={"16px"} direction={"row"}>
-                <Button>Learn More</Button>
-                <Button variant={"outlined"} sx={{ background: "none" }}>
-                    Contact Us
-                </Button>
+                <Link href="/services" passHref>
+                    <Button>Learn More</Button>
+                </Link>
+                <Link href="/contact-us" passHref>
+                    <Button variant={"outlined"} sx={{ background: "none" }}>
+                        Contact Us
+                    </Button>
+                </Link>
             </Stack>
         </Stack>
     );

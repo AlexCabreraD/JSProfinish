@@ -230,6 +230,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                             color="primary"
                             size="large"
                             type="submit"
+                            style={{ backgroundColor: "#1C7C54" }}
                         >
                             Submit
                         </Button>

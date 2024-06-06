@@ -47,7 +47,7 @@ const ImageMasonry = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                transform: "translate(20px, -156px)",
+                maxHeight: "880px",
             }}
             className="image-masonry"
         >
@@ -65,15 +65,22 @@ const ImageMasonry = () => {
                         sx={{
                             boxShadow: 1,
                             position: "relative",
-                            top: index % 2 === 1 ? 156 : 0, // Offset every second image
-                            overflow: "hidden", // Hide overflow to cut off images
+                            height:
+                                index === 0 || index === images.length - 1
+                                    ? "170px"
+                                    : "340px",
+                            overflow: "hidden",
                         }}
                     >
                         <Image
                             src={image.src}
                             alt={image.alt}
                             width={319.25}
-                            height={340}
+                            height={
+                                index === 0 || index === images.length - 1
+                                    ? 170
+                                    : 340
+                            } // Adjust height for first and last images
                             style={{
                                 display: "block",
                                 objectFit: "cover",

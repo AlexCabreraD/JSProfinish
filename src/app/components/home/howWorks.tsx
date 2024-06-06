@@ -120,7 +120,10 @@ const HowWorks = () => {
                             </Grid>
                             <div style={{ margin: "64px 0 0 0" }}>
                                 <Link href="/contact-us" passHref>
-                                    <Button variant={"contained"}>
+                                    <Button
+                                        variant={"contained"}
+                                        style={{ backgroundColor: "#1C7C54" }}
+                                    >
                                         Get Started
                                     </Button>
                                 </Link>

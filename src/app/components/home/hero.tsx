@@ -4,24 +4,30 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <Container maxWidth={false} className={"Home-Content-Container"}>
+        <Container
+            maxWidth={false}
+            className={"secondary-background"}
+            sx={{ textAlign: "-webkit-center" }}
+        >
             <Grid
                 container
-                className={"secondary-background hero-container"}
-                sx={{ height: "68vh", overflow: "hidden" }}
+                sx={{
+                    alignItems: "center",
+                    textAlign: { xs: "center", md: "start" },
+                    height: "fit-content",
+                    maxWidth: "1440px",
+                    justifyContent: "center",
+                }}
             >
                 <Grid
                     item
                     xs={12}
                     md={6}
-                    lg={6}
-                    alignContent={"center"}
-                    justifyContent={"center"}
-                    sx={{ height: "100%", paddingX: "32px", width: "100%" }} // Adjust padding for smaller screens
+                    sx={{ paddingRight: { xs: "0", md: "80px" } }}
                 >
                     <TextSection />
                 </Grid>
-                <Grid item xs={12} md={6} lg={6} sx={{ width: "100%" }}>
+                <Grid item xs={12} md={6} sx={{ overflow: "hidden" }}>
                     <ImageMasonry />
                 </Grid>
             </Grid>
@@ -31,7 +37,13 @@ const Hero = () => {
 
 const TextSection = () => {
     return (
-        <Stack spacing={"24px"} className={"md-alignText"}>
+        <Stack
+            spacing={"24px"}
+            sx={{
+                paddingY: { xs: "112px", md: "70px", lg: "112px" },
+                alignItems: { xs: "center", md: "start" },
+            }}
+        >
             <Typography variant={"h1"} sx={{ maxWidth: "576px" }}>
                 Premier Basement Finishing Serving Northern Utah Communities
             </Typography>
@@ -43,7 +55,11 @@ const TextSection = () => {
                 anywhere in northern Utah, trust us to deliver top-quality
                 results with our attention to detail and craftsmanship.
             </Typography>
-            <Stack spacing={"16px"} direction={"row"}>
+            <Stack
+                spacing={"16px"}
+                direction={"row"}
+                sx={{ alignSelf: { xs: "center", md: "start" } }}
+            >
                 <Link href="/services" passHref>
                     <Button>Learn More</Button>
                 </Link>

@@ -76,6 +76,7 @@ const Cta = () => {
                                 minWidth: { xs: "100%", sm: "auto" },
                                 mb: { xs: 1, sm: 0 },
                             }}
+                            style={{ backgroundColor: "#1C7C54" }}
                         >
                             Get in Touch
                         </Button>
@@ -87,6 +88,7 @@ const Cta = () => {
                             sx={{
                                 minWidth: { xs: "100%", sm: "auto" },
                             }}
+                            style={{ backgroundColor: "transparent" }}
                         >
                             Gallery
                         </Button>

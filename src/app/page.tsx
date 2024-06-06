@@ -10,7 +10,7 @@ import Contact from "@/app/components/global/contact";
 
 export default function Home() {
     return (
-        <Box className={"secondary-background"} sx={{ width: "100vw" }}>
+        <Box sx={{ width: "100vw" }}>
             <Hero />
             <MobileGallery />
             <Feature />

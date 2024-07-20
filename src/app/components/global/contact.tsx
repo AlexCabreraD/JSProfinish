@@ -111,7 +111,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                         sx={{
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
+                            justifyContent: { xs: "center", md: "left" },
                             mb: 2,
                         }}
                     >
@@ -124,7 +124,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                         sx={{
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
+                            justifyContent: { xs: "center", md: "left" },
                             mb: 2,
                         }}
                     >
@@ -137,7 +137,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                         sx={{
                             display: "flex",
                             alignItems: "center",
-                            justifyContent: "center",
+                            justifyContent: { xs: "center", md: "left" },
                             mb: 2,
                         }}
                     >

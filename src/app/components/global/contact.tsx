@@ -107,19 +107,40 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                         Let&apos;s discuss your project and how we can turn your
                         vision into reality.
                     </Typography>
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            mb: 2,
+                        }}
+                    >
                         <MdOutlineEmail size={24} />
                         <Typography variant="body1" sx={{ marginLeft: 1 }}>
                             contact@jsprofinish.com
                         </Typography>
                     </Box>
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            mb: 2,
+                        }}
+                    >
                         <FiPhone size={24} />
                         <Typography variant="body1" sx={{ marginLeft: 1 }}>
                             (385) 333-7592
                         </Typography>
                     </Box>
-                    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            mb: 2,
+                        }}
+                    >
                         <IoLocationOutline size={24} />
                         <Typography variant="body1" sx={{ marginLeft: 1 }}>
                             1740 S 300 W #8 Clearfield UT 84015

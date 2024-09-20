@@ -169,6 +169,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     backgroundColor: dark
                                         ? "#4e4e4e"
                                         : "#F5F5F5",
+                                    color: dark ? "#FFFFFF" : "#000000",
                                 },
                             }}
                             InputLabelProps={{
@@ -188,6 +189,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     backgroundColor: dark
                                         ? "#4e4e4e"
                                         : "#F5F5F5",
+                                    color: dark ? "#FFFFFF" : "#000000",
                                 },
                             }}
                             InputLabelProps={{
@@ -209,6 +211,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     backgroundColor: dark
                                         ? "#4e4e4e"
                                         : "#F5F5F5",
+                                    color: dark ? "#FFFFFF" : "#000000",
                                 },
                             }}
                             InputLabelProps={{

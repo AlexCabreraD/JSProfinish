@@ -1,11 +1,8 @@
 import { Container, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import basement1 from "@/app/assets/gallery/basement1.jpg";
-import basement2 from "@/app/assets/gallery/basement2.png";
 import basement3 from "@/app/assets/gallery/basement3.jpg";
 import basement4 from "@/app/assets/gallery/basement4.jpg";
-import basement5 from "@/app/assets/gallery/basement5.png";
-import basement6 from "@/app/assets/gallery/basement6.png";
 import basement7 from "@/app/assets/home/img/image1.png";
 import basement8 from "@/app/assets/home/img/image2.png";
 import basement9 from "@/app/assets/home/img/image3.png";
@@ -24,12 +21,6 @@ const GalleryComponent = () => {
             height: 300,
         },
         {
-            src: basement2,
-            alt: "Rustic basement renovation with wooden elements",
-            width: 300,
-            height: 300,
-        },
-        {
             src: basement3,
             alt: "Contemporary remodel project with open layout",
             width: 300,
@@ -38,18 +29,6 @@ const GalleryComponent = () => {
         {
             src: basement4,
             alt: "Wooden styled modern kitchen",
-            width: 300,
-            height: 300,
-        },
-        {
-            src: basement5,
-            alt: "Spacious basement with modern lighting",
-            width: 300,
-            height: 300,
-        },
-        {
-            src: basement6,
-            alt: "Basement makeover with cozy seating area",
             width: 300,
             height: 300,
         },

@@ -117,7 +117,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                     >
                         <MdOutlineEmail size={24} />
                         <Typography variant="body1" sx={{ marginLeft: 1 }}>
-                            contact@jsprofinish.com
+                            contact@jsprofinish-utah.com
                         </Typography>
                     </Box>
                     <Box

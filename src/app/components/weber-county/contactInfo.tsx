@@ -34,7 +34,7 @@ const ContactInfo = () => {
                         us via email.
                     </Typography>
                     <Typography variant="body1" sx={{ marginTop: "24px" }}>
-                        contact@profinish.com
+                        contact@jsprofinish-utah.com
                     </Typography>
                 </Grid>
 

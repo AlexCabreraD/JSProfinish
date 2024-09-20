@@ -17,7 +17,7 @@ const Header = ({ county }: HeaderProps) => {
                     alignItems: "center",
                     textAlign: "center",
                     height: "fit-content",
-                    maxWidth: "1440px",
+                    maxWidth: "1040px",
                     padding: "112px 0 112px 0",
                 }}
             >

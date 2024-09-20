@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { AppBar, Box, Drawer, Typography } from "@mui/material";
+import { AppBar, Box, Button, Drawer, Typography } from "@mui/material";
 import { TiThMenu } from "react-icons/ti";
 import Link from "next/link";
 import "./navbar.css";
@@ -100,6 +100,28 @@ const NavDrawer = () => {
                     passHref
                 >
                     <Typography>Weber County</Typography>
+                </Link>
+                <Link
+                    href="/contact-us"
+                    onClick={() => {
+                        setOpen(false);
+                    }}
+                    passHref
+                >
+                    <Button
+                        sx={{
+                            position: "absolute",
+                            bottom: 20,
+                            width: "100%",
+                            height: "40px",
+                            backgroundColor: "#1C7C54",
+                            fontSize: { xs: "0.75rem", md: "1rem" },
+                            padding: { xs: "5px 10px", md: "8px 16px" },
+                            borderRadius: 0,
+                        }}
+                    >
+                        Contact Us
+                    </Button>
                 </Link>
             </Drawer>
         </>

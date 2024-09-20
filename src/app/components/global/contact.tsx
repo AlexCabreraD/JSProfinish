@@ -129,9 +129,11 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                         }}
                     >
                         <FiPhone size={24} />
-                        <Typography variant="body1" sx={{ marginLeft: 1 }}>
-                            (385) 333-7592
-                        </Typography>
+                        <a href="tel:3853337592">
+                            <Typography variant="body1" sx={{ marginLeft: 1 }}>
+                                (385) 333-7592
+                            </Typography>
+                        </a>
                     </Box>
                     <Box
                         sx={{

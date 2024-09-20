@@ -50,9 +50,11 @@ const ContactInfo = () => {
                         We&apos;re available by phone for any questions or to
                         schedule a consultation.
                     </Typography>
-                    <Typography variant="body1" sx={{ marginTop: "24px" }}>
-                        +1 (385) 333-7592
-                    </Typography>
+                    <a href="tel:3853337592">
+                        <Typography variant="body1" sx={{ marginTop: "24px" }}>
+                            +1 (385) 333-7592
+                        </Typography>
+                    </a>
                 </Grid>
 
                 {/* Office Column */}

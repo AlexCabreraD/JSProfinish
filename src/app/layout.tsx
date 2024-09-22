@@ -5,6 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/app/theme/theme";
 import BootstrapClient from "@/app/components/bootstrap/bootstrapClient";
 import "./globals.css";
+import "../output.css";
 import Footer from "@/app/components/global/footer";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";

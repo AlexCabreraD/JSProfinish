@@ -7,12 +7,12 @@ import HowWorks from "@/app/components/home/howWorks";
 import Cta from "@/app/components/home/cta";
 import Testimonials from "@/app/components/home/testimonials";
 import Contact from "@/app/components/global/contact";
+import { Header76 } from "@/app/components/relume/header76";
 
 export default function Home() {
     return (
         <Box sx={{ width: "100vw" }}>
-            <Hero />
-            <MobileGallery />
+            <Header76 />
             <Feature />
             <Benefits />
             <HowWorks />

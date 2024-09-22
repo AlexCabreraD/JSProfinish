@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
 }
@@ -28,4 +31,8 @@ a {
 
 .fixed-element, .sticky-element {
   will-change: transform; /* Optimize rendering for fixed/sticky elements */
+}
+
+.primary-button{
+  background-color: #1C7C54;
 }

@@ -52,7 +52,7 @@ const ImageMasonry = () => {
             className="image-masonry"
         >
             <Masonry
-                columns={2}
+                columns={{ xs: 1, sm: 2 }} // Responsive columns
                 spacing={2}
                 sx={{
                     width: "fit-content",
@@ -65,28 +65,25 @@ const ImageMasonry = () => {
                         sx={{
                             boxShadow: 1,
                             position: "relative",
-                            height:
-                                index === 0 || index === images.length - 1
-                                    ? "170px"
-                                    : "340px",
                             overflow: "hidden",
+                            borderRadius: 1, // Add a subtle border radius for design consistency
                         }}
                     >
                         <Image
                             src={image.src}
                             alt={image.alt}
+                            layout="responsive" // Responsive layout for image
                             width={319.25}
                             height={
                                 index === 0 || index === images.length - 1
                                     ? 170
                                     : 340
-                            } // Adjust height for first and last images
+                            } // Set height for first and last images
+                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" // Set responsive image sizes
                             style={{
                                 display: "block",
                                 objectFit: "cover",
                             }}
-                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-                            priority
                         />
                     </Box>
                 ))}

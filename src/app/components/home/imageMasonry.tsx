@@ -72,14 +72,8 @@ const ImageMasonry = () => {
                         <Image
                             src={image.src}
                             alt={image.alt}
-                            layout="responsive" // Responsive layout for image
-                            width={319.25}
-                            height={
-                                index === 0 || index === images.length - 1
-                                    ? 170
-                                    : 340
-                            } // Set height for first and last images
-                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" // Set responsive image sizes
+                            layout="responsive"
+                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
                             style={{
                                 display: "block",
                                 objectFit: "cover",

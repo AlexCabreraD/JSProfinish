@@ -47,8 +47,9 @@ const MobileGallery = () => {
                         <Image
                             src={image.src} // Access the src attribute of the StaticImageData type
                             alt={`Image ${index + 1}`}
-                            width={610} // Fixed width to maintain consistency
-                            height={340}
+                            width={610} // Original width of the image
+                            height={340} // Original height of the image
+                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" // Responsive image sizes
                             style={{
                                 display: "block",
                                 objectFit: "cover", // Ensure image covers the container

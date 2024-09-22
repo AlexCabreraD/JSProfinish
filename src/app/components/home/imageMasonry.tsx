@@ -42,11 +42,8 @@ const ImageMasonry = () => {
     return (
         <Box
             sx={{
-                width: "100%",
                 overflow: "hidden",
-                display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
                 maxHeight: "880px",
             }}
             className="image-masonry"
@@ -54,10 +51,6 @@ const ImageMasonry = () => {
             <Masonry
                 columns={{ xs: 1, sm: 2 }} // Responsive columns
                 spacing={2}
-                sx={{
-                    width: "fit-content",
-                    maxWidth: "100%",
-                }}
             >
                 {images.map((image, index) => (
                     <Box key={index}>

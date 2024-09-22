@@ -8,22 +8,22 @@ const Cta = () => {
         <Box
             sx={{
                 position: "relative",
-                height: { xs: "60vh", sm: "50vh", md: "40vh" }, // Responsive height
+                height: { xs: "60vh", sm: "50vh", md: "40vh" },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
                 textAlign: "center",
-                paddingX: { xs: 2, sm: 4, md: 6 }, // Responsive padding
+                paddingX: { xs: 2, sm: 4, md: 6 },
             }}
         >
             <Image
                 src={img9}
-                alt={
-                    "Beautifully remodeled basement with modern furniture and lighting"
-                }
+                alt="Basement in the process of being remodeled"
                 layout="fill"
                 objectFit="cover"
+                sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+                priority // Improves loading performance
                 style={{ filter: "blur(5px)" }}
             />
             <Box

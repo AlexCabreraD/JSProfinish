@@ -33,7 +33,9 @@ const Feature = () => {
                 >
                     <Image
                         src={img8}
-                        alt={"test"}
+                        alt={
+                            "cozy and modern living room featuring a cream-colored sectional sofa, earthy-toned pillows, and a patterned area rug. The decor includes large plants in woven baskets, a pouf, and framed botanical artwork. The room has a minimalist, natural aesthetic with polished concrete floors and recessed lighting"
+                        }
                         layout="responsive"
                         className={"benefits-image"}
                     />

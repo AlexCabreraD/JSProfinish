@@ -32,7 +32,7 @@ const Feature = () => {
                 >
                     <Image
                         src={img7}
-                        alt={"test"}
+                        alt={"Remodeled and furnished basement"}
                         layout="responsive"
                         className={"feature-image"}
                     />

@@ -62,23 +62,7 @@ export const Header76 = (props: Header76Props) => {
             </div>
             <div className="h-[30rem] overflow-hidden pl-[5vw] pr-[5vw] md:h-[40rem] lg:h-screen lg:pl-0">
                 <div className="grid w-full grid-cols-2 gap-x-4">
-                    <div className="-mt-[120%] grid size-full animate-loop-vertically columns-2 grid-cols-1 gap-4 self-center">
-                        {images.map((image, index) => (
-                            <div
-                                key={index}
-                                className="grid size-full grid-cols-1 gap-4"
-                            >
-                                <div className="relative w-full pt-[120%]">
-                                    <img
-                                        className="absolute inset-0 size-full object-cover"
-                                        src={image.src}
-                                        alt={image.alt}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="grid size-full animate-loop-vertically grid-cols-1 gap-4">
+                    <div className="-mt-[140%] grid size-full animate-loop-vertically columns-2 grid-cols-1 gap-4 self-center">
                         {images.map((image, index) => (
                             <div
                                 key={index}
@@ -90,6 +74,25 @@ export const Header76 = (props: Header76Props) => {
                                         src={image.src}
                                         alt={image.alt}
                                         fill
+                                        priority
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="grid size-full animate-loop-vertically grid-cols-1 gap-4">
+                        {images.reverse().map((image, index) => (
+                            <div
+                                key={index}
+                                className="grid size-full grid-cols-1 gap-4"
+                            >
+                                <div className="relative w-full pt-[120%]">
+                                    <Image
+                                        className="absolute inset-0 size-full object-cover"
+                                        src={image.src}
+                                        alt={image.alt}
+                                        fill
+                                        priority
                                     />
                                 </div>
                             </div>

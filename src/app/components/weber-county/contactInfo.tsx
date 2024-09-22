@@ -50,9 +50,9 @@ const ContactInfo = () => {
                         We&apos;re available by phone for any questions or to
                         schedule a consultation.
                     </Typography>
-                    <a href="tel:3853337592">
+                    <a href="tel:3856263514">
                         <Typography variant="body1" sx={{ marginTop: "24px" }}>
-                            +1 (385) 333-7592
+                            +1 (385) 626-3514
                         </Typography>
                     </a>
                 </Grid>

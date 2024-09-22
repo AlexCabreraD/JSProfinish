@@ -60,23 +60,14 @@ const ImageMasonry = () => {
                 }}
             >
                 {images.map((image, index) => (
-                    <Box
-                        key={index}
-                        sx={{
-                            boxShadow: 1,
-                            position: "relative",
-                            overflow: "hidden",
-                            borderRadius: 1, // Add a subtle border radius for design consistency
-                        }}
-                    >
+                    <Box key={index}>
                         <Image
                             src={image.src}
                             alt={image.alt}
                             layout="responsive"
                             sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
                             style={{
-                                display: "block",
-                                objectFit: "cover",
+                                borderRadius: 4,
                             }}
                         />
                     </Box>

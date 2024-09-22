@@ -38,6 +38,8 @@ const Feature = () => {
                         }
                         layout="responsive"
                         className={"benefits-image"}
+                        sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+                        priority
                     />
                 </Grid>
             </Grid>

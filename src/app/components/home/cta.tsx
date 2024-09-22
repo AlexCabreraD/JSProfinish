@@ -23,7 +23,7 @@ const Cta = () => {
                 layout="fill"
                 objectFit="cover"
                 sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
-                priority // Improves loading performance
+                priority
                 style={{ filter: "blur(5px)" }}
             />
             <Box

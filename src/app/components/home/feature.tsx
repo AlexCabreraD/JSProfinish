@@ -35,6 +35,8 @@ const Feature = () => {
                         alt={"Remodeled and furnished basement"}
                         layout="responsive"
                         className={"feature-image"}
+                        sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+                        priority
                     />
                 </Grid>
                 <Grid item xs={12} md={6} sx={{ order: { xs: 1, md: 2 } }}>

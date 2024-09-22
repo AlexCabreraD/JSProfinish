@@ -15,6 +15,7 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import { sendContactEmail } from "@/app/utils/sendEmail";
 
 interface ContactProps {
     dark?: boolean;
@@ -45,15 +46,13 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
             return;
         }
 
-        const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-        });
-
-        if (response.ok) {
+        try {
+            // Call the sendContactEmail function here
+            await sendContactEmail(
+                formData.name,
+                formData.email,
+                formData.message,
+            );
             alert("Message sent successfully");
             setFormData({
                 name: "",
@@ -61,7 +60,8 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                 message: "",
                 termsAccepted: false,
             });
-        } else {
+        } catch (error) {
+            console.error(error);
             alert("Failed to send message");
         }
     };

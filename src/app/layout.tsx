@@ -7,6 +7,8 @@ import BootstrapClient from "@/app/components/bootstrap/bootstrapClient";
 import "./globals.css";
 import Footer from "@/app/components/global/footer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -30,6 +32,7 @@ export default function RootLayout({
                     <Footer />
                 </ThemeProvider>
                 <BootstrapClient />
+                <SpeedInsights />
             </body>
         </html>
     );

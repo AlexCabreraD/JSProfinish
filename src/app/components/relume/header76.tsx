@@ -106,8 +106,7 @@ export const Header76 = (props: Header76Props) => {
 
 export const Header76Defaults: Header76Props = {
     heading: "Premier Basement Finishing Serving Northern Utah Communities",
-    description:
-        "At JS ProFinish, we are Utah&apos;s premier experts in basement finishing and remodeling services. Our team specializes in transforming basements into beautiful spaces tailored to your needs. Whether you&apos;re in Ogden, Clearfield, Layton, or anywhere in northern Utah, trust us to deliver top-quality results with our attention to detail and craftsmanship.",
+    description: `At JS ProFinish, we are Utah's premier experts in basement finishing and remodeling services. Our team specializes in transforming basements into beautiful spaces tailored to your needs. Whether you're in Ogden, Clearfield, Layton, or anywhere in northern Utah, trust us to deliver top-quality results with our attention to detail and craftsmanship.`,
     buttons: [
         {
             title: "LEARN MORE",

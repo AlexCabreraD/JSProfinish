@@ -123,7 +123,7 @@ const Footer = () => {
                     }}
                 />
                 <Typography variant={"caption"} sx={{ marginTop: "32px" }}>
-                    © 2024 Basement. All rights reserved.
+                    © 2024 JsProFinish. All rights reserved.
                 </Typography>
             </Grid>
         </Container>

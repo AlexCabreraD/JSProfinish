@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jsprofinish.com
+Host: https://www.jsprofinish-utah.com/
 
 # Sitemaps
-Sitemap: https://jsprofinish.com/sitemap.xml
+Sitemap: https://jsprofinish-utah.com/sitemap.xml

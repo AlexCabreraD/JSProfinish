@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.jsprofinish-utah.com/
-
-# Sitemaps
-Sitemap: https://jsprofinish-utah.com/sitemap.xml

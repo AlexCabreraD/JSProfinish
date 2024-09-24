@@ -103,7 +103,7 @@ const GalleryComponent = () => {
                     <Stack spacing={"24px"}>
                         <Typography variant={"h2"}>Gallery</Typography>
                         <Typography variant={"body1"}>
-                            Explore our stunning basement finishing projects in
+                            Explore stunning basement finishing projects in
                             various styles
                         </Typography>
                     </Stack>

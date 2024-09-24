@@ -1,5 +1,7 @@
 import { Container, Grid, Stack, Typography } from "@mui/material";
+
 import Image from "next/image";
+
 import basement1 from "@/app/assets/gallery/basement1.jpg";
 import basement3 from "@/app/assets/gallery/basement3.jpg";
 import basement4 from "@/app/assets/gallery/basement4.jpg";

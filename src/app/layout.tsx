@@ -7,6 +7,7 @@ import BootstrapClient from "@/app/components/bootstrap/bootstrapClient";
 import "./globals.css";
 import "../output.css";
 import Footer from "@/app/components/global/footer";
+import { jsonLd } from "@/app/utils/seo";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -25,6 +26,17 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            jsonLd,
+                        }),
+                    }}
+                />
+                <title>{metadata.title?.toString()}</title>
+            </head>
             <body className={inter.className}>
                 <ThemeProvider theme={theme}>
                     <CssBaseline />

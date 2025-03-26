@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { RiBuilding3Line } from "react-icons/ri";
 import { PiWall } from "react-icons/pi";
 import { TbTools } from "react-icons/tb";
-import { LuPaintbrush2 } from "react-icons/lu";
+import { LuPaintbrush } from "react-icons/lu";
 import Link from "next/link";
 
 const OurWork = () => {
@@ -128,7 +128,7 @@ const OurWork = () => {
                         basement with our high-quality carpentry services.
                     </Typography>
 
-                    <LuPaintbrush2
+                    <LuPaintbrush
                         size={40}
                         style={{
                             width: "36px",

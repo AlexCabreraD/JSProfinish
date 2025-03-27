@@ -38,7 +38,6 @@ const Benefits = () => {
                                 mx: { xs: "auto", md: 0 },
                             }}
                         >
-                            {/* Icon */}
                             <Box
                                 sx={{
                                     display: "flex",

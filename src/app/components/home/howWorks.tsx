@@ -43,14 +43,17 @@ const HowWorks = () => {
         >
             <Container maxWidth="lg">
                 <Grid container spacing={4} justifyContent="center">
-                    {/* Header Section */}
-                    <Grid size={12} sx={{ mb: { xs: 3, md: 6 } }}>
+                    <Grid
+                        size={12}
+                        sx={{ mb: { xs: 3, md: 6 }, alignItems: "center" }}
+                    >
                         <Stack
                             spacing={2}
                             sx={{
                                 maxWidth: "800px",
                                 mx: "auto",
                                 textAlign: "center",
+                                alignItems: "center",
                             }}
                         >
                             <Typography
@@ -84,7 +87,7 @@ const HowWorks = () => {
                                     fontSize: { xs: "1rem", md: "1.125rem" },
                                     color: "#333333",
                                     maxWidth: "650px",
-                                    mx: "auto",
+                                    justifyContent: "center",
                                     lineHeight: 1.6,
                                 }}
                             >
@@ -97,7 +100,6 @@ const HowWorks = () => {
                         </Stack>
                     </Grid>
 
-                    {/* Process Steps Section */}
                     <Grid container spacing={4} columns={12}>
                         {processSteps.map((step, index) => (
                             <Grid key={index} size={{ xs: 12, md: 4 }}>
@@ -109,6 +111,8 @@ const HowWorks = () => {
                                         backgroundColor:
                                             "rgba(28, 124, 84, 0.04)",
                                         transition: "all 0.3s ease",
+                                        position: "relative", // Add this for positioning
+                                        paddingBottom: "60px", // Add padding at bottom for step indicator
                                         "&:hover": {
                                             backgroundColor:
                                                 "rgba(28, 124, 84, 0.08)",
@@ -118,7 +122,7 @@ const HowWorks = () => {
                                         },
                                     }}
                                 >
-                                    <Stack spacing={3} sx={{ height: "100%" }}>
+                                    <Stack spacing={3}>
                                         <Box
                                             sx={{
                                                 width: "56px",
@@ -168,46 +172,46 @@ const HowWorks = () => {
                                                 {step.description}
                                             </Typography>
                                         </Box>
+                                    </Stack>
+
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            alignItems: "center",
+                                            position: "absolute",
+                                            bottom: "24px",
+                                            left: "24px",
+                                            right: "24px",
+                                        }}
+                                    >
+                                        <Typography
+                                            variant="subtitle2"
+                                            sx={{
+                                                fontWeight: 500,
+                                                color: "#1C7C54",
+                                                display: "flex",
+                                                alignItems: "center",
+                                            }}
+                                        >
+                                            Step {index + 1}
+                                        </Typography>
 
                                         <Box
                                             sx={{
-                                                display: "flex",
-                                                alignItems: "center",
-                                                mt: "auto",
+                                                height: "2px",
+                                                backgroundColor:
+                                                    "rgba(28, 124, 84, 0.2)",
+                                                flexGrow: 1,
+                                                ml: 2,
+                                                position: "relative",
+                                                overflow: "hidden",
+                                                display: {
+                                                    xs: "none",
+                                                    md: "block",
+                                                },
                                             }}
-                                        >
-                                            <Typography
-                                                variant="subtitle2"
-                                                sx={{
-                                                    fontWeight: 500,
-                                                    color: "#1C7C54",
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                }}
-                                            >
-                                                Step {index + 1}
-                                            </Typography>
-
-                                            {index <
-                                                processSteps.length - 1 && (
-                                                <Box
-                                                    sx={{
-                                                        height: "2px",
-                                                        backgroundColor:
-                                                            "rgba(28, 124, 84, 0.2)",
-                                                        flexGrow: 1,
-                                                        ml: 2,
-                                                        position: "relative",
-                                                        overflow: "hidden",
-                                                        display: {
-                                                            xs: "none",
-                                                            md: "block",
-                                                        },
-                                                    }}
-                                                />
-                                            )}
-                                        </Box>
-                                    </Stack>
+                                        />
+                                    </Box>
                                 </Box>
                             </Grid>
                         ))}
@@ -268,6 +272,7 @@ const HowWorks = () => {
                                     sx={{
                                         borderColor: "rgba(28, 124, 84, 0.5)",
                                         color: "#1C7C54",
+                                        backgroundColor: "#FFFFFF",
                                         py: 1.5,
                                         px: 4,
                                         fontWeight: 600,
@@ -288,7 +293,6 @@ const HowWorks = () => {
                         </Box>
                     </Grid>
 
-                    {/* Decorative Shapes */}
                     <Box
                         sx={{
                             position: "absolute",

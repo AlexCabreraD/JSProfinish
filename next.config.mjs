@@ -6,7 +6,7 @@ const nextConfig = {
                 source: '/(.*)',
                 has: [{ type: 'host', value: 'jsprofinish-utah.com' }],
                 destination: 'https://jsprofinish-utah.com/:path*',
-                permanent: true,  // This sets a 301 permanent redirect
+                permanent: true,
             },
         ];
     },

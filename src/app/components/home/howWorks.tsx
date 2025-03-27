@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Button } from "@mui/material";
-import Grid from "@mui/material/Grid2"; // Grid version 2
+import Grid from "@mui/material/Grid2";
 import Stack from "@mui/material/Stack";
 import { LuPencil } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
@@ -111,8 +111,8 @@ const HowWorks = () => {
                                         backgroundColor:
                                             "rgba(28, 124, 84, 0.04)",
                                         transition: "all 0.3s ease",
-                                        position: "relative", // Add this for positioning
-                                        paddingBottom: "60px", // Add padding at bottom for step indicator
+                                        position: "relative",
+                                        paddingBottom: "60px",
                                         "&:hover": {
                                             backgroundColor:
                                                 "rgba(28, 124, 84, 0.08)",
@@ -217,7 +217,6 @@ const HowWorks = () => {
                         ))}
                     </Grid>
 
-                    {/* CTA Buttons */}
                     <Grid size={12} sx={{ mt: 6, textAlign: "center" }}>
                         <Box
                             sx={{

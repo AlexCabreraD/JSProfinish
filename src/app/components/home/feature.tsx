@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2"; // Grid version 2
+import Grid from "@mui/material/Grid2";
 import Stack from "@mui/material/Stack";
 import Image from "next/image";
 import img7 from "../../assets/home/img/image7.png";
@@ -134,7 +134,6 @@ const Feature = () => {
                                 mx: { xs: "auto", md: 0 },
                             }}
                         >
-                            {/* Section Label */}
                             <Typography
                                 variant="overline"
                                 component="p"
@@ -164,7 +163,6 @@ const Feature = () => {
                                 Our Basement Finishing Services
                             </Typography>
 
-                            {/* Description */}
                             <Typography
                                 variant="body1"
                                 sx={{

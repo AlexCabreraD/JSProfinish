@@ -7,12 +7,12 @@ const Header = () => {
         <Box
             sx={{
                 position: "relative",
-                height: { xs: "70vh", sm: "50vh", md: "40vh" }, // Responsive height
+                height: { xs: "70vh", sm: "50vh", md: "40vh" },
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 overflow: "hidden",
-                paddingX: { xs: 2, sm: 4, md: 6 }, // Responsive padding
+                paddingX: { xs: 2, sm: 4, md: 6 },
             }}
         >
             <Image

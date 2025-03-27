@@ -1,132 +1,498 @@
-import { Container, Grid, Stack, Typography } from "@mui/material";
-import Link from "next/link";
+"use client";
+
 import React from "react";
-import "@/app/components/home/home.css";
+import {
+    Container,
+    Grid,
+    Typography,
+    Box,
+    Paper,
+    Stack,
+    Divider,
+    IconButton,
+    useTheme,
+    useMediaQuery,
+} from "@mui/material";
+import Link from "next/link";
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaLinkedinIn,
+    FaMapMarkerAlt,
+} from "react-icons/fa";
+import { MdOutlineEmail, MdPhone } from "react-icons/md";
+import { IoLogoGoogle } from "react-icons/io";
 
 const Footer = () => {
-    return (
-        <Container
-            maxWidth={false}
-            className={"primary-background"}
-            sx={{ textAlign: "-webkit-center" }}
-        >
-            <Grid
-                container
-                sx={{
-                    alignItems: "flex-start",
-                    height: "fit-content",
-                    maxWidth: "1440px",
-                    padding: { xs: "56px 0", md: "112px 0" }, // Responsive padding
-                    justifyContent: "center",
-                }}
-            >
-                <Link href="/" passHref>
-                    <Typography
-                        variant="h6"
-                        component="p"
-                        sx={{
-                            fontWeight: "bold",
-                            textDecoration: "none",
-                            color: "#1C7C54",
-                            marginBottom: "32px",
-                        }}
-                    >
-                        JS ProFinish
-                    </Typography>
-                </Link>
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-                <Grid container gap={"32px"} justifyContent={"center"}>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/about-us" passHref>
+    const navigationLinks = [
+        {
+            category: "Services",
+            links: [
+                { href: "/services", label: "Services" },
+                { href: "/gallery", label: "Gallery" },
+                { href: "/weber-county", label: "Weber County" },
+                { href: "/davis-county", label: "Davis County" },
+            ],
+        },
+        {
+            category: "Company",
+            links: [
+                { href: "/about-us", label: "About Us" },
+                { href: "/contact-us", label: "Contact Us" },
+            ],
+        },
+    ];
+
+    const currentYear = new Date().getFullYear();
+
+    return (
+        <Box
+            component="footer"
+            id="main-footer"
+            sx={{
+                position: "relative",
+                overflow: "hidden",
+                backgroundColor: "#F5F5F5",
+                pt: isMobile ? "60px" : "80px",
+                pb: isMobile ? "40px" : "30px",
+                "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: "5px",
+                    background:
+                        "linear-gradient(to right, #1C7C54, #2A9D8F, #1C7C54)",
+                    zIndex: 1,
+                },
+            }}
+        >
+            <Container
+                maxWidth={false}
+                sx={{ maxWidth: "1440px", margin: "0 auto" }}
+            >
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={4}>
+                        <Box sx={{ mb: 3 }}>
+                            <Link href="/" passHref>
+                                <Typography
+                                    variant="h6"
+                                    component="p"
+                                    sx={{
+                                        fontWeight: "bold",
+                                        textDecoration: "none",
+                                        color: "#1C7C54",
+                                        fontSize: "1.5rem",
+                                        display: "inline-block",
+                                        mb: 2,
+                                        position: "relative",
+                                        "&::after": {
+                                            content: '""',
+                                            position: "absolute",
+                                            bottom: -8,
+                                            left: 0,
+                                            width: "40px",
+                                            height: "3px",
+                                            backgroundColor: "#1C7C54",
+                                        },
+                                    }}
+                                >
+                                    JS ProFinish
+                                </Typography>
+                            </Link>
+
                             <Typography
-                                component="p"
+                                variant="body2"
                                 sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
+                                    maxWidth: "350px",
+                                    color: "#555",
+                                    mb: 3,
                                 }}
                             >
-                                About Us
+                                Northern Utah&apos;s premier basement finishing
+                                experts with over 15 years of experience
+                                transforming spaces into beautiful, functional
+                                areas.
                             </Typography>
-                        </Link>
+
+                            <Stack spacing={2}>
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <MdOutlineEmail
+                                        style={{
+                                            color: "#1C7C54",
+                                            marginRight: "10px",
+                                            flexShrink: 0,
+                                        }}
+                                    />
+                                    <Typography variant="body2">
+                                        contact@jsprofinish-utah.com
+                                    </Typography>
+                                </Box>
+
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <MdPhone
+                                        style={{
+                                            color: "#1C7C54",
+                                            marginRight: "10px",
+                                            flexShrink: 0,
+                                        }}
+                                    />
+                                    <Typography variant="body2">
+                                        (385) 626-3514
+                                    </Typography>
+                                </Box>
+
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <FaMapMarkerAlt
+                                        style={{
+                                            color: "#1C7C54",
+                                            marginRight: "10px",
+                                            flexShrink: 0,
+                                        }}
+                                    />
+                                    <Typography variant="body2">
+                                        1740 S 300 W #8 Clearfield UT 84015
+                                    </Typography>
+                                </Box>
+                            </Stack>
+                        </Box>
+
+                        <Box sx={{ mt: 4 }}>
+                            <Typography
+                                variant="subtitle1"
+                                sx={{
+                                    fontWeight: 600,
+                                    mb: 2,
+                                    color: "#333",
+                                }}
+                            >
+                                Follow Us
+                            </Typography>
+
+                            <Box sx={{ display: "flex", gap: 2 }}>
+                                <IconButton
+                                    aria-label="Facebook"
+                                    sx={{
+                                        backgroundColor:
+                                            "rgba(28, 124, 84, 0.1)",
+                                        color: "#1C7C54",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            backgroundColor: "#1C7C54",
+                                            color: "white",
+                                            transform: "translateY(-3px)",
+                                        },
+                                    }}
+                                >
+                                    <FaFacebookF />
+                                </IconButton>
+
+                                <IconButton
+                                    aria-label="Instagram"
+                                    sx={{
+                                        backgroundColor:
+                                            "rgba(28, 124, 84, 0.1)",
+                                        color: "#1C7C54",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            backgroundColor: "#1C7C54",
+                                            color: "white",
+                                            transform: "translateY(-3px)",
+                                        },
+                                    }}
+                                >
+                                    <FaInstagram />
+                                </IconButton>
+
+                                <IconButton
+                                    aria-label="Google"
+                                    sx={{
+                                        backgroundColor:
+                                            "rgba(28, 124, 84, 0.1)",
+                                        color: "#1C7C54",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            backgroundColor: "#1C7C54",
+                                            color: "white",
+                                            transform: "translateY(-3px)",
+                                        },
+                                    }}
+                                >
+                                    <IoLogoGoogle />
+                                </IconButton>
+
+                                <IconButton
+                                    aria-label="LinkedIn"
+                                    sx={{
+                                        backgroundColor:
+                                            "rgba(28, 124, 84, 0.1)",
+                                        color: "#1C7C54",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            backgroundColor: "#1C7C54",
+                                            color: "white",
+                                            transform: "translateY(-3px)",
+                                        },
+                                    }}
+                                >
+                                    <FaLinkedinIn />
+                                </IconButton>
+                            </Box>
+                        </Box>
                     </Grid>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/services" passHref>
-                            <Typography
-                                component="p"
-                                sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Services
-                            </Typography>
-                        </Link>
+
+                    <Grid item xs={12} md={5}>
+                        <Grid container spacing={isMobile ? 3 : 4}>
+                            {navigationLinks.map((category) => (
+                                <Grid item xs={6} key={category.category}>
+                                    <Typography
+                                        variant="subtitle1"
+                                        sx={{
+                                            fontWeight: 600,
+                                            mb: 3,
+                                            position: "relative",
+                                            display: "inline-block",
+                                            color: "#333",
+                                            "&::after": {
+                                                content: '""',
+                                                position: "absolute",
+                                                bottom: -8,
+                                                left: 0,
+                                                width: "30px",
+                                                height: "2px",
+                                                backgroundColor: "#1C7C54",
+                                            },
+                                        }}
+                                    >
+                                        {category.category}
+                                    </Typography>
+
+                                    <Stack spacing={isMobile ? 1.5 : 2}>
+                                        {category.links.map((link) => (
+                                            <Link
+                                                key={link.href}
+                                                href={link.href}
+                                                passHref
+                                            >
+                                                <Typography
+                                                    component="span"
+                                                    sx={{
+                                                        color: "#555",
+                                                        fontSize: "0.95rem",
+                                                        transition:
+                                                            "all 0.3s ease",
+                                                        display: "inline-block",
+                                                        textDecoration: "none",
+                                                        position: "relative",
+                                                        "&:hover": {
+                                                            color: "#1C7C54",
+                                                            transform:
+                                                                "translateX(5px)",
+                                                        },
+                                                        "&::before": {
+                                                            content: '"›"',
+                                                            position:
+                                                                "absolute",
+                                                            left: -15,
+                                                            top: "50%",
+                                                            transform:
+                                                                "translateY(-50%)",
+                                                            opacity: 0,
+                                                            transition:
+                                                                "opacity 0.3s ease",
+                                                            color: "#1C7C54",
+                                                        },
+                                                        "&:hover::before": {
+                                                            opacity: 1,
+                                                        },
+                                                    }}
+                                                >
+                                                    {link.label}
+                                                </Typography>
+                                            </Link>
+                                        ))}
+                                    </Stack>
+                                </Grid>
+                            ))}
+                        </Grid>
                     </Grid>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/contact-us" passHref>
+
+                    <Grid item xs={12} md={3}>
+                        <Paper
+                            elevation={1}
+                            sx={{
+                                p: 3,
+                                borderRadius: "12px",
+                                background:
+                                    "linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(240,240,240,0.9) 100%)",
+                                border: "1px solid rgba(28, 124, 84, 0.1)",
+                                height: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                            }}
+                        >
                             <Typography
-                                component="p"
+                                variant="subtitle1"
                                 sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
+                                    fontWeight: 600,
+                                    mb: 2,
+                                    color: "#333",
+                                    textAlign: "center",
                                 }}
                             >
-                                Contact Us
+                                Serving Northern Utah
                             </Typography>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/gallery" passHref>
-                            <Typography
-                                component="p"
+
+                            <Box
                                 sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
+                                    textAlign: "center",
+                                    mb: 2,
                                 }}
                             >
-                                Gallery
-                            </Typography>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/weber-county" passHref>
-                            <Typography
-                                component="p"
-                                sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Weber County
-                            </Typography>
-                        </Link>
-                    </Grid>
-                    <Grid item xs={3} md={1.5}>
-                        <Link href="/davis-county" passHref>
-                            <Typography
-                                component="p"
-                                sx={{
-                                    textDecoration: "none",
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Davis County
-                            </Typography>
-                        </Link>
+                                <Typography variant="body2" sx={{ mb: 1 }}>
+                                    Proudly servicing Weber & Davis Counties
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    sx={{
+                                        fontStyle: "italic",
+                                        color: "#666",
+                                    }}
+                                >
+                                    Quality craftsmanship since 2009
+                                </Typography>
+                            </Box>
+
+                            <Link href="/contact-us" passHref>
+                                <Typography
+                                    component="span"
+                                    sx={{
+                                        display: "block",
+                                        textAlign: "center",
+                                        color: "#1C7C54",
+                                        fontWeight: 600,
+                                        textDecoration: "underline",
+                                        margin: "0 auto",
+                                        transition: "all 0.3s ease",
+                                        "&:hover": {
+                                            color: "#145c3f",
+                                            textDecoration: "none",
+                                        },
+                                    }}
+                                >
+                                    Get a free estimate today
+                                </Typography>
+                            </Link>
+                        </Paper>
                     </Grid>
                 </Grid>
-                <hr
-                    style={{
-                        border: "1px solid #000000",
+
+                <Divider
+                    sx={{
+                        my: 4,
+                        borderColor: "rgba(0, 0, 0, 0.1)",
                         width: "100%",
-                        marginTop: "80px",
                     }}
                 />
-                <Typography variant={"caption"} sx={{ marginTop: "32px" }}>
-                    © 2024 JsProFinish. All rights reserved.
-                </Typography>
-            </Grid>
-        </Container>
+
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexDirection: { xs: "column", md: "row" },
+                        justifyContent: "space-between",
+                        alignItems: { xs: "center", md: "center" },
+                    }}
+                >
+                    <Typography
+                        variant="caption"
+                        sx={{
+                            color: "#666",
+                            textAlign: { xs: "center", md: "left" },
+                            mb: { xs: 2, md: 0 },
+                        }}
+                    >
+                        © {currentYear} JS ProFinish. All rights reserved.
+                    </Typography>
+
+                    <Box
+                        sx={{
+                            display: "flex",
+                            gap: 3,
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Link href="/privacy-policy" passHref>
+                            <Typography
+                                component="span"
+                                variant="caption"
+                                sx={{
+                                    color: "#666",
+                                    transition: "color 0.3s ease",
+                                    "&:hover": {
+                                        color: "#1C7C54",
+                                    },
+                                }}
+                            >
+                                Privacy Policy
+                            </Typography>
+                        </Link>
+
+                        <Link href="/terms-of-service" passHref>
+                            <Typography
+                                component="span"
+                                variant="caption"
+                                sx={{
+                                    color: "#666",
+                                    transition: "color 0.3s ease",
+                                    "&:hover": {
+                                        color: "#1C7C54",
+                                    },
+                                }}
+                            >
+                                Terms of Service
+                            </Typography>
+                        </Link>
+
+                        <Link href="/sitemap" passHref>
+                            <Typography
+                                component="span"
+                                variant="caption"
+                                sx={{
+                                    color: "#666",
+                                    transition: "color 0.3s ease",
+                                    "&:hover": {
+                                        color: "#1C7C54",
+                                    },
+                                }}
+                            >
+                                Sitemap
+                            </Typography>
+                        </Link>
+                    </Box>
+                </Box>
+            </Container>
+        </Box>
     );
 };
 

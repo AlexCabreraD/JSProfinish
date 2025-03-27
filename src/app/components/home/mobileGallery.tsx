@@ -17,7 +17,7 @@ const MobileGallery = () => {
             className={"mobile-gallery"}
             sx={{
                 width: "100%",
-                overflow: "hidden", // Hide overflow to cut off images
+                overflow: "hidden",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -31,7 +31,7 @@ const MobileGallery = () => {
                 spacing={2}
                 sx={{
                     width: "fit-content",
-                    maxWidth: "100%", // Ensure it doesn't exceed the screen width
+                    maxWidth: "100%",
                 }}
             >
                 {images.map((image, index) => (
@@ -45,14 +45,14 @@ const MobileGallery = () => {
                         className={"responsive-image-container"}
                     >
                         <Image
-                            src={image.src} // Access the src attribute of the StaticImageData type
+                            src={image.src}
                             alt={`Image ${index + 1}`}
-                            width={610} // Original width of the image
-                            height={340} // Original height of the image
-                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw" // Responsive image sizes
+                            width={610}
+                            height={340}
+                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
                             style={{
                                 display: "block",
-                                objectFit: "cover", // Ensure image covers the container
+                                objectFit: "cover",
                             }}
                         />
                     </Box>

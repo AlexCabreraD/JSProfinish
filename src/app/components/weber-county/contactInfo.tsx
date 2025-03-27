@@ -21,7 +21,6 @@ const ContactInfo = () => {
                     padding: { xs: "56px 16px", md: "112px 0" },
                 }}
             >
-                {/* Email Column */}
                 <Grid item xs={12} md={4}>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <MdOutlineEmail size={50} />
@@ -38,7 +37,6 @@ const ContactInfo = () => {
                     </Typography>
                 </Grid>
 
-                {/* Phone Column */}
                 <Grid item xs={12} md={4}>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <FiPhone size={50} />
@@ -57,7 +55,6 @@ const ContactInfo = () => {
                     </a>
                 </Grid>
 
-                {/* Office Column */}
                 <Grid item xs={12} md={4}>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                         <IoLocationOutline size={50} />

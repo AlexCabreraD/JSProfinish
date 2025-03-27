@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2"; // Grid version 2
+import Grid from "@mui/material/Grid2";
 import Stack from "@mui/material/Stack";
 import Image from "next/image";
 import img8 from "../../assets/home/img/image8.png";

@@ -48,10 +48,7 @@ const ImageMasonry = () => {
             }}
             className="image-masonry"
         >
-            <Masonry
-                columns={{ xs: 1, sm: 2 }} // Responsive columns
-                spacing={2}
-            >
+            <Masonry columns={{ xs: 1, sm: 2 }} spacing={2}>
                 {images.map((image, index) => (
                     <Box key={index}>
                         <Image

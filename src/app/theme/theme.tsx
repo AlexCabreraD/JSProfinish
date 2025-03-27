@@ -5,14 +5,14 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
     palette: {
         primary: {
-            main: "#1C7C54", // Color for primary elements like links and buttons
+            main: "#1C7C54",
         },
         background: {
-            default: "#F5F5F5", // Primary background color
+            default: "#F5F5F5",
         },
         text: {
-            primary: "#000000", // Primary text color
-            secondary: "#FFFFFF", // White text for sections with dark backgrounds
+            primary: "#000000",
+            secondary: "#FFFFFF",
         },
     },
     typography: {
@@ -62,17 +62,17 @@ let theme = createTheme({
         MuiLink: {
             styleOverrides: {
                 root: {
-                    color: "#1C7C54", // Link color
+                    color: "#1C7C54",
                 },
             },
         },
         MuiButton: {
             styleOverrides: {
                 root: {
-                    color: "#FFFFFF", // Text color for buttons, change based on section
-                    backgroundColor: "#e0e0e0", // Background color for buttons
+                    color: "#FFFFFF",
+                    backgroundColor: "#e0e0e0",
                     "&:hover": {
-                        backgroundColor: "#145c3f", // Darker shade for hover state
+                        backgroundColor: "#145c3f",
                     },
                     fontSize: "16px",
                     fontWeight: "normal",

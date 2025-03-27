@@ -15,7 +15,7 @@ const OurServices = () => {
                     alignItems: "flex-start",
                     height: "fit-content",
                     maxWidth: "1440px",
-                    padding: { xs: "56px 0", md: "112px 0" }, // Responsive padding
+                    padding: { xs: "56px 0", md: "112px 0" },
                 }}
             >
                 <Grid

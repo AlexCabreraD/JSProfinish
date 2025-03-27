@@ -50,9 +50,9 @@ const Gallery = () => {
                             src={img1}
                             alt="Remodeled finished basement with a pool table, TV, and entertainment stand"
                             layout="responsive"
-                            width={500} // Specify the width of the image
-                            height={500} // Specify the height of the image
-                            objectFit="cover" // Ensure the image covers the area
+                            width={500}
+                            height={500}
+                            objectFit="cover"
                         />
                     </Grid>
                     <Grid item xs={6}>
@@ -60,9 +60,9 @@ const Gallery = () => {
                             src={img2}
                             alt="Finished basement with small living room area, TV, and counter island with chairs"
                             layout="responsive"
-                            width={500} // Specify the width of the image
-                            height={500} // Specify the height of the image
-                            objectFit="cover" // Ensure the image covers the area
+                            width={500}
+                            height={500}
+                            objectFit="cover"
                         />
                     </Grid>
                 </Grid>

@@ -15,7 +15,7 @@ const ServiceCta = () => {
                     alignItems: "center",
                     height: "fit-content",
                     maxWidth: "1440px",
-                    padding: { xs: "56px 16px", md: "112px 0" }, // Responsive padding
+                    padding: { xs: "56px 16px", md: "112px 0" },
                     justifyContent: "center",
                 }}
             >

@@ -16,7 +16,7 @@ const Cta = () => {
                     textAlign: { xs: "center", md: "start" },
                     height: "fit-content",
                     maxWidth: "1440px",
-                    padding: { xs: "56px 16px", md: "112px 0" }, // Responsive padding
+                    padding: { xs: "56px 16px", md: "112px 0" },
                 }}
             >
                 <Grid item xs={12} md={6}>

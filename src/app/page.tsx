@@ -8,6 +8,7 @@ import Cta from "@/app/components/home/cta";
 import Testimonials from "@/app/components/home/testimonials";
 import Contact from "@/app/components/global/contact";
 import { Header76 } from "@/app/components/relume/header76";
+import HomeHeader from "@/app/components/home/hero";
 
 export const metadata: Metadata = {
     title: "Basement Finishing & Remodeling in Northern Utah | JS ProFinish",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <Box sx={{ width: "100vw" }}>
-            <Header76 />
+            <HomeHeader />
             <Feature />
             <Benefits />
             <HowWorks />

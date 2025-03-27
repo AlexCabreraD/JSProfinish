@@ -807,7 +807,7 @@ const PrivacyPolicy = () => {
                                 color: "#1C7C54",
                             }}
                         >
-                            Children's Privacy
+                            Children&#39;s Privacy
                         </Typography>
                     </Box>
 

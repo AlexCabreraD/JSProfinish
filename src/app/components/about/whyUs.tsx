@@ -4,6 +4,20 @@ import planImage from "@/app/assets/about/CircleImage.png";
 import Image from "next/image";
 import Link from "next/link";
 
+const whyUsStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Professional Basement Finishing Services",
+    description:
+        "Discover what sets JS ProFinish apart with our commitment to excellence, tailored solutions, and transparent communication for basement finishing in Northern Utah.",
+    provider: {
+        "@type": "LocalBusiness",
+        name: "JS ProFinish",
+        areaServed: ["Northern Utah", "Weber County", "Davis County"],
+    },
+    serviceType: "Basement Remodeling",
+};
+
 const WhyUs = () => {
     return (
         <Container
@@ -39,6 +53,8 @@ const WhyUs = () => {
                             margin: "0 auto",
                             display: "block",
                         }}
+                        priority
+                        sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
                     />
                 </Grid>
                 <Grid
@@ -59,7 +75,7 @@ const WhyUs = () => {
                     </Typography>
                     <Typography
                         variant="h2"
-                        component="div"
+                        component="h2"
                         sx={{ marginTop: "16px" }}
                     >
                         What Sets Us Apart
@@ -75,7 +91,7 @@ const WhyUs = () => {
                     </Typography>
                     <Grid container spacing={2} sx={{ marginTop: "32px" }}>
                         <Grid item xs={12} md={6}>
-                            <Typography variant="h6" component="div">
+                            <Typography variant="h6" component="h3">
                                 Tailored Solutions
                             </Typography>
                             <Typography
@@ -90,7 +106,7 @@ const WhyUs = () => {
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                            <Typography variant="h6" component="div">
+                            <Typography variant="h6" component="h3">
                                 Transparent Communication
                             </Typography>
                             <Typography
@@ -107,7 +123,11 @@ const WhyUs = () => {
                     </Grid>
                     <Grid container spacing={2} sx={{ marginTop: "24px" }}>
                         <Grid item>
-                            <Link href="/services" passHref>
+                            <Link
+                                href="/services"
+                                passHref
+                                aria-label="Learn more about our basement finishing services"
+                            >
                                 <Button
                                     variant="outlined"
                                     sx={{ borderColor: "white" }}
@@ -117,7 +137,11 @@ const WhyUs = () => {
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="/contact-us" passHref>
+                            <Link
+                                href="/contact-us"
+                                passHref
+                                aria-label="Contact us for a free estimate"
+                            >
                                 <Button
                                     variant="text"
                                     endIcon={<MdArrowForwardIos />}
@@ -129,6 +153,13 @@ const WhyUs = () => {
                     </Grid>
                 </Grid>
             </Grid>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(whyUsStructuredData),
+                }}
+            />
         </Container>
     );
 };

@@ -250,11 +250,19 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                         <Typography
                                             variant="subtitle1"
                                             fontWeight="bold"
-                                            sx={{ mb: 0.5 }}
+                                            sx={{
+                                                mb: 0.5,
+                                                color: dark ? "white" : "black",
+                                            }}
                                         >
                                             Email
                                         </Typography>
-                                        <Typography variant="body2">
+                                        <Typography
+                                            variant="body2"
+                                            sx={{
+                                                color: dark ? "white" : "black",
+                                            }}
+                                        >
                                             contact@jsprofinish-utah.com
                                         </Typography>
                                     </Box>
@@ -296,7 +304,10 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                         <Typography
                                             variant="subtitle1"
                                             fontWeight="bold"
-                                            sx={{ mb: 0.5 }}
+                                            sx={{
+                                                mb: 0.5,
+                                                color: dark ? "white" : "black",
+                                            }}
                                         >
                                             Phone
                                         </Typography>
@@ -347,11 +358,19 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                         <Typography
                                             variant="subtitle1"
                                             fontWeight="bold"
-                                            sx={{ mb: 0.5 }}
+                                            sx={{
+                                                mb: 0.5,
+                                                color: dark ? "white" : "black",
+                                            }}
                                         >
                                             Office
                                         </Typography>
-                                        <Typography variant="body2">
+                                        <Typography
+                                            variant="body2"
+                                            sx={{
+                                                color: dark ? "white" : "black",
+                                            }}
+                                        >
                                             1740 S 300 W #8 Clearfield UT 84015
                                         </Typography>
                                     </Box>
@@ -398,6 +417,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     textAlign: "center",
                                     fontWeight: 600,
                                     position: "relative",
+                                    color: dark ? "white" : "black",
                                 }}
                             >
                                 Send Us a Message
@@ -543,7 +563,16 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     }
                                     label={
                                         <>
-                                            I accept the{" "}
+                                            <Typography
+                                                sx={{
+                                                    color: dark
+                                                        ? "white"
+                                                        : "black",
+                                                    display: "inline",
+                                                }}
+                                            >
+                                                I accept the{" "}
+                                            </Typography>
                                             <Tooltip
                                                 title="By using this contact form, you agree to allow us to collect and process your data. We will only use your information for the purpose of responding to your inquiry. Your information will not be shared with third parties without your consent."
                                                 arrow

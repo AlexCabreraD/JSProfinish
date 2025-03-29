@@ -143,7 +143,7 @@ const Header = () => {
                                 fontWeight: 400,
                             }}
                         >
-                            Welcome to JS ProFinish, where we've been
+                            Welcome to JS ProFinish, where we&#39;ve been
                             transforming basements and bringing dreams to life
                             for over 15 years. Based in Clearfield, UT, we serve
                             Davis County, Weber County, and surrounding areas

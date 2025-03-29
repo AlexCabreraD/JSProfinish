@@ -1,12 +1,5 @@
 import React from "react";
-import {
-    Container,
-    Grid,
-    Typography,
-    Box,
-    Paper,
-    useTheme,
-} from "@mui/material";
+import { Container, Grid, Typography, Box, Paper } from "@mui/material";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -64,7 +57,7 @@ const ContactInfo = () => {
                 className={"primary-background"}
                 sx={{
                     position: "relative",
-                    py: { xs: 8, md: 14 },
+                    py: { xs: 6, md: 14 },
                     "&::before": {
                         content: '""',
                         position: "absolute",
@@ -83,9 +76,10 @@ const ContactInfo = () => {
                 <Box
                     sx={{
                         textAlign: "center",
-                        mb: 6,
+                        mb: { xs: 4, md: 6 },
                         position: "relative",
                         zIndex: 1,
+                        px: { xs: 2, md: 0 },
                     }}
                 >
                     <Typography
@@ -94,8 +88,12 @@ const ContactInfo = () => {
                         id="contact-heading"
                         sx={{
                             fontWeight: 700,
-                            mb: 2,
-                            fontSize: { xs: "2rem", md: "2.5rem" },
+                            mb: { xs: 1.5, md: 2 },
+                            fontSize: {
+                                xs: "1.75rem",
+                                sm: "2rem",
+                                md: "2.5rem",
+                            },
                         }}
                     >
                         Get In Touch
@@ -107,6 +105,8 @@ const ContactInfo = () => {
                             mx: "auto",
                             color: "#5F5F5F",
                             mb: 1,
+                            fontSize: { xs: "0.95rem", md: "1rem" },
+                            px: { xs: 1, md: 0 },
                         }}
                     >
                         Reach out to our team for any questions about our
@@ -114,272 +114,334 @@ const ContactInfo = () => {
                     </Typography>
                 </Box>
 
-                <Grid
-                    container
-                    spacing={4}
+                <Box
                     sx={{
+                        maxWidth: "1200px",
+                        mx: "auto",
+                        px: { xs: 2, sm: 3, md: 4 },
                         position: "relative",
                         zIndex: 2,
-                        maxWidth: "1440px",
-                        mx: "auto",
-                        px: { xs: 2, md: 0 },
                     }}
                 >
-                    <Grid item xs={12} md={4}>
-                        <Paper
-                            elevation={3}
-                            sx={{
-                                p: 4,
-                                height: "100%",
-                                textAlign: "center",
-                                borderRadius: "16px",
-                                transition:
-                                    "transform 0.3s ease, box-shadow 0.3s ease",
-                                "&:hover": {
-                                    transform: "translateY(-8px)",
-                                    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)",
-                                },
-                            }}
-                        >
-                            <Box
+                    <Grid
+                        container
+                        spacing={{ xs: 3, md: 4 }}
+                        justifyContent="center"
+                    >
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Paper
+                                elevation={3}
                                 sx={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    mb: 2,
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        width: 80,
-                                        height: 80,
-                                        borderRadius: "50%",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        justifyContent: "center",
-                                        backgroundColor:
-                                            "rgba(28, 124, 84, 0.1)",
-                                        color: "#1C7C54",
-                                        transition: "all 0.3s ease",
-                                        "&:hover": {
-                                            backgroundColor: "#1C7C54",
-                                            color: "white",
-                                            transform: "rotate(15deg)",
-                                        },
-                                    }}
-                                >
-                                    <MdOutlineEmail size={40} />
-                                </Box>
-                            </Box>
-                            <Typography
-                                variant="h4"
-                                component="h3"
-                                sx={{
-                                    mb: 2,
-                                    fontWeight: 600,
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Email Us
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                paragraph
-                                sx={{ mb: 3 }}
-                            >
-                                For inquiries about basement remodeling projects
-                                or to request a free estimate.
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                component="a"
-                                href="mailto:contact@jsprofinish-utah.com"
-                                sx={{
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    color: "#1C7C54",
-                                    textDecoration: "none",
-                                    display: "block",
-                                    transition: "color 0.2s ease",
+                                    p: { xs: 3, md: 4 },
+                                    height: "100%",
+                                    textAlign: "center",
+                                    borderRadius: { xs: "12px", md: "16px" },
+                                    transition:
+                                        "transform 0.3s ease, box-shadow 0.3s ease",
                                     "&:hover": {
-                                        color: "#145c3f",
-                                        textDecoration: "underline",
+                                        transform: {
+                                            xs: "translateY(-4px)",
+                                            md: "translateY(-8px)",
+                                        },
+                                        boxShadow:
+                                            "0 12px 24px rgba(0, 0, 0, 0.1)",
                                     },
-                                }}
-                            >
-                                contact@jsprofinish-utah.com
-                            </Typography>
-                        </Paper>
-                    </Grid>
-
-                    <Grid item xs={12} md={4}>
-                        <Paper
-                            elevation={3}
-                            sx={{
-                                p: 4,
-                                height: "100%",
-                                textAlign: "center",
-                                borderRadius: "16px",
-                                transition:
-                                    "transform 0.3s ease, box-shadow 0.3s ease",
-                                "&:hover": {
-                                    transform: "translateY(-8px)",
-                                    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)",
-                                },
-                            }}
-                        >
-                            <Box
-                                sx={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    mb: 2,
+                                    maxWidth: { sm: "320px", md: "100%" },
+                                    mx: { xs: "auto", md: 0 },
                                 }}
                             >
                                 <Box
                                     sx={{
-                                        width: 80,
-                                        height: 80,
-                                        borderRadius: "50%",
                                         display: "flex",
-                                        alignItems: "center",
                                         justifyContent: "center",
-                                        backgroundColor:
-                                            "rgba(28, 124, 84, 0.1)",
+                                        mb: { xs: 1.5, md: 2 },
+                                    }}
+                                >
+                                    <Box
+                                        sx={{
+                                            width: { xs: 60, md: 80 },
+                                            height: { xs: 60, md: 80 },
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            backgroundColor:
+                                                "rgba(28, 124, 84, 0.1)",
+                                            color: "#1C7C54",
+                                            transition: "all 0.3s ease",
+                                            "&:hover": {
+                                                backgroundColor: "#1C7C54",
+                                                color: "white",
+                                                transform: "rotate(15deg)",
+                                            },
+                                        }}
+                                    >
+                                        <Box
+                                            sx={{
+                                                fontSize: { xs: 30, md: 40 },
+                                            }}
+                                        >
+                                            <MdOutlineEmail />
+                                        </Box>
+                                    </Box>
+                                </Box>
+                                <Typography
+                                    variant="h4"
+                                    component="h3"
+                                    sx={{
+                                        mb: { xs: 1, md: 2 },
+                                        fontWeight: 600,
                                         color: "#1C7C54",
-                                        transition: "all 0.3s ease",
+                                        fontSize: { xs: "1.4rem", md: "2rem" },
+                                    }}
+                                >
+                                    Email Us
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    paragraph
+                                    sx={{
+                                        mb: { xs: 2, md: 3 },
+                                        fontSize: { xs: "0.9rem", md: "1rem" },
+                                    }}
+                                >
+                                    For inquiries about basement remodeling
+                                    projects or to request a free estimate.
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    component="a"
+                                    href="mailto:contact@jsprofinish-utah.com"
+                                    sx={{
+                                        fontWeight: 600,
+                                        fontSize: {
+                                            xs: "0.95rem",
+                                            md: "1.1rem",
+                                        },
+                                        color: "#1C7C54",
+                                        textDecoration: "none",
+                                        display: "block",
+                                        transition: "color 0.2s ease",
+                                        wordBreak: "break-word",
                                         "&:hover": {
-                                            backgroundColor: "#1C7C54",
-                                            color: "white",
-                                            transform: "rotate(15deg)",
+                                            color: "#145c3f",
+                                            textDecoration: "underline",
                                         },
                                     }}
                                 >
-                                    <FiPhone size={40} />
-                                </Box>
-                            </Box>
-                            <Typography
-                                variant="h4"
-                                component="h3"
+                                    contact@jsprofinish-utah.com
+                                </Typography>
+                            </Paper>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Paper
+                                elevation={3}
                                 sx={{
-                                    mb: 2,
-                                    fontWeight: 600,
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Call Us
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                paragraph
-                                sx={{ mb: 3 }}
-                            >
-                                Contact our basement remodeling experts directly
-                                to discuss your project.
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                component="a"
-                                href="tel:3856263514"
-                                aria-label="Call JS ProFinish at 385-626-3514"
-                                sx={{
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    color: "#1C7C54",
-                                    textDecoration: "none",
-                                    display: "block",
-                                    transition: "color 0.2s ease",
+                                    p: { xs: 3, md: 4 },
+                                    height: "100%",
+                                    textAlign: "center",
+                                    borderRadius: { xs: "12px", md: "16px" },
+                                    transition:
+                                        "transform 0.3s ease, box-shadow 0.3s ease",
                                     "&:hover": {
-                                        color: "#145c3f",
-                                        textDecoration: "underline",
+                                        transform: {
+                                            xs: "translateY(-4px)",
+                                            md: "translateY(-8px)",
+                                        },
+                                        boxShadow:
+                                            "0 12px 24px rgba(0, 0, 0, 0.1)",
                                     },
-                                }}
-                            >
-                                (385) 626-3514
-                            </Typography>
-                        </Paper>
-                    </Grid>
-
-                    <Grid item xs={12} md={4}>
-                        <Paper
-                            elevation={3}
-                            sx={{
-                                p: 4,
-                                height: "100%",
-                                textAlign: "center",
-                                borderRadius: "16px",
-                                transition:
-                                    "transform 0.3s ease, box-shadow 0.3s ease",
-                                "&:hover": {
-                                    transform: "translateY(-8px)",
-                                    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.1)",
-                                },
-                            }}
-                        >
-                            <Box
-                                sx={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    mb: 2,
+                                    maxWidth: { sm: "320px", md: "100%" },
+                                    mx: { xs: "auto", md: 0 },
                                 }}
                             >
                                 <Box
                                     sx={{
-                                        width: 80,
-                                        height: 80,
-                                        borderRadius: "50%",
                                         display: "flex",
-                                        alignItems: "center",
                                         justifyContent: "center",
-                                        backgroundColor:
-                                            "rgba(28, 124, 84, 0.1)",
+                                        mb: { xs: 1.5, md: 2 },
+                                    }}
+                                >
+                                    <Box
+                                        sx={{
+                                            width: { xs: 60, md: 80 },
+                                            height: { xs: 60, md: 80 },
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            backgroundColor:
+                                                "rgba(28, 124, 84, 0.1)",
+                                            color: "#1C7C54",
+                                            transition: "all 0.3s ease",
+                                            "&:hover": {
+                                                backgroundColor: "#1C7C54",
+                                                color: "white",
+                                                transform: "rotate(15deg)",
+                                            },
+                                        }}
+                                    >
+                                        <Box
+                                            sx={{
+                                                fontSize: { xs: 30, md: 40 },
+                                            }}
+                                        >
+                                            <FiPhone />
+                                        </Box>
+                                    </Box>
+                                </Box>
+                                <Typography
+                                    variant="h4"
+                                    component="h3"
+                                    sx={{
+                                        mb: { xs: 1, md: 2 },
+                                        fontWeight: 600,
                                         color: "#1C7C54",
-                                        transition: "all 0.3s ease",
+                                        fontSize: { xs: "1.4rem", md: "2rem" },
+                                    }}
+                                >
+                                    Call Us
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    paragraph
+                                    sx={{
+                                        mb: { xs: 2, md: 3 },
+                                        fontSize: { xs: "0.9rem", md: "1rem" },
+                                    }}
+                                >
+                                    Contact our basement remodeling experts
+                                    directly to discuss your project.
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    component="a"
+                                    href="tel:3856263514"
+                                    aria-label="Call JS ProFinish at 385-626-3514"
+                                    sx={{
+                                        fontWeight: 600,
+                                        fontSize: {
+                                            xs: "0.95rem",
+                                            md: "1.1rem",
+                                        },
+                                        color: "#1C7C54",
+                                        textDecoration: "none",
+                                        display: "block",
+                                        transition: "color 0.2s ease",
                                         "&:hover": {
-                                            backgroundColor: "#1C7C54",
-                                            color: "white",
-                                            transform: "rotate(15deg)",
+                                            color: "#145c3f",
+                                            textDecoration: "underline",
                                         },
                                     }}
                                 >
-                                    <IoLocationOutline size={40} />
+                                    (385) 626-3514
+                                </Typography>
+                            </Paper>
+                        </Grid>
+
+                        <Grid item xs={12} sm={10} md={4}>
+                            <Paper
+                                elevation={3}
+                                sx={{
+                                    p: { xs: 3, md: 4 },
+                                    height: "100%",
+                                    textAlign: "center",
+                                    borderRadius: { xs: "12px", md: "16px" },
+                                    transition:
+                                        "transform 0.3s ease, box-shadow 0.3s ease",
+                                    "&:hover": {
+                                        transform: {
+                                            xs: "translateY(-4px)",
+                                            md: "translateY(-8px)",
+                                        },
+                                        boxShadow:
+                                            "0 12px 24px rgba(0, 0, 0, 0.1)",
+                                    },
+                                    maxWidth: { sm: "320px", md: "100%" },
+                                    mx: "auto",
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        mb: { xs: 1.5, md: 2 },
+                                    }}
+                                >
+                                    <Box
+                                        sx={{
+                                            width: { xs: 60, md: 80 },
+                                            height: { xs: 60, md: 80 },
+                                            borderRadius: "50%",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            backgroundColor:
+                                                "rgba(28, 124, 84, 0.1)",
+                                            color: "#1C7C54",
+                                            transition: "all 0.3s ease",
+                                            "&:hover": {
+                                                backgroundColor: "#1C7C54",
+                                                color: "white",
+                                                transform: "rotate(15deg)",
+                                            },
+                                        }}
+                                    >
+                                        <Box
+                                            sx={{
+                                                fontSize: { xs: 30, md: 40 },
+                                            }}
+                                        >
+                                            <IoLocationOutline />
+                                        </Box>
+                                    </Box>
                                 </Box>
-                            </Box>
-                            <Typography
-                                variant="h4"
-                                component="h3"
-                                sx={{
-                                    mb: 2,
-                                    fontWeight: 600,
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                Visit Us
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                paragraph
-                                sx={{ mb: 3 }}
-                            >
-                                Stop by our showroom to discuss your basement
-                                finishing project in person.
-                            </Typography>
-                            <Typography
-                                variant="body1"
-                                component="address"
-                                sx={{
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    color: "#1C7C54",
-                                    fontStyle: "normal",
-                                    lineHeight: 1.6,
-                                }}
-                            >
-                                1740 S 300 W #8
-                                <br />
-                                Clearfield, UT 84015
-                            </Typography>
-                        </Paper>
+                                <Typography
+                                    variant="h4"
+                                    component="h3"
+                                    sx={{
+                                        mb: { xs: 1, md: 2 },
+                                        fontWeight: 600,
+                                        color: "#1C7C54",
+                                        fontSize: { xs: "1.4rem", md: "2rem" },
+                                    }}
+                                >
+                                    Visit Us
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    paragraph
+                                    sx={{
+                                        mb: { xs: 2, md: 3 },
+                                        fontSize: { xs: "0.9rem", md: "1rem" },
+                                    }}
+                                >
+                                    Stop by our showroom to discuss your
+                                    basement finishing project in person.
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    component="address"
+                                    sx={{
+                                        fontWeight: 600,
+                                        fontSize: {
+                                            xs: "0.95rem",
+                                            md: "1.1rem",
+                                        },
+                                        color: "#1C7C54",
+                                        fontStyle: "normal",
+                                        lineHeight: 1.6,
+                                    }}
+                                >
+                                    1740 S 300 W #8
+                                    <br />
+                                    Clearfield, UT 84015
+                                </Typography>
+                            </Paper>
+                        </Grid>
                     </Grid>
-                </Grid>
+                </Box>
 
                 <Box
                     sx={{

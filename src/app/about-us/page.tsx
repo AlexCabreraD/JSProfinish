@@ -18,7 +18,7 @@ const aboutUsStructuredData = {
         name: "JS ProFinish",
         description:
             "Northern Utah's premier basement finishing experts with over 15 years experience serving Davis County and Weber County.",
-        foundingDate: "2009",
+        foundingDate: "2019",
         founders: [
             {
                 "@type": "Person",

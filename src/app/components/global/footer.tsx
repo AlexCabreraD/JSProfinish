@@ -379,7 +379,7 @@ const Footer = () => {
                                         color: "#666",
                                     }}
                                 >
-                                    Quality craftsmanship since 2009
+                                    Quality craftsmanship since 2019
                                 </Typography>
                             </Box>
 

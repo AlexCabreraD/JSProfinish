@@ -172,7 +172,7 @@ export const jsonLd = {
         },
     ],
     slogan: "Your Trusted Local Remodeling Experts",
-    foundingDate: "2009",
+    foundingDate: "2019",
     foundingLocation: {
         "@type": "Place",
         address: {

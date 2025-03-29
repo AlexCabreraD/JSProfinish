@@ -135,8 +135,8 @@ const ContactUs = () => {
                     </span>
                     <span itemProp="description">
                         Contact information for JS ProFinish, offering basement
-                        finishing services in Northern Utah's Davis County and
-                        Weber County.
+                        finishing services in Northern Utah&#39;s Davis County
+                        and Weber County.
                     </span>
                 </div>
 

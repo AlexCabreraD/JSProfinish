@@ -22,7 +22,6 @@ import {
 import { MdOutlineEmail, MdSend, MdMarkEmailRead } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { sendContactEmail } from "@/app/utils/sendEmail";
 
 interface ContactProps {
     dark?: boolean;
@@ -35,6 +34,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
     const [submitting, setSubmitting] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     const [formData, setFormData] = useState({
         name: "",
@@ -59,34 +59,57 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
             return;
         }
 
+        setSubmitting(true);
+
         try {
-            setSubmitting(true);
+            const formspreeUrl =
+                process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT || "";
+            if (!formspreeUrl) {
+                console.error("Formspree endpoint not configured");
+                throw new Error("Contact form not properly configured");
+            }
 
-            await sendContactEmail(
-                formData.name,
-                formData.email,
-                formData.message,
-            );
-
-            setSubmitting(false);
-            setSuccess(true);
-
-            setFormData({
-                name: "",
-                email: "",
-                message: "",
-                termsAccepted: false,
+            const response = await fetch(formspreeUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    message: formData.message,
+                }),
             });
+
+            if (response.ok) {
+                setSuccess(true);
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: "",
+                    termsAccepted: false,
+                });
+            } else {
+                const data = await response.json();
+                setError(true);
+                setErrorMessage(
+                    data.error ||
+                        "Failed to send message. Please try again later.",
+                );
+            }
         } catch (error) {
-            console.error(error);
-            setSubmitting(false);
+            console.error("Form submission error:", error);
             setError(true);
+            setErrorMessage("Failed to send message. Please try again later.");
+        } finally {
+            setSubmitting(false);
         }
     };
 
     const handleCloseAlert = () => {
         setSuccess(false);
         setError(false);
+        setErrorMessage("");
     };
 
     const componentTheme = dark ? "secondary-background" : "primary-background";
@@ -683,7 +706,8 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                             Failed to send message
                         </Typography>
                         <Typography variant="body2">
-                            Please try again or contact us directly.
+                            {errorMessage ||
+                                "Please try again or contact us directly."}
                         </Typography>
                     </Alert>
                 </Snackbar>

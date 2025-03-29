@@ -53,7 +53,7 @@ const Navbar = () => {
         { href: "/services", label: "Services" },
         { href: "/gallery", label: "Gallery" },
         {
-            href: "/locations",
+            href: "/weber-county",
             label: "Locations",
             subLinks: [
                 { href: "/weber-county", label: "Weber County" },

@@ -113,6 +113,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                 sx={{
                     position: "relative",
                     py: paddingY,
+                    pb: isMobile ? "100px" : "120px",
                     "&::before": {
                         content: '""',
                         position: "absolute",
@@ -300,7 +301,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                     >
                                         <FiPhone size={24} color="#1C7C54" />
                                     </Box>
-                                    <Box>
+                                    <Box sx={{ width: "100%" }}>
                                         <Typography
                                             variant="subtitle1"
                                             fontWeight="bold"
@@ -311,7 +312,13 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                         >
                                             Phone
                                         </Typography>
-                                        <a href="tel:3856263514">
+                                        <a
+                                            href="tel:3856263514"
+                                            style={{
+                                                textDecoration: "none",
+                                                color: dark ? "white" : "black",
+                                            }}
+                                        >
                                             <Typography variant="body2">
                                                 (385) 626-3514
                                             </Typography>

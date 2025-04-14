@@ -132,45 +132,6 @@ export const jsonLd = {
             closes: "16:00",
         },
     ],
-    aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.8",
-        ratingCount: "65",
-        bestRating: "5",
-        worstRating: "1",
-    },
-    review: [
-        {
-            "@type": "Review",
-            author: {
-                "@type": "Person",
-                name: "James White",
-            },
-            reviewRating: {
-                "@type": "Rating",
-                ratingValue: "5",
-                bestRating: "5",
-            },
-            datePublished: "2023-11-15",
-            reviewBody:
-                "Working with JS ProFinish was a breeze. Great communication and quality work!",
-        },
-        {
-            "@type": "Review",
-            author: {
-                "@type": "Person",
-                name: "Adriana Cortés",
-            },
-            reviewRating: {
-                "@type": "Rating",
-                ratingValue: "5",
-                bestRating: "5",
-            },
-            datePublished: "2023-10-22",
-            reviewBody:
-                "JS ProFinish basement finishing exceeded our expectations. Highly recommended!",
-        },
-    ],
     slogan: "Your Trusted Local Remodeling Experts",
     foundingDate: "2019",
     foundingLocation: {

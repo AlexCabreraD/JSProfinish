@@ -8,7 +8,6 @@ import {
     Paper,
     Divider,
     Grid,
-    Link as MuiLink,
     Breadcrumbs,
     useTheme,
     useMediaQuery,
@@ -300,7 +299,7 @@ const Sitemap = () => {
                                                     },
                                                 }}
                                             >
-                                                <Link href={link.href} passHref>
+                                                <Link href={link.href}>
                                                     <Typography
                                                         variant="h6"
                                                         component="div"
@@ -311,6 +310,7 @@ const Sitemap = () => {
                                                             display: "flex",
                                                             alignItems:
                                                                 "center",
+                                                            cursor: "pointer",
                                                             "&::after": {
                                                                 content: "''",
                                                                 display:
@@ -418,21 +418,21 @@ const Sitemap = () => {
                                     >
                                         Reach out via our contact form or phone
                                     </Typography>
-                                    <Link href="/contact-us" passHref>
-                                        <MuiLink
+                                    <Link href="/contact-us">
+                                        <Typography
                                             sx={{
                                                 color: "#1C7C54",
                                                 fontWeight: 600,
                                                 display: "flex",
                                                 alignItems: "center",
-                                                textDecoration: "none",
+                                                cursor: "pointer",
                                                 "&:hover": {
                                                     textDecoration: "underline",
                                                 },
                                             }}
                                         >
                                             Get in Touch
-                                        </MuiLink>
+                                        </Typography>
                                     </Link>
                                 </Paper>
                             </Grid>
@@ -474,21 +474,21 @@ const Sitemap = () => {
                                     >
                                         Find answers to common questions
                                     </Typography>
-                                    <Link href="/terms-of-service#faq" passHref>
-                                        <MuiLink
+                                    <Link href="/terms-of-service#faq">
+                                        <Typography
                                             sx={{
                                                 color: "#1C7C54",
                                                 fontWeight: 600,
                                                 display: "flex",
                                                 alignItems: "center",
-                                                textDecoration: "none",
+                                                cursor: "pointer",
                                                 "&:hover": {
                                                     textDecoration: "underline",
                                                 },
                                             }}
                                         >
                                             View FAQs
-                                        </MuiLink>
+                                        </Typography>
                                     </Link>
                                 </Paper>
                             </Grid>

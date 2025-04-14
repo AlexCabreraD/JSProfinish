@@ -10,6 +10,7 @@ import ContactInfo from "@/app/components/weber-county/contactInfo";
 const weberCountyStructuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://www.jsprofinish-utah.com/weber-county#business",
     name: "JS ProFinish - Weber County Basement Finishing",
     url: "https://www.jsprofinish-utah.com/weber-county",
     logo: "https://www.jsprofinish-utah.com/logo.png",
@@ -83,6 +84,7 @@ const weberCountyStructuredData = {
         areaServed: "Weber County",
         provider: {
             "@type": "LocalBusiness",
+            "@id": "https://www.jsprofinish-utah.com/weber-county#business",
             name: "JS ProFinish",
         },
         hasOfferCatalog: {

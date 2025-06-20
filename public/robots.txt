@@ -1,4 +1,15 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://jsprofinish-utah.com/sitemap.xml
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Host
+Host: https://jsprofinish.com
+
+# Sitemaps
+Sitemap: https://jsprofinish.com/sitemap.xml

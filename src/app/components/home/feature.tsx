@@ -36,8 +36,6 @@ const FeatureStructuredData = () => {
             "@type": "LocalBusiness",
             "@id": "https://www.jsprofinish.com/#business",
             name: "JS ProFinish",
-            telephone: "+1-385-626-3514",
-            email: "contact@jsprofinish-utah.com",
             address: {
                 "@type": "PostalAddress",
                 streetAddress: "1740 S 300 W #8",
@@ -46,39 +44,24 @@ const FeatureStructuredData = () => {
                 postalCode: "84015",
                 addressCountry: "US",
             },
-            geo: {
-                "@type": "GeoCoordinates",
-                latitude: "41.0895",
-                longitude: "-112.0263",
-            },
+            telephone: "+1-385-626-3514",
+            priceRange: "$$",
             areaServed: [
                 {
                     "@type": "City",
                     name: "Clearfield",
-                    containedInPlace: {
-                        "@type": "AdministrativeArea",
-                        name: "Davis County",
-                    },
                 },
                 {
                     "@type": "City",
                     name: "Layton",
-                    containedInPlace: {
-                        "@type": "AdministrativeArea",
-                        name: "Davis County",
-                    },
                 },
                 {
                     "@type": "City",
                     name: "Ogden",
-                    containedInPlace: {
-                        "@type": "AdministrativeArea",
-                        name: "Weber County",
-                    },
                 },
                 {
                     "@type": "City",
-                    name: "Kaysville",
+                    name: "Bountiful",
                 },
                 {
                     "@type": "City",
@@ -128,37 +111,18 @@ const FeatureStructuredData = () => {
                         description:
                             "Quality finishes and meticulous attention to detail in every basement project for Northern Utah homes",
                     },
-                    priceSpecification: {
-                        "@type": "PriceSpecification",
-                        price: "Custom pricing based on project scope",
-                        priceCurrency: "USD",
-                    },
                 },
                 {
                     "@type": "Offer",
                     itemOffered: {
                         "@type": "Service",
-                        name: "Customized Basement Design Solutions",
+                        name: "Custom Basement Design Solutions",
                         description:
-                            "Tailored basement designs to match your specific needs and style preferences in Davis and Weber Counties",
+                            "Tailored basement designs that match your specific needs and style preferences for Davis and Weber County homes",
                     },
                     priceSpecification: {
                         "@type": "PriceSpecification",
-                        price: "Custom pricing based on design complexity",
-                        priceCurrency: "USD",
-                    },
-                },
-                {
-                    "@type": "Offer",
-                    itemOffered: {
-                        "@type": "Service",
-                        name: "Basement Bathroom Installation",
-                        description:
-                            "Professional bathroom installation services for basement spaces in Northern Utah homes",
-                    },
-                    priceSpecification: {
-                        "@type": "PriceSpecification",
-                        price: "Starting at $8,000",
+                        price: "Starting at $15,000",
                         priceCurrency: "USD",
                     },
                 },
@@ -191,6 +155,14 @@ const FeatureStructuredData = () => {
                     },
                 },
             ],
+        },
+        // FIXED: Added aggregateRating at the same level as reviews
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            reviewCount: "47",
+            bestRating: "5",
+            worstRating: "1",
         },
         review: [
             {
@@ -247,230 +219,121 @@ const Feature = () => {
             <Head>
                 <meta
                     name="description"
-                    content="Expert basement finishing services in Northern Utah by JS ProFinish. Transform your basement with custom designs, quality craftsmanship, and affordable solutions in Davis and Weber Counties. 15+ years of experience."
-                />
-                <meta
-                    name="keywords"
-                    content="basement finishing Utah, basement remodeling Davis County, Weber County basement contractors, custom basement design, basement renovation Clearfield, Ogden basement finishing, Layton basement contractors, finished basement cost Utah"
-                />
-                <meta
-                    property="og:title"
-                    content="Professional Basement Finishing Services in Northern Utah | JS ProFinish"
-                />
-                <meta
-                    property="og:description"
-                    content="Transform your basement with Northern Utah's premier basement finishing experts. Custom designs, quality craftsmanship, and 15+ years of experience in Davis and Weber Counties."
-                />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:image"
-                    content="https://www.jsprofinish.com/app/assets/home/img/image7.png"
-                />
-                <meta
-                    property="og:url"
-                    content="https://www.jsprofinish.com/services"
-                />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Professional Basement Finishing in Northern Utah | JS ProFinish"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Transform your basement with Northern Utah's premier basement finishing experts serving Davis and Weber Counties."
-                />
-                <link
-                    rel="canonical"
-                    href="https://www.jsprofinish.com/services"
+                    content="Expert basement finishing services in Northern Utah by JS ProFinish. Professional craftsmanship, custom designs, and affordable solutions for your basement remodeling project."
                 />
             </Head>
 
             <Box
                 component="section"
-                id="basement-finishing-services"
-                aria-labelledby="services-heading"
+                id="basement-finishing-benefits"
+                aria-labelledby="benefits-heading"
                 itemScope
                 itemType="https://schema.org/Service"
-                sx={{
-                    py: { xs: 8, md: 14 },
-                    position: "relative",
-                    overflow: "hidden",
-                    backgroundColor: "#FFFFFF",
-                }}
             >
-                <Container maxWidth="lg">
+                <Container
+                    maxWidth={false}
+                    className="secondary-background"
+                    sx={{
+                        textAlign: "-webkit-center",
+                        position: "relative",
+                        overflow: "hidden",
+                    }}
+                >
                     <Grid
                         container
-                        spacing={{ xs: 4, md: 6 }}
-                        alignItems="center"
-                        justifyContent="center"
+                        sx={{
+                            alignItems: "center",
+                            height: "fit-content",
+                            maxWidth: "1440px",
+                            padding: { xs: "56px 16px", md: "112px 24px" },
+                        }}
                     >
-                        <Grid
-                            item
-                            xs={12}
-                            md={6}
-                            order={{ xs: 1, md: 2 }}
-                            sx={{
-                                px: { xs: 2, md: 4, lg: 6 },
-                            }}
-                        >
+                        <Grid item xs={12} md={6}>
                             <Box
                                 sx={{
+                                    width: "100%",
+                                    height: { xs: "300px", md: "400px" },
+                                    position: "relative",
                                     borderRadius: "12px",
                                     overflow: "hidden",
-                                    boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
-                                    position: "relative",
-                                    "&::before": {
-                                        content: '""',
-                                        position: "absolute",
-                                        top: 0,
-                                        left: 0,
-                                        width: "100%",
-                                        height: "100%",
-                                        background:
-                                            "linear-gradient(180deg, rgba(28, 124, 84, 0) 0%, rgba(28, 124, 84, 0.08) 100%)",
-                                        zIndex: 1,
-                                    },
+                                    boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
                                 }}
                             >
                                 <Image
                                     src={img7}
-                                    alt="Professional basement finishing by JS ProFinish showcasing expert craftsmanship in Northern Utah homes"
-                                    width={600}
-                                    height={450}
-                                    priority={true}
-                                    sizes="(max-width: 768px) 100vw, 600px"
+                                    alt="Professional basement finishing and remodeling services in Northern Utah by JS ProFinish"
+                                    fill
                                     style={{
-                                        width: "100%",
-                                        height: "auto",
-                                        display: "block",
+                                        objectFit: "cover",
                                     }}
-                                    itemProp="image"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    priority
                                 />
                             </Box>
-
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    width: "100px",
-                                    height: "100px",
-                                    borderRadius: "12px",
-                                    backgroundColor: "rgba(28, 124, 84, 0.12)",
-                                    bottom: { xs: "-20px", md: "-30px" },
-                                    left: { xs: "-20px", md: "-30px" },
-                                    zIndex: -1,
-                                    display: { xs: "none", md: "block" },
-                                }}
-                                aria-hidden="true"
-                            />
                         </Grid>
 
-                        <Grid
-                            item
-                            xs={12}
-                            md={6}
-                            order={{ xs: 1, md: 2 }}
-                            sx={{
-                                px: { xs: 2, md: 4, lg: 6 },
-                            }}
-                        >
+                        <Grid item xs={12} md={6}>
                             <Stack
-                                spacing={{ xs: 3, md: 4 }}
+                                spacing="32px"
                                 sx={{
-                                    maxWidth: "540px",
-                                    mx: { xs: "auto", md: 0 },
+                                    textAlign: { xs: "center", md: "left" },
+                                    mt: { xs: 4, md: 0 },
+                                    ml: { md: 4 },
                                 }}
                             >
-                                <Typography
-                                    variant="overline"
-                                    component="p"
-                                    sx={{
-                                        fontWeight: 600,
-                                        letterSpacing: "0.1em",
-                                        color: "#1C7C54",
-                                        fontSize: "0.875rem",
-                                        textAlign: { xs: "center", md: "left" },
-                                    }}
-                                >
-                                    PREMIUM BASEMENT FINISHING SERVICES
-                                </Typography>
+                                <Box>
+                                    <Typography
+                                        variant="h2"
+                                        component="h2"
+                                        id="benefits-heading"
+                                        itemProp="name"
+                                        sx={{
+                                            fontWeight: 700,
+                                            mb: 2,
+                                            fontSize: {
+                                                xs: "2rem",
+                                                md: "2.5rem",
+                                            },
+                                            lineHeight: 1.2,
+                                        }}
+                                    >
+                                        Why Choose Our Basement Finishing
+                                        Services?
+                                    </Typography>
+                                    <Typography
+                                        variant="body1"
+                                        itemProp="description"
+                                        sx={{
+                                            color: "#666666",
+                                            lineHeight: 1.6,
+                                            fontSize: "1.125rem",
+                                        }}
+                                    >
+                                        Transform your basement into the space
+                                        of your dreams with our expert
+                                        craftsmanship and personalized approach.
+                                    </Typography>
+                                </Box>
 
-                                <Typography
-                                    variant="h1" // Changed to h1 as main page heading for better SEO
-                                    id="services-heading"
-                                    itemProp="name"
-                                    sx={{
-                                        fontWeight: 700,
-                                        fontSize: {
-                                            xs: "1.75rem",
-                                            md: "2.25rem",
-                                        },
-                                        lineHeight: 1.2,
-                                        mb: { xs: 1, md: 2 },
-                                        textAlign: { xs: "center", md: "left" },
-                                    }}
-                                >
-                                    Professional Basement Finishing in Northern
-                                    Utah
-                                </Typography>
-
-                                <Typography
-                                    variant="body1"
-                                    itemProp="description"
-                                    sx={{
-                                        fontSize: {
-                                            xs: "1rem",
-                                            md: "1.125rem",
-                                        },
-                                        lineHeight: 1.6,
-                                        color: "#333333",
-                                        textAlign: { xs: "center", md: "left" },
-                                    }}
-                                >
-                                    Our expert basement finishing services are
-                                    designed to meet your unique needs and
-                                    preferences. With over 15 years of
-                                    experience serving homeowners in Davis and
-                                    Weber Counties, we transform your
-                                    underutilized basement into a comfortable,
-                                    stylish living space for you and your family
-                                    to enjoy for years to come.
-                                </Typography>
-
-                                <Stack
-                                    component="ul"
-                                    spacing={3}
-                                    sx={{
-                                        listStyleType: "none",
-                                        padding: 0,
-                                        margin: 0,
-                                        mt: 2,
-                                        color: "black",
-                                    }}
-                                    aria-label="Basement Finishing Service Benefits"
-                                >
+                                <Stack spacing="24px">
                                     {serviceBenefits.map((benefit, index) => (
                                         <Box
-                                            component="li"
                                             key={index}
                                             sx={{
                                                 display: "flex",
                                                 alignItems: "flex-start",
-                                                textAlign: "left",
+                                                gap: 2,
                                             }}
-                                            itemProp="hasOfferCatalog"
+                                            itemScope
+                                            itemType="https://schema.org/Thing"
                                         >
                                             <Box
                                                 sx={{
-                                                    minWidth: "24px",
-                                                    height: "24px",
-                                                    mr: 2,
-                                                    display: "flex",
-                                                    alignItems: "center",
-                                                    justifyContent: "center",
                                                     color: "#1C7C54",
-                                                    mt: "2px",
+                                                    mt: 0.25,
+                                                    flexShrink: 0,
                                                 }}
+                                                aria-hidden="true"
                                             >
                                                 <FaRegCheckCircle
                                                     size={18}

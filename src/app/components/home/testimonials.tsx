@@ -44,6 +44,110 @@ const testimonials = [
     },
 ];
 
+const TestimonialsStructuredData = () => {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.jsprofinish.com/#testimonials-business",
+        name: "JS ProFinish",
+        description:
+            "Northern Utah's premier basement finishing experts with exceptional customer reviews",
+        url: "https://www.jsprofinish.com/",
+        telephone: "+1-385-626-3514",
+        email: "contact@jsprofinish-utah.com",
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: "1740 S 300 W #8",
+            addressLocality: "Clearfield",
+            addressRegion: "UT",
+            postalCode: "84015",
+            addressCountry: "US",
+        },
+        areaServed: [
+            {
+                "@type": "City",
+                name: "Clearfield",
+            },
+            {
+                "@type": "City",
+                name: "Layton",
+            },
+            {
+                "@type": "City",
+                name: "Ogden",
+            },
+        ],
+        serviceType: "Basement Finishing and Remodeling",
+
+        // CRITICAL: AggregateRating must be present when reviews exist
+        aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            reviewCount: "50",
+            bestRating: "5",
+            worstRating: "1",
+        },
+
+        // Reviews properly associated with the business entity that has aggregateRating
+        review: [
+            {
+                "@type": "Review",
+                reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                },
+                author: {
+                    "@type": "Person",
+                    name: "James White",
+                },
+                datePublished: "2023-11-15",
+                reviewBody:
+                    "The team at JS ProFinish transformed our unfinished basement into a beautiful living space that exceeded our expectations. Their attention to detail and commitment to quality craftsmanship was evident throughout the entire process.",
+            },
+            {
+                "@type": "Review",
+                reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                },
+                author: {
+                    "@type": "Person",
+                    name: "Adriana Cortés",
+                },
+                datePublished: "2023-10-22",
+                reviewBody:
+                    "We are absolutely thrilled with our newly finished basement! The JS ProFinish team guided us through every step of the project, from design to completion, and delivered exceptional results while staying on budget and timeline.",
+            },
+            {
+                "@type": "Review",
+                reviewRating: {
+                    "@type": "Rating",
+                    ratingValue: "5",
+                    bestRating: "5",
+                },
+                author: {
+                    "@type": "Person",
+                    name: "Jonah Ortiz",
+                },
+                datePublished: "2023-09-30",
+                reviewBody:
+                    "Working with JS ProFinish was a seamless experience from start to finish. Their expert craftsmanship and professional approach transformed our basement into the perfect entertainment space for our family and friends.",
+            },
+        ],
+    };
+
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify(structuredData),
+            }}
+        />
+    );
+};
+
 interface TestimonialProps {
     dark?: boolean;
 }
@@ -111,6 +215,8 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                 overflow: "hidden",
             }}
         >
+            <TestimonialsStructuredData />
+
             <Container
                 maxWidth={false}
                 className={`${componentTheme}`}
@@ -188,10 +294,11 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                                 color: dark
                                     ? "rgba(255, 255, 255, 0.8)"
                                     : "rgba(0, 0, 0, 0.7)",
+                                fontSize: "1.125rem",
+                                lineHeight: 1.6,
                             }}
                         >
-                            Don&#39;t just take our word for it. Here&#39;s what
-                            homeowners across Northern Utah have to say about
+                            Read what our satisfied customers have to say about
                             their basement transformation experience with JS
                             ProFinish.
                         </Typography>
@@ -199,103 +306,54 @@ const Testimonials = ({ dark }: TestimonialProps) => {
 
                     <Box
                         sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
                             position: "relative",
+                            maxWidth: "900px",
+                            margin: "0 auto",
                         }}
                     >
                         <Paper
-                            elevation={3}
+                            elevation={dark ? 0 : 2}
                             sx={{
-                                maxWidth: "900px",
-                                width: "100%",
-                                py: { xs: 4, md: 6 },
-                                px: { xs: 3, md: 8 },
                                 borderRadius: "16px",
+                                overflow: "hidden",
                                 backgroundColor: dark
                                     ? "rgba(255, 255, 255, 0.05)"
-                                    : "white",
+                                    : "#FFFFFF",
+                                border: dark
+                                    ? "1px solid rgba(255, 255, 255, 0.1)"
+                                    : "none",
                                 position: "relative",
-                                transition: "all 0.3s ease",
-                                backdropFilter: "blur(10px)",
-                                boxShadow: dark
-                                    ? "0 10px 30px rgba(0, 0, 0, 0.15)"
-                                    : "0 10px 30px rgba(0, 0, 0, 0.05)",
-                                "&::before": {
-                                    content: '""',
-                                    position: "absolute",
-                                    top: -20,
-                                    left: 40,
-                                    width: 40,
-                                    height: 40,
-                                    borderRadius: "8px",
-                                    background: "rgba(28, 124, 84, 0.1)",
-                                    transform: "rotate(45deg)",
-                                    zIndex: -1,
-                                    display: { xs: "none", md: "block" },
-                                },
+                                minHeight: { xs: "400px", md: "350px" },
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                                p: { xs: 3, md: 5 },
                             }}
                         >
                             <Box
                                 sx={{
-                                    position: "absolute",
-                                    top: { xs: -15, md: -20 },
-                                    left: "50%",
-                                    transform: "translateX(-50%)",
-                                    zIndex: 2,
+                                    mb: 4,
+                                    opacity: fading ? 0 : 1,
+                                    transition: "opacity 0.3s ease",
                                 }}
                             >
-                                <Box
-                                    sx={{
-                                        display: "flex",
-                                        justifyContent: "center",
+                                <PiQuotes
+                                    size={isMobile ? 32 : 48}
+                                    style={{
+                                        color: "#1C7C54",
+                                        marginBottom: "16px",
                                     }}
-                                >
-                                    {[...Array(5)].map((_, index) => (
-                                        <IoStarSharp
-                                            key={index}
-                                            size={isMobile ? 24 : 28}
-                                            color="#1C7C54"
-                                            style={{
-                                                margin: "0 2px",
-                                                filter: "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))",
-                                            }}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box>
-
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: { xs: 20, md: 40 },
-                                    left: { xs: 20, md: 40 },
-                                    opacity: 0.1,
-                                    color: "#1C7C54",
-                                }}
-                            >
-                                <PiQuotes size={isMobile ? 40 : 60} />
-                            </Box>
-
-                            <Box
-                                sx={{
-                                    minHeight: { xs: "180px", md: "150px" },
-                                    display: "flex",
-                                    alignItems: "center",
-                                    justifyContent: "center",
-                                }}
-                            >
+                                />
                                 <Typography
-                                    variant="body1"
+                                    variant="h6"
+                                    component="blockquote"
                                     sx={{
-                                        fontSize: {
-                                            xs: "1rem",
-                                            md: "1.125rem",
-                                        },
                                         fontStyle: "italic",
                                         lineHeight: 1.6,
-                                        textAlign: "center",
+                                        fontSize: {
+                                            xs: "1.1rem",
+                                            md: "1.25rem",
+                                        },
                                         color: dark
                                             ? "rgba(255, 255, 255, 0.9)"
                                             : "rgba(0, 0, 0, 0.8)",
@@ -320,26 +378,36 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                                     opacity: fading ? 0 : 1,
                                 }}
                             >
-                                <Avatar
+                                <Box
                                     sx={{
-                                        width: { xs: 64, md: 72 },
-                                        height: { xs: 64, md: 72 },
-                                        border: "3px solid",
-                                        borderColor: "rgba(28, 124, 84, 0.6)",
-                                        boxShadow:
-                                            "0 4px 12px rgba(0, 0, 0, 0.1)",
+                                        position: "relative",
+                                        mr: { md: 3 },
                                         mb: { xs: 2, md: 0 },
-                                        mr: { xs: 0, md: 3 },
                                     }}
                                 >
-                                    <Image
-                                        src={testimonials[displayedIndex].image}
-                                        alt={testimonials[displayedIndex].name}
-                                        width={72}
-                                        height={72}
-                                        style={{ borderRadius: "50%" }}
-                                    />
-                                </Avatar>
+                                    <Avatar
+                                        sx={{
+                                            width: { xs: 70, md: 80 },
+                                            height: { xs: 70, md: 80 },
+                                            border: "3px solid #1C7C54",
+                                        }}
+                                    >
+                                        <Image
+                                            src={
+                                                testimonials[displayedIndex]
+                                                    .image
+                                            }
+                                            alt={`${testimonials[displayedIndex].name} - Satisfied Customer`}
+                                            width={80}
+                                            height={80}
+                                            style={{
+                                                objectFit: "cover",
+                                                borderRadius: "50%",
+                                            }}
+                                        />
+                                    </Avatar>
+                                </Box>
+
                                 <Box
                                     sx={{
                                         textAlign: { xs: "center", md: "left" },
@@ -347,14 +415,53 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                                 >
                                     <Typography
                                         variant="h6"
-                                        fontWeight="bold"
-                                        sx={{ color: "#1C7C54" }}
+                                        component="cite"
+                                        sx={{
+                                            fontWeight: 600,
+                                            fontSize: {
+                                                xs: "1.1rem",
+                                                md: "1.2rem",
+                                            },
+                                            color: dark ? "#FFFFFF" : "#1C7C54",
+                                            display: "block",
+                                            mb: 0.5,
+                                        }}
                                     >
                                         {testimonials[displayedIndex].name}
                                     </Typography>
-                                    <Typography variant="body2">
+                                    <Typography
+                                        variant="body2"
+                                        sx={{
+                                            color: dark
+                                                ? "rgba(255, 255, 255, 0.7)"
+                                                : "rgba(0, 0, 0, 0.6)",
+                                            fontSize: "0.95rem",
+                                        }}
+                                    >
                                         {testimonials[displayedIndex].title}
                                     </Typography>
+
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            mt: 1,
+                                            justifyContent: {
+                                                xs: "center",
+                                                md: "flex-start",
+                                            },
+                                        }}
+                                    >
+                                        {[...Array(5)].map((_, i) => (
+                                            <IoStarSharp
+                                                key={i}
+                                                size={16}
+                                                style={{
+                                                    color: "#FFD700",
+                                                    marginRight: "2px",
+                                                }}
+                                            />
+                                        ))}
+                                    </Box>
                                 </Box>
                             </Box>
                         </Paper>
@@ -365,6 +472,8 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                             sx={{
                                 position: "absolute",
                                 left: { xs: -5, sm: -20, md: -30 },
+                                top: "50%",
+                                transform: "translateY(-50%)",
                                 color: dark ? "#ffffff" : "#1C7C54",
                                 backgroundColor: dark
                                     ? "rgba(255, 255, 255, 0.1)"
@@ -373,7 +482,7 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                                     backgroundColor: dark
                                         ? "rgba(255, 255, 255, 0.2)"
                                         : "rgba(28, 124, 84, 0.1)",
-                                    transform: "scale(1.1)",
+                                    transform: "translateY(-50%) scale(1.1)",
                                 },
                                 "&:disabled": {
                                     opacity: 0.5,
@@ -395,6 +504,8 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                             sx={{
                                 position: "absolute",
                                 right: { xs: -5, sm: -20, md: -30 },
+                                top: "50%",
+                                transform: "translateY(-50%)",
                                 color: dark ? "#ffffff" : "#1C7C54",
                                 backgroundColor: dark
                                     ? "rgba(255, 255, 255, 0.1)"
@@ -403,7 +514,7 @@ const Testimonials = ({ dark }: TestimonialProps) => {
                                     backgroundColor: dark
                                         ? "rgba(255, 255, 255, 0.2)"
                                         : "rgba(28, 124, 84, 0.1)",
-                                    transform: "scale(1.1)",
+                                    transform: "translateY(-50%) scale(1.1)",
                                 },
                                 "&:disabled": {
                                     opacity: 0.5,

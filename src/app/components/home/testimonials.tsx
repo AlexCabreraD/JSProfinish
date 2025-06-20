@@ -79,7 +79,6 @@ const TestimonialsStructuredData = () => {
         ],
         serviceType: "Basement Finishing and Remodeling",
 
-        // CRITICAL: AggregateRating must be present when reviews exist
         aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: "5.0",
@@ -88,7 +87,6 @@ const TestimonialsStructuredData = () => {
             worstRating: "1",
         },
 
-        // Reviews properly associated with the business entity that has aggregateRating
         review: [
             {
                 "@type": "Review",

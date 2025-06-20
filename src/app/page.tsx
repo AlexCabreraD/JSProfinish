@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description:
             "Transform your basement with Northern Utah's premier finishing experts. 15+ years of experience in Davis and Weber Counties.",
         images: ["/images/og-image.jpg"],
-        url: "https://www.jsprofinish-utah.com/",
+        url: "https://www.jsprofinish.com/",
         siteName: "JS ProFinish",
         locale: "en_US",
         type: "website",

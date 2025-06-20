@@ -58,7 +58,7 @@ const BenefitsStructuredData = () => {
         ],
         mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": "https://www.jsprofinish-utah.com/services#benefits",
+            "@id": "https://www.jsprofinish.com/services#benefits",
         },
     };
 
@@ -86,7 +86,7 @@ const Benefits = () => {
                 />
                 <meta
                     property="og:image"
-                    content="https://www.jsprofinish-utah.com/assets/home/img/image8.png"
+                    content="https://www.jsprofinish.com/assets/home/img/image8.png"
                 />
                 <meta property="og:type" content="website" />
                 <meta name="twitter:card" content="summary_large_image" />

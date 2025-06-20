@@ -1,17 +1,17 @@
 export const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "@id": "https://www.jsprofinish-utah.com/#business",
+    "@id": "https://www.jsprofinish.com/#business",
     name: "JS ProFinish",
     alternateName: "JS ProFinish Basement Finishing",
     description:
         "Northern Utah's premier basement finishing and remodeling experts with over 15 years of experience serving Davis County and Weber County. Specializing in custom basement designs, framing, carpentry, drywall installation, and professional painting.",
-    url: "https://www.jsprofinish-utah.com/",
-    logo: "https://www.jsprofinish-utah.com/logo.png",
+    url: "https://www.jsprofinish.com/",
+    logo: "https://www.jsprofinish.com/logo.png",
     image: [
-        "https://www.jsprofinish-utah.com/app/assets/home/img/image1.png",
-        "https://www.jsprofinish-utah.com/app/assets/home/img/image3.png",
-        "https://www.jsprofinish-utah.com/app/assets/home/img/image8.png",
+        "https://www.jsprofinish.com/app/assets/home/img/image1.png",
+        "https://www.jsprofinish.com/app/assets/home/img/image3.png",
+        "https://www.jsprofinish.com/app/assets/home/img/image8.png",
     ],
     telephone: "(385) 626-3514",
     email: "contact@jsprofinish-utah.com",

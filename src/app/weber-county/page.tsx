@@ -10,11 +10,11 @@ import ContactInfo from "@/app/components/weber-county/contactInfo";
 const weberCountyStructuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.jsprofinish-utah.com/weber-county#business",
+    "@id": "https://www.jsprofinish.com/weber-county#business",
     name: "JS ProFinish - Weber County Basement Finishing",
-    url: "https://www.jsprofinish-utah.com/weber-county",
-    logo: "https://www.jsprofinish-utah.com/logo.png",
-    image: "https://www.jsprofinish-utah.com/assets/images/weber-county-basement.jpg",
+    url: "https://www.jsprofinish.com/weber-county",
+    logo: "https://www.jsprofinish.com/logo.png",
+    image: "https://www.jsprofinish.com/assets/images/weber-county-basement.jpg",
     description:
         "Expert basement finishing and remodeling services in Weber County, specializing in custom designs, quality craftsmanship, and complete transformations throughout Ogden, North Ogden, Roy, and surrounding areas.",
     telephone: "(385) 626-3514",
@@ -84,7 +84,7 @@ const weberCountyStructuredData = {
         areaServed: "Weber County",
         provider: {
             "@type": "LocalBusiness",
-            "@id": "https://www.jsprofinish-utah.com/weber-county#business",
+            "@id": "https://www.jsprofinish.com/weber-county#business",
             name: "JS ProFinish",
         },
         hasOfferCatalog: {
@@ -136,7 +136,7 @@ const articleStructuredData = {
     headline: "Weber County Basement Finishing & Remodeling Services",
     description:
         "Expert basement remodeling in Ogden, Roy, North Ogden and throughout Weber County. Learn about our local expertise and custom basement solutions.",
-    image: "https://www.jsprofinish-utah.com/assets/images/weber-county-basement.jpg",
+    image: "https://www.jsprofinish.com/assets/images/weber-county-basement.jpg",
     datePublished: "2023-04-15T08:00:00+08:00",
     dateModified: new Date().toISOString(),
     author: {
@@ -148,12 +148,12 @@ const articleStructuredData = {
         name: "JS ProFinish",
         logo: {
             "@type": "ImageObject",
-            url: "https://www.jsprofinish-utah.com/logo.png",
+            url: "https://www.jsprofinish.com/logo.png",
         },
     },
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "https://www.jsprofinish-utah.com/weber-county",
+        "@id": "https://www.jsprofinish.com/weber-county",
     },
 };
 
@@ -165,19 +165,19 @@ const breadcrumbStructuredData = {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://www.jsprofinish-utah.com/",
+            item: "https://www.jsprofinish.com/",
         },
         {
             "@type": "ListItem",
             position: 2,
             name: "Locations",
-            item: "https://www.jsprofinish-utah.com/locations",
+            item: "https://www.jsprofinish.com/locations",
         },
         {
             "@type": "ListItem",
             position: 3,
             name: "Weber County",
-            item: "https://www.jsprofinish-utah.com/weber-county",
+            item: "https://www.jsprofinish.com/weber-county",
         },
     ],
 };
@@ -192,11 +192,11 @@ export const metadata: Metadata = {
         title: "Weber County Basement Finishing & Remodeling | JS ProFinish",
         description:
             "Expert basement finishing and remodeling services in Weber County, Utah. Custom designs, local expertise, and quality craftsmanship in Ogden, Roy, and surrounding areas.",
-        url: "https://www.jsprofinish-utah.com/weber-county",
+        url: "https://www.jsprofinish.com/weber-county",
         siteName: "JS ProFinish",
         images: [
             {
-                url: "https://www.jsprofinish-utah.com/assets/images/weber-county-og.jpg",
+                url: "https://www.jsprofinish.com/assets/images/weber-county-og.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Weber County Basement Remodeling by JS ProFinish",
@@ -211,11 +211,11 @@ export const metadata: Metadata = {
         description:
             "Professional basement remodeling in Ogden, Roy, and throughout Weber County by JS ProFinish.",
         images: [
-            "https://www.jsprofinish-utah.com/assets/images/weber-county-twitter.jpg",
+            "https://www.jsprofinish.com/assets/images/weber-county-twitter.jpg",
         ],
     },
     alternates: {
-        canonical: "https://www.jsprofinish-utah.com/weber-county",
+        canonical: "https://www.jsprofinish.com/weber-county",
     },
 };
 
@@ -229,11 +229,11 @@ const WeberCounty = () => {
                 <meta name="ICBM" content="41.2138, -111.9703" />
                 <link
                     rel="preconnect"
-                    href="https://www.jsprofinish-utah.com"
+                    href="https://www.jsprofinish.com"
                 />
                 <link
                     rel="dns-prefetch"
-                    href="https://www.jsprofinish-utah.com"
+                    href="https://www.jsprofinish.com"
                 />
             </Head>
 

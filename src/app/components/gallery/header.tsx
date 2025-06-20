@@ -7,11 +7,11 @@ const galleryStructuredData = {
     name: "Basement Remodeling Gallery - JS ProFinish",
     description:
         "Explore our gallery of stunning basement renovation projects in Northern Utah. View our completed basement finishing work in Weber County and Davis County.",
-    url: "https://www.jsprofinish-utah.com/gallery",
+    url: "https://www.jsprofinish.com/gallery",
     isPartOf: {
         "@type": "WebSite",
         name: "JS ProFinish",
-        url: "https://www.jsprofinish-utah.com",
+        url: "https://www.jsprofinish.com",
     },
     about: {
         "@type": "Service",
@@ -42,7 +42,7 @@ const Header = () => {
                 />
                 <link
                     rel="canonical"
-                    href="https://www.jsprofinish-utah.com/gallery"
+                    href="https://www.jsprofinish.com/gallery"
                 />
                 <meta
                     property="og:title"
@@ -54,12 +54,12 @@ const Header = () => {
                 />
                 <meta
                     property="og:url"
-                    content="https://www.jsprofinish-utah.com/gallery"
+                    content="https://www.jsprofinish.com/gallery"
                 />
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:image"
-                    content="https://www.jsprofinish-utah.com/images/gallery-preview.jpg"
+                    content="https://www.jsprofinish.com/images/gallery-preview.jpg"
                 />
             </Head>
 

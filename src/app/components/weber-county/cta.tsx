@@ -35,7 +35,7 @@ const ctaStructuredData = {
     potentialAction: {
         "@type": "ContactAction",
         name: "Get a Free Estimate",
-        target: "https://www.jsprofinish-utah.com/contact-us",
+        target: "https://www.jsprofinish.com/contact-us",
     },
 };
 

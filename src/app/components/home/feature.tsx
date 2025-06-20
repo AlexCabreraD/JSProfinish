@@ -28,13 +28,13 @@ const FeatureStructuredData = () => {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Service",
-        "@id": "https://www.jsprofinish-utah.com/services#basement-finishing",
+        "@id": "https://www.jsprofinish.com/services#basement-finishing",
         name: "Professional Basement Finishing Services in Northern Utah",
         description:
             "Expert basement finishing and remodeling services in Davis and Weber Counties. We transform your unfinished basement into a comfortable, stylish living space with custom designs, quality materials, and meticulous craftsmanship. Serving Clearfield, Layton, Ogden and surrounding areas.",
         provider: {
             "@type": "LocalBusiness",
-            "@id": "https://www.jsprofinish-utah.com/#business",
+            "@id": "https://www.jsprofinish.com/#business",
             name: "JS ProFinish",
             telephone: "+1-385-626-3514",
             email: "contact@jsprofinish-utah.com",
@@ -93,11 +93,11 @@ const FeatureStructuredData = () => {
                 "https://www.facebook.com/jsprofinish",
                 "https://www.instagram.com/jsprofinish",
             ],
-            url: "https://www.jsprofinish-utah.com/",
+            url: "https://www.jsprofinish.com/",
         },
         serviceType: "Basement Finishing and Remodeling",
         serviceOutput: "Professionally finished basement spaces",
-        termsOfService: "https://www.jsprofinish-utah.com/terms-of-service",
+        termsOfService: "https://www.jsprofinish.com/terms-of-service",
         audience: {
             "@type": "Audience",
             audienceType: "Homeowners in Northern Utah",
@@ -264,11 +264,11 @@ const Feature = () => {
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:image"
-                    content="https://www.jsprofinish-utah.com/app/assets/home/img/image7.png"
+                    content="https://www.jsprofinish.com/app/assets/home/img/image7.png"
                 />
                 <meta
                     property="og:url"
-                    content="https://www.jsprofinish-utah.com/services"
+                    content="https://www.jsprofinish.com/services"
                 />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
@@ -281,7 +281,7 @@ const Feature = () => {
                 />
                 <link
                     rel="canonical"
-                    href="https://www.jsprofinish-utah.com/services"
+                    href="https://www.jsprofinish.com/services"
                 />
             </Head>
 

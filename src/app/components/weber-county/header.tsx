@@ -35,7 +35,7 @@ const Header = ({ county }: HeaderProps) => {
         "@type": "LocalBusiness",
         name: `JS ProFinish Basement Remodeling - ${county} County`,
         description: `Professional basement finishing and remodeling services in ${county} County, Utah. Over 15 years of experience transforming basements into beautiful living spaces.`,
-        url: `https://www.jsprofinish-utah.com/${county.toLowerCase()}-county`,
+        url: `https://www.jsprofinish.com/${county.toLowerCase()}-county`,
         sameAs: [
             "https://www.facebook.com/jsprofinish",
             "https://www.instagram.com/jsprofinish",
@@ -104,15 +104,15 @@ const Header = ({ county }: HeaderProps) => {
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:url"
-                    content={`https://www.jsprofinish-utah.com/${county.toLowerCase()}-county`}
+                    content={`https://www.jsprofinish.com/${county.toLowerCase()}-county`}
                 />
                 <meta
                     property="og:image"
-                    content="https://www.jsprofinish-utah.com/images/basement-remodel.jpg"
+                    content="https://www.jsprofinish.com/images/basement-remodel.jpg"
                 />
                 <link
                     rel="canonical"
-                    href={`https://www.jsprofinish-utah.com/${county.toLowerCase()}-county`}
+                    href={`https://www.jsprofinish.com/${county.toLowerCase()}-county`}
                 />
                 <script
                     type="application/ld+json"

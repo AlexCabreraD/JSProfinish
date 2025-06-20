@@ -16,7 +16,7 @@ const contactHeaderSchema = {
     name: "Contact JS ProFinish - Basement Remodeling Services",
     description:
         "Get in touch with Northern Utah's premier basement finishing experts. Contact JS ProFinish for a free consultation about your basement renovation project in Davis County and Weber County.",
-    url: "https://www.jsprofinish-utah.com/contact-us",
+    url: "https://www.jsprofinish.com/contact-us",
     mainEntity: {
         "@type": "ContactPage",
         name: "JS ProFinish Contact Information",
@@ -36,13 +36,13 @@ const contactHeaderSchema = {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.jsprofinish-utah.com/",
+                item: "https://www.jsprofinish.com/",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Contact Us",
-                item: "https://www.jsprofinish-utah.com/contact-us",
+                item: "https://www.jsprofinish.com/contact-us",
             },
         ],
     },

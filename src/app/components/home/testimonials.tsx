@@ -78,62 +78,6 @@ const TestimonialsStructuredData = () => {
             },
         ],
         serviceType: "Basement Finishing and Remodeling",
-
-        aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "5.0",
-            reviewCount: "50",
-            bestRating: "5",
-            worstRating: "1",
-        },
-
-        review: [
-            {
-                "@type": "Review",
-                reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                    bestRating: "5",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "James White",
-                },
-                datePublished: "2023-11-15",
-                reviewBody:
-                    "The team at JS ProFinish transformed our unfinished basement into a beautiful living space that exceeded our expectations. Their attention to detail and commitment to quality craftsmanship was evident throughout the entire process.",
-            },
-            {
-                "@type": "Review",
-                reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                    bestRating: "5",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "Adriana Cortés",
-                },
-                datePublished: "2023-10-22",
-                reviewBody:
-                    "We are absolutely thrilled with our newly finished basement! The JS ProFinish team guided us through every step of the project, from design to completion, and delivered exceptional results while staying on budget and timeline.",
-            },
-            {
-                "@type": "Review",
-                reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                    bestRating: "5",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "Jonah Ortiz",
-                },
-                datePublished: "2023-09-30",
-                reviewBody:
-                    "Working with JS ProFinish was a seamless experience from start to finish. Their expert craftsmanship and professional approach transformed our basement into the perfect entertainment space for our family and friends.",
-            },
-        ],
     };
 
     return (

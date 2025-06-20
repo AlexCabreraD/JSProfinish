@@ -192,45 +192,6 @@ const FeatureStructuredData = () => {
                 },
             ],
         },
-        aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.9",
-            reviewCount: "47",
-            bestRating: "5",
-            worstRating: "1",
-        },
-        review: [
-            {
-                "@type": "Review",
-                reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                    bestRating: "5",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "James White",
-                },
-                datePublished: "2023-11-15",
-                reviewBody:
-                    "JS ProFinish transformed our unfinished basement into a beautiful living space that exceeded our expectations. Their attention to detail was outstanding.",
-            },
-            {
-                "@type": "Review",
-                reviewRating: {
-                    "@type": "Rating",
-                    ratingValue: "5",
-                    bestRating: "5",
-                },
-                author: {
-                    "@type": "Person",
-                    name: "Adriana Cortés",
-                },
-                datePublished: "2023-10-22",
-                reviewBody:
-                    "We are thrilled with our newly finished basement! The JS ProFinish team guided us through every step of the project.",
-            },
-        ],
         brand: {
             "@type": "Brand",
             name: "JS ProFinish",

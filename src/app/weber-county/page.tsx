@@ -125,9 +125,46 @@ const weberCountyStructuredData = {
     aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.9",
-        ratingCount: "47",
+        reviewCount: "47",
         bestRating: "5",
+        worstRating: "1",
+        itemReviewed: {
+            "@type": "LocalBusiness",
+            "@id": "https://www.jsprofinish.com/weber-county#business",
+        },
     },
+    review: [
+        {
+            "@type": "Review",
+            reviewRating: {
+                "@type": "Rating",
+                ratingValue: "5",
+                bestRating: "5",
+            },
+            author: {
+                "@type": "Person",
+                name: "James White",
+            },
+            datePublished: "2023-11-15",
+            reviewBody:
+                "JS ProFinish transformed our unfinished basement into a beautiful living space that exceeded our expectations. Their attention to detail was outstanding.",
+        },
+        {
+            "@type": "Review",
+            reviewRating: {
+                "@type": "Rating",
+                ratingValue: "5",
+                bestRating: "5",
+            },
+            author: {
+                "@type": "Person",
+                name: "Adriana Cortés",
+            },
+            datePublished: "2023-10-22",
+            reviewBody:
+                "We are thrilled with our newly finished basement! The JS ProFinish team guided us through every step of the project.",
+        },
+    ],
 };
 
 const articleStructuredData = {
@@ -227,14 +264,8 @@ const WeberCounty = () => {
                 <meta name="geo.placename" content="Weber County" />
                 <meta name="geo.position" content="41.2138;-111.9703" />
                 <meta name="ICBM" content="41.2138, -111.9703" />
-                <link
-                    rel="preconnect"
-                    href="https://www.jsprofinish.com"
-                />
-                <link
-                    rel="dns-prefetch"
-                    href="https://www.jsprofinish.com"
-                />
+                <link rel="preconnect" href="https://www.jsprofinish.com" />
+                <link rel="dns-prefetch" href="https://www.jsprofinish.com" />
             </Head>
 
             <Box

@@ -497,7 +497,7 @@ const Footer = () => {
                             </Typography>
                         </Link>
 
-                        <Link href="/sitemap" passHref>
+                        <Link href="/site-index" passHref>
                             <Typography
                                 component="span"
                                 variant="caption"

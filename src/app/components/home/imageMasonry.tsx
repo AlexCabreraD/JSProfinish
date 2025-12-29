@@ -56,6 +56,7 @@ const ImageMasonry = () => {
                             alt={image.alt}
                             layout="responsive"
                             sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+                            quality={85}
                             style={{
                                 borderRadius: 4,
                             }}

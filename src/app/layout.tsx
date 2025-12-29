@@ -11,9 +11,14 @@ import { jsonLd } from "@/app/utils/seo";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+    subsets: ["latin"],
+    display: "swap",
+    preload: true,
+});
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://jsprofinish.com"),
     title: "Basement Finishing & Remodeling in Northern Utah | JS ProFinish",
     description:
         "JS ProFinish offers expert basement finishing and remodeling services in Northern Utah, serving Davis County and Weber County. Transform your basement with our professional painting, carpentry, drywall installation, and framing. Contact us today for personalized basement renovations tailored to your needs.\n",

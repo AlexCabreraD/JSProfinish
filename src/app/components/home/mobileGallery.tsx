@@ -9,7 +9,12 @@ import React from "react";
 
 import "./home.css";
 
-const images = [img1, img2, img3, img4];
+const images = [
+    { src: img1, alt: "Finished basement showcase" },
+    { src: img2, alt: "Basement remodel with home theater" },
+    { src: img3, alt: "Custom basement renovation" },
+    { src: img4, alt: "Luxurious basement with bar area" },
+];
 
 const MobileGallery = () => {
     return (
@@ -46,10 +51,11 @@ const MobileGallery = () => {
                     >
                         <Image
                             src={image.src}
-                            alt={`Image ${index + 1}`}
+                            alt={image.alt}
                             width={610}
                             height={340}
-                            sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 33vw"
+                            sizes="(max-width: 600px) 50vw, 33vw"
+                            quality={85}
                             style={{
                                 display: "block",
                                 objectFit: "cover",

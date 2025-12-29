@@ -68,8 +68,6 @@ const Footer = () => {
         },
     ];
 
-    const currentYear = new Date().getFullYear();
-
     return (
         <Box
             component="footer"
@@ -454,7 +452,7 @@ const Footer = () => {
                             mb: { xs: 2, md: 0 },
                         }}
                     >
-                        © {currentYear} JS ProFinish. All rights reserved.
+                        © 2025 JS ProFinish. All rights reserved.
                     </Typography>
 
                     <Box

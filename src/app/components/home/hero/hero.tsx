@@ -276,6 +276,7 @@ export default function HomeHeader() {
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                     priority={true}
+                                    fetchPriority="high"
                                     style={{
                                         objectFit: "cover",
                                     }}

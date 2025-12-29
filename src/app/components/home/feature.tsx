@@ -273,7 +273,8 @@ const Feature = () => {
                                     width={600}
                                     height={450}
                                     priority={true}
-                                    sizes="(max-width: 768px) 100vw, 600px"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                                    quality={85}
                                     style={{
                                         width: "100%",
                                         height: "auto",

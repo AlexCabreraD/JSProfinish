@@ -14,7 +14,7 @@ export const jsonLd = {
         "https://www.jsprofinish.com/app/assets/home/img/image8.png",
     ],
     telephone: "(385) 626-3514",
-    email: "contact@jsprofinish-utah.com",
+    email: "jsprofinish@gmail.com",
     priceRange: "$$",
     address: {
         "@type": "PostalAddress",

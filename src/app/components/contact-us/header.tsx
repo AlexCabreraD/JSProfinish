@@ -24,7 +24,7 @@ const contactHeaderSchema = {
             "@type": "ContactPoint",
             telephone: "+13856263514",
             contactType: "customer service",
-            email: "contact@jsprofinish-utah.com",
+            email: "jsprofinish@gmail.com",
             areaServed: ["Davis County", "Weber County", "Northern Utah"],
             availableLanguage: "English",
         },
@@ -304,7 +304,7 @@ const Header = () => {
                                         </Typography>
                                         <Box
                                             component="a"
-                                            href="mailto:contact@jsprofinish-utah.com"
+                                            href="mailto:jsprofinish@gmail.com"
                                             sx={{
                                                 fontWeight: 600,
                                                 textDecoration: "none",
@@ -318,7 +318,7 @@ const Header = () => {
                                                 lineHeight: 1.5,
                                             }}
                                         >
-                                            contact@jsprofinish-utah.com
+                                            jsprofinish@gmail.com
                                         </Box>
                                     </Box>
                                 </Box>

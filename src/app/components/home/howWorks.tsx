@@ -59,19 +59,19 @@ const HowWorks = () => {
             icon: <LuPencil />,
             title: "Free Consultation",
             description:
-                "Schedule a free consultation to discuss your basement finishing project and receive personalized recommendations.",
+                "We'll visit your home, take measurements, and talk through what you want. No pressure, just honest advice about what's possible.",
         },
         {
             icon: <MdOutlineDesignServices />,
-            title: "Design and Planning",
+            title: "Design & Planning",
             description:
-                "Work with our expert designers to create a customized plan that maximizes your space and reflects your style.",
+                "Together we'll create a plan that works for your space and budget. You'll know exactly what to expect before we break ground.",
         },
         {
             icon: <IoConstructOutline />,
-            title: "Quality Construction",
+            title: "Construction",
             description:
-                "Our experienced team handles all aspects of the construction process with meticulous attention to detail.",
+                "Our crew shows up on time, keeps the job site clean, and gets the work done right. We'll keep you updated along the way.",
         },
     ];
 
@@ -151,13 +151,7 @@ const HowWorks = () => {
                                         lineHeight: 1.6,
                                     }}
                                 >
-                                    Our basement finishing process in Davis
-                                    County and Weber County is simple and
-                                    hassle-free. We guide you through every
-                                    step, from the initial consultation to the
-                                    final touches, ensuring a smooth and
-                                    enjoyable experience for homeowners in
-                                    Clearfield, Ogden, and surrounding areas.
+                                    We keep things straightforward. Here's how we work: free consultation to understand your needs, design that makes sense for your space and budget, then quality construction from start to finish. No complicated processes or confusing jargon.
                                 </Typography>
                             </Stack>
                         </Grid>

@@ -1,7 +1,17 @@
 import { MetadataRoute } from "next";
+import { getAllCitySlugs } from "@/app/data/cities";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://jsprofinish.com";
+
+    // Get all city slugs for dynamic city pages
+    const citySlugs = getAllCitySlugs();
+    const cityPages = citySlugs.map((slug) => ({
+        url: `${baseUrl}/cities/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.85,
+    }));
 
     return [
         {
@@ -38,14 +48,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/weber-county`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.7,
+            priority: 0.95,
         },
         {
             url: `${baseUrl}/davis-county`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.7,
+            priority: 0.95,
         },
+        // Add all city pages
+        ...cityPages,
         {
             url: `${baseUrl}/privacy-policy`,
             lastModified: new Date(),

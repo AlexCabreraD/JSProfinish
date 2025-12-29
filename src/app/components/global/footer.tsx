@@ -44,6 +44,28 @@ const Footer = () => {
                 { href: "/contact-us", label: "Contact Us" },
             ],
         },
+        {
+            category: "Weber County",
+            links: [
+                { href: "/cities/ogden", label: "Ogden" },
+                { href: "/cities/roy", label: "Roy" },
+                { href: "/cities/north-ogden", label: "North Ogden" },
+                { href: "/cities/south-ogden", label: "South Ogden" },
+                { href: "/cities/pleasant-view", label: "Pleasant View" },
+                { href: "/cities/harrisville", label: "Harrisville" },
+            ],
+        },
+        {
+            category: "Davis County",
+            links: [
+                { href: "/cities/clearfield", label: "Clearfield" },
+                { href: "/cities/layton", label: "Layton" },
+                { href: "/cities/kaysville", label: "Kaysville" },
+                { href: "/cities/farmington", label: "Farmington" },
+                { href: "/cities/bountiful", label: "Bountiful" },
+                { href: "/cities/syracuse", label: "Syracuse" },
+            ],
+        },
     ];
 
     const currentYear = new Date().getFullYear();
@@ -134,7 +156,7 @@ const Footer = () => {
                                         }}
                                     />
                                     <Typography variant="body2">
-                                        contact@jsprofinish-utah.com
+                                        jsprofinish@gmail.com
                                     </Typography>
                                 </Box>
 
@@ -260,10 +282,10 @@ const Footer = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={8}>
                         <Grid container spacing={isMobile ? 3 : 4}>
                             {navigationLinks.map((category) => (
-                                <Grid item xs={6} key={category.category}>
+                                <Grid item xs={6} md={3} key={category.category}>
                                     <Typography
                                         variant="subtitle1"
                                         sx={{
@@ -272,6 +294,7 @@ const Footer = () => {
                                             position: "relative",
                                             display: "inline-block",
                                             color: "#333",
+                                            fontSize: "0.95rem",
                                             "&::after": {
                                                 content: '""',
                                                 position: "absolute",
@@ -297,7 +320,7 @@ const Footer = () => {
                                                     component="span"
                                                     sx={{
                                                         color: "#555",
-                                                        fontSize: "0.95rem",
+                                                        fontSize: "0.875rem",
                                                         transition:
                                                             "all 0.3s ease",
                                                         display: "inline-block",
@@ -336,7 +359,7 @@ const Footer = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12} md={3}>
+                    <Grid item xs={12} md={4} sx={{ display: { xs: "none", md: "block" } }}>
                         <Paper
                             elevation={1}
                             sx={{

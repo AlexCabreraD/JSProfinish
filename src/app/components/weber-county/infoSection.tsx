@@ -188,8 +188,24 @@ const InfoSection = ({ county }: InfoSectionProps) => {
                             At JS ProFinish, we understand{" "}
                             {countyInfo[county].expertise}. Our team of local
                             basement remodeling experts has been serving{" "}
-                            {countyInfo[county].cities.join(", ")}
-                            since {countyInfo[county].yearEstablished}, ensuring
+                            {county === "Weber" ? (
+                                <>
+                                    <Link href="/cities/ogden" style={{ color: "#1C7C54", textDecoration: "underline" }}>Ogden</Link>,{" "}
+                                    <Link href="/cities/roy" style={{ color: "#1C7C54", textDecoration: "underline" }}>Roy</Link>,{" "}
+                                    <Link href="/cities/north-ogden" style={{ color: "#1C7C54", textDecoration: "underline" }}>North Ogden</Link>,{" "}
+                                    <Link href="/cities/south-ogden" style={{ color: "#1C7C54", textDecoration: "underline" }}>South Ogden</Link>,{" "}
+                                    <Link href="/cities/pleasant-view" style={{ color: "#1C7C54", textDecoration: "underline" }}>Pleasant View</Link>
+                                </>
+                            ) : (
+                                <>
+                                    <Link href="/cities/clearfield" style={{ color: "#1C7C54", textDecoration: "underline" }}>Clearfield</Link>,{" "}
+                                    <Link href="/cities/layton" style={{ color: "#1C7C54", textDecoration: "underline" }}>Layton</Link>,{" "}
+                                    <Link href="/cities/kaysville" style={{ color: "#1C7C54", textDecoration: "underline" }}>Kaysville</Link>,{" "}
+                                    <Link href="/cities/farmington" style={{ color: "#1C7C54", textDecoration: "underline" }}>Farmington</Link>,{" "}
+                                    <Link href="/cities/bountiful" style={{ color: "#1C7C54", textDecoration: "underline" }}>Bountiful</Link>
+                                </>
+                            )}
+                            {" "}since {countyInfo[county].yearEstablished}, ensuring
                             every project meets local building codes and
                             addresses the unique climate considerations of
                             Northern Utah homes.

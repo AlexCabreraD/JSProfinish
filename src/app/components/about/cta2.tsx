@@ -19,7 +19,7 @@ const ctaStructuredData = {
             streetAddress: "1740 S 300 W #8",
         },
         telephone: "(385) 626-3514",
-        email: "contact@jsprofinish-utah.com",
+        email: "jsprofinish@gmail.com",
     },
     areaServed: ["Davis County", "Weber County", "Northern Utah"],
     serviceType: "Basement Finishing",

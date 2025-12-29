@@ -154,12 +154,7 @@ export default function HomeHeader() {
                                     maxWidth: "560px",
                                 }}
                             >
-                                At JS ProFinish, we specialize in transforming
-                                underutilized basements into stunning living
-                                spaces tailored to your needs. With over 15
-                                years of experience serving Northern Utah, our
-                                team delivers exceptional craftsmanship and
-                                attention to detail in every project.
+                                For over 15 years, we've been helping Northern Utah families turn their unfinished basements into the extra space they need. Whether that's a home theater, guest suite, or play area for the kids. Quality work, fair pricing, no surprises.
                             </Typography>
 
                             <Stack

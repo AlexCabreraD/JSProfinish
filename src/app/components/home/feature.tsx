@@ -8,19 +8,19 @@ import Head from "next/head";
 
 const serviceBenefits = [
     {
-        title: "Expert Basement Craftsmanship",
+        title: "Quality Craftsmanship",
         description:
-            "Quality finishes and meticulous attention to detail in every basement finishing project in Northern Utah",
+            "Every detail matters. From framing to the final coat of paint, we don't cut corners. You'll see the difference in the finished product.",
     },
     {
-        title: "Custom Basement Design Solutions",
+        title: "Custom Design",
         description:
-            "Tailored basement designs that match your specific needs and style preferences for Davis and Weber County homes",
+            "Your basement, your way. We'll work with you to create a space that fits how you actually live, not some cookie-cutter template.",
     },
     {
-        title: "Affordable Basement Renovation",
+        title: "Fair Pricing",
         description:
-            "Competitive basement finishing rates with convenient financing options available for your Utah basement project",
+            "Transparent estimates with no hidden fees. We offer financing options to make your project more manageable.",
     },
 ];
 
@@ -37,7 +37,7 @@ const FeatureStructuredData = () => {
             "@id": "https://www.jsprofinish.com/#business",
             name: "JS ProFinish",
             telephone: "+1-385-626-3514",
-            email: "contact@jsprofinish-utah.com",
+            email: "jsprofinish@gmail.com",
             address: {
                 "@type": "PostalAddress",
                 streetAddress: "1740 S 300 W #8",
@@ -361,14 +361,7 @@ const Feature = () => {
                                         textAlign: { xs: "center", md: "left" },
                                     }}
                                 >
-                                    Our expert basement finishing services are
-                                    designed to meet your unique needs and
-                                    preferences. With over 15 years of
-                                    experience serving homeowners in Davis and
-                                    Weber Counties, we transform your
-                                    underutilized basement into a comfortable,
-                                    stylish living space for you and your family
-                                    to enjoy for years to come.
+                                    We know every home is different. That's why we take the time to understand what you want before we start any work. With 15+ years finishing basements across Davis and Weber Counties, we've learned how to do the job right: on time, on budget, and built to last.
                                 </Typography>
 
                                 <Stack

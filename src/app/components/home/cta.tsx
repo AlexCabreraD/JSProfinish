@@ -163,12 +163,7 @@ const Cta = () => {
                                 mx: "auto",
                             }}
                         >
-                            Schedule your free basement consultation today with
-                            JS ProFinish, serving Davis County and Weber County.
-                            Get a personalized estimate for your basement
-                            finishing project in Clearfield, Ogden, Layton, or
-                            surrounding areas. Our experienced team is ready to
-                            bring your basement vision to life.
+                            Let's talk about your basement. We'll give you an honest assessment and a fair price—no obligation. Serving Davis and Weber Counties.
                         </Typography>
 
                         <Box

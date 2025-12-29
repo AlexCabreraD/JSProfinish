@@ -54,7 +54,7 @@ const TestimonialsStructuredData = () => {
             "Northern Utah's premier basement finishing experts with exceptional customer reviews",
         url: "https://www.jsprofinish.com/",
         telephone: "+1-385-626-3514",
-        email: "contact@jsprofinish-utah.com",
+        email: "jsprofinish@gmail.com",
         address: {
             "@type": "PostalAddress",
             streetAddress: "1740 S 300 W #8",

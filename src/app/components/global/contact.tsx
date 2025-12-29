@@ -287,7 +287,7 @@ const Contact = ({ dark, padded = true }: ContactProps) => {
                                                 color: dark ? "white" : "black",
                                             }}
                                         >
-                                            contact@jsprofinish-utah.com
+                                            jsprofinish@gmail.com
                                         </Typography>
                                     </Box>
                                 </Paper>

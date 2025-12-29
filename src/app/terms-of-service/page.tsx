@@ -986,7 +986,7 @@ const TermsOfService = () => {
                             sx={{ mb: 0 }}
                         >
                             <strong>By email:</strong>{" "}
-                            contact@jsprofinish-utah.com
+                            jsprofinish@gmail.com
                         </Typography>
                     </Box>
                 </Paper>

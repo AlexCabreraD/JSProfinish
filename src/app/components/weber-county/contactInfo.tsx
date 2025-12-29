@@ -17,7 +17,7 @@ const contactInfoSchema = {
         addressCountry: "US",
     },
     telephone: "+13856263514",
-    email: "contact@jsprofinish-utah.com",
+    email: "jsprofinish@gmail.com",
     priceRange: "$$",
     areaServed: ["Davis County", "Weber County", "Northern Utah"],
     serviceType: "Basement Finishing",
@@ -211,7 +211,7 @@ const ContactInfo = () => {
                                 <Typography
                                     variant="body1"
                                     component="a"
-                                    href="mailto:contact@jsprofinish-utah.com"
+                                    href="mailto:jsprofinish@gmail.com"
                                     sx={{
                                         fontWeight: 600,
                                         fontSize: {
@@ -229,7 +229,7 @@ const ContactInfo = () => {
                                         },
                                     }}
                                 >
-                                    contact@jsprofinish-utah.com
+                                    jsprofinish@gmail.com
                                 </Typography>
                             </Paper>
                         </Grid>

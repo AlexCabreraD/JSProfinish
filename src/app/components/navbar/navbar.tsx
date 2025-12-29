@@ -562,7 +562,7 @@ const Navbar = () => {
 
                             <Box
                                 component="a"
-                                href="mailto:contact@jsprofinish-utah.com"
+                                href="mailto:jsprofinish@gmail.com"
                                 sx={{
                                     display: "flex",
                                     alignItems: "center",
@@ -576,7 +576,7 @@ const Navbar = () => {
                             >
                                 <RiMailLine style={{ marginRight: "10px" }} />
                                 <Typography variant="body2">
-                                    contact@jsprofinish-utah.com
+                                    jsprofinish@gmail.com
                                 </Typography>
                             </Box>
                         </Stack>

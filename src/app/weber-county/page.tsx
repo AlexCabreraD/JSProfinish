@@ -18,7 +18,7 @@ const weberCountyStructuredData = {
     description:
         "Expert basement finishing and remodeling services in Weber County, specializing in custom designs, quality craftsmanship, and complete transformations throughout Ogden, North Ogden, Roy, and surrounding areas.",
     telephone: "(385) 626-3514",
-    email: "contact@jsprofinish-utah.com",
+    email: "jsprofinish@gmail.com",
     address: {
         "@type": "PostalAddress",
         streetAddress: "1740 S 300 W #8",

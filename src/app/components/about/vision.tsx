@@ -19,15 +19,9 @@ const Vision = () => {
             >
                 <Grid item>
                     <Stack spacing={"24px"}>
-                        <Typography variant={"h3"}>Our Vision</Typography>
+                        <Typography variant={"h3"}>Where We're Headed</Typography>
                         <Typography variant={"body1"}>
-                            At JS ProFinish, our goal is to establish ourselves
-                            as a reputable industry leader in Utah, recognized
-                            for our integrity, exceptional craftsmanship, and
-                            unwavering commitment to customer happiness. We are
-                            eager to cultivate enduring partnerships with our
-                            clients and turn their visions into reality, project
-                            by project.
+                            We want to be the first name people think of when they need basement work in Northern Utah. Not because we're the biggest, but because we do honest work at fair prices. We build our reputation one basement at a time.
                         </Typography>
                     </Stack>
                 </Grid>

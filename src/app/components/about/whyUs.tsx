@@ -85,39 +85,31 @@ const WhyUs = () => {
                         component="div"
                         sx={{ marginTop: "24px" }}
                     >
-                        Commitment to Excellence. We are unwaveringly dedicated
-                        to maintaining the highest standards of quality and
-                        professionalism in all our endeavors.
+                        We do what we say we're going to do. That means quality work, showing up on schedule, and treating your home with respect.
                     </Typography>
                     <Grid container spacing={2} sx={{ marginTop: "32px" }}>
                         <Grid item xs={12} md={6}>
                             <Typography variant="h6" component="h3">
-                                Tailored Solutions
+                                Your Project, Your Way
                             </Typography>
                             <Typography
                                 variant="body1"
                                 component="div"
                                 sx={{ marginTop: "16px" }}
                             >
-                                We recognize the distinctiveness of each client
-                                and project. Therefore, we provide customized
-                                solutions that align with individual styles and
-                                preferences.
+                                No two homes are alike, and neither are our projects. We listen to what you need and design a basement that works for how you live.
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Typography variant="h6" component="h3">
-                                Transparent Communication
+                                Straight Talk
                             </Typography>
                             <Typography
                                 variant="body1"
                                 component="div"
                                 sx={{ marginTop: "16px" }}
                             >
-                                We prioritize clear and transparent
-                                communication at every stage of the process,
-                                ensuring that our clients are consistently
-                                informed and engaged.
+                                We'll tell you upfront what things cost, how long they'll take, and if we run into any issues. No surprises, no runaround.
                             </Typography>
                         </Grid>
                     </Grid>

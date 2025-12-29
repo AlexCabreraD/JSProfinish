@@ -19,15 +19,9 @@ const About = () => {
             >
                 <Grid item>
                     <Stack spacing={"24px"}>
-                        <Typography variant={"h3"}>Our Mission</Typography>
+                        <Typography variant={"h3"}>What We're About</Typography>
                         <Typography variant={"body1"}>
-                            At JS ProFinish, our mission is clear: we create
-                            stunning and functional spaces that inspire and
-                            enhance everyday living. With over 15 years of
-                            experience in northern Utah, we exceed our
-                            clients&apos; expectations through innovative
-                            designs, quality materials, and meticulous attention
-                            to detail.
+                            We finish basements the right way—no shortcuts, no surprises. Every job gets the same attention whether it's a simple rec room or a full apartment. We use quality materials, show up when we say we will, and treat your home like it's our own.
                         </Typography>
                     </Stack>
                 </Grid>

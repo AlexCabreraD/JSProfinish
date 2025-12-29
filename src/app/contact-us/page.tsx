@@ -48,7 +48,7 @@ const contactPageSchema = {
         description:
             "Expert basement finishing and remodeling services in Northern Utah with over 15 years of experience.",
         telephone: "(385) 626-3514",
-        email: "contact@jsprofinish-utah.com",
+        email: "jsprofinish@gmail.com",
         address: {
             "@type": "PostalAddress",
             streetAddress: "1740 S 300 W #8",

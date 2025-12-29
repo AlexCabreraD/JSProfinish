@@ -143,12 +143,7 @@ const Header = () => {
                                 fontWeight: 400,
                             }}
                         >
-                            Welcome to JS ProFinish, where we&#39;ve been
-                            transforming basements and bringing dreams to life
-                            for over 15 years. Based in Clearfield, UT, we serve
-                            Davis County, Weber County, and surrounding areas
-                            with exceptional craftsmanship and personalized
-                            service.
+                            We've been finishing basements in Northern Utah since 2019. Based in Clearfield, we serve homeowners across Davis and Weber Counties who need more space but don't want to move.
                         </Typography>
 
                         <Box

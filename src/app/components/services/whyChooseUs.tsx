@@ -57,21 +57,16 @@ const WhyChooseUs = () => {
                         Why Choose Us?
                     </Typography>
                     <Typography variant="body1" sx={{ marginTop: "24px" }}>
-                        Maximize your home&apos;s living area with a fully
-                        finished basement to significantly enhance your living
-                        space.
+                        Get the extra space your family needs without moving to a bigger house.
                     </Typography>
                     <Typography variant="body1" sx={{ marginTop: "16px" }}>
-                        Elevate your property&apos;s value with a professionally
-                        finished basement to notably increase home value.
+                        A finished basement adds real value when it's time to sell. It's one of the best ROI projects you can do.
                     </Typography>
                     <Typography variant="body1" sx={{ marginTop: "16px" }}>
-                        Craft versatile spaces for entertaining, relaxing, or
-                        working with our expert design services.
+                        Create the home theater, guest suite, or home office you've been wanting.
                     </Typography>
                     <Typography variant="body1" sx={{ marginTop: "16px" }}>
-                        Count on our professional team for expert advice and
-                        unwavering support throughout the process.
+                        Our team has done this hundreds of times. We'll help you avoid the common mistakes and get it done right.
                     </Typography>
                     <Stack
                         direction="row"

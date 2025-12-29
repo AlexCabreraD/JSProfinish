@@ -20,14 +20,10 @@ const Header = () => {
                 <Grid item sx={{ maxWidth: "768px" }}>
                     <Stack spacing={"24px"}>
                         <Typography variant={"h1"}>
-                            Unlock the Potential of Your Basement
+                            Complete Basement Finishing Services
                         </Typography>
                         <Typography variant={"body1"}>
-                            Discover our comprehensive basement finishing
-                            services. From painting and carpentry to drywall and
-                            framing, we handle every aspect to create a
-                            functional and beautiful area tailored to your
-                            needs.
+                            We handle everything: framing, drywall, carpentry, painting, and finishing touches. You get one crew, one point of contact, and one fair price for the whole job.
                         </Typography>
                     </Stack>
                 </Grid>

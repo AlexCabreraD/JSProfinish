@@ -191,17 +191,7 @@ const Benefits = () => {
                                         color: "rgba(255, 255, 255, 0.9)",
                                     }}
                                 >
-                                    When you choose our professional basement
-                                    finishing services in Northern Utah,
-                                    you&apos;ll enjoy increased home value,
-                                    additional functional living space, and
-                                    customized design options tailored to your
-                                    lifestyle. Our experienced team in Davis and
-                                    Weber Counties will work closely with you to
-                                    bring your basement vision to life, creating
-                                    a beautiful and practical space that
-                                    perfectly suits your family&apos;s needs and
-                                    enhances your home&apos;s overall value.
+                                    A finished basement adds real value to your home in two ways: resale value and how you use the space day-to-day. More room for your family to spread out, and a significant return on your investment when it comes time to sell.
                                 </Typography>
 
                                 <Box className="sr-only">

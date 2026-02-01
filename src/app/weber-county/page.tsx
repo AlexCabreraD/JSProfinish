@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { Box, Container } from "@mui/material";
-import Head from "next/head";
 import Header from "@/app/components/weber-county/header";
 import InfoSection from "@/app/components/weber-county/infoSection";
 import Faq from "@/app/components/weber-county/faq";
@@ -254,20 +253,17 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://www.jsprofinish.com/weber-county",
     },
+    other: {
+        "geo.region": "US-UT",
+        "geo.placename": "Weber County",
+        "geo.position": "41.2138;-111.9703",
+        "ICBM": "41.2138, -111.9703",
+    },
 };
 
 const WeberCounty = () => {
     return (
         <>
-            <Head>
-                <meta name="geo.region" content="US-UT" />
-                <meta name="geo.placename" content="Weber County" />
-                <meta name="geo.position" content="41.2138;-111.9703" />
-                <meta name="ICBM" content="41.2138, -111.9703" />
-                <link rel="preconnect" href="https://www.jsprofinish.com" />
-                <link rel="dns-prefetch" href="https://www.jsprofinish.com" />
-            </Head>
-
             <Box
                 component="main"
                 id="weber-county-content"

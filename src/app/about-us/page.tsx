@@ -1,7 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
 import { Box } from "@mui/material";
-import Head from "next/head";
 import Header from "@/app/components/about/header";
 import About from "@/app/components/about/about";
 import WhyUs from "@/app/components/about/whyUs";
@@ -98,19 +97,12 @@ export const metadata: Metadata = {
 const AboutUs = () => {
     return (
         <>
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(aboutUsStructuredData),
-                    }}
-                />
-                <link
-                    rel="canonical"
-                    href="https://www.jsprofinish.com/about-us"
-                />
-            </Head>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(aboutUsStructuredData),
+                }}
+            />
             <Box
                 component="main"
                 id="about-us-main-content"

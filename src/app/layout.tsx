@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/app/components/navbar/navbar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import theme from "@/app/theme/theme";
@@ -10,6 +11,8 @@ import Footer from "@/app/components/global/footer";
 import { jsonLd } from "@/app/utils/seo";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
+const GA_MEASUREMENT_ID = "AW-17847227430";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -43,6 +46,20 @@ export default function RootLayout({
                 <title>{metadata.title?.toString()}</title>
             </head>
             <body className={inter.className}>
+                {/* Google Tag (gtag.js) */}
+                <Script
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${GA_MEASUREMENT_ID}');
+                    `}
+                </Script>
+
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <Navbar />

@@ -7,7 +7,6 @@ import { IoConstructOutline } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
 import React from "react";
-import Head from "next/head";
 
 const processStructuredData = {
     "@context": "https://schema.org",
@@ -77,15 +76,12 @@ const HowWorks = () => {
 
     return (
         <>
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(processStructuredData),
-                    }}
-                />
-            </Head>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(processStructuredData),
+                }}
+            />
             <Box
                 component="section"
                 id="basement-finishing-process"

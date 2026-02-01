@@ -1,5 +1,4 @@
 import { Container, Grid, Stack, Typography, Box } from "@mui/material";
-import Head from "next/head";
 
 const galleryStructuredData = {
     "@context": "https://schema.org",
@@ -28,41 +27,6 @@ const galleryStructuredData = {
 const Header = () => {
     return (
         <>
-            <Head>
-                <title>
-                    Basement Remodeling Project Gallery | JS ProFinish
-                </title>
-                <meta
-                    name="description"
-                    content="Explore our gallery of completed basement renovation projects in Northern Utah. See our transformations from ordinary basements into extraordinary living spaces."
-                />
-                <meta
-                    name="keywords"
-                    content="basement gallery, basement remodeling, basement renovation, Davis County, Weber County, Northern Utah, finished basements"
-                />
-                <link
-                    rel="canonical"
-                    href="https://www.jsprofinish.com/gallery"
-                />
-                <meta
-                    property="og:title"
-                    content="Basement Remodeling Gallery | JS ProFinish"
-                />
-                <meta
-                    property="og:description"
-                    content="Browse our stunning basement renovation projects - see the before and after transformations across Northern Utah."
-                />
-                <meta
-                    property="og:url"
-                    content="https://www.jsprofinish.com/gallery"
-                />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:image"
-                    content="https://www.jsprofinish.com/images/gallery-preview.jpg"
-                />
-            </Head>
-
             <Container
                 maxWidth={false}
                 className={"secondary-background"}

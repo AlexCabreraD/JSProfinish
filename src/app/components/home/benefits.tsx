@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Image from "next/image";
 import img8 from "../../assets/home/img/image8.png";
 import { RiTeamLine } from "react-icons/ri";
-import Head from "next/head";
 
 const BenefitsStructuredData = () => {
     const structuredData = {
@@ -75,23 +74,6 @@ const BenefitsStructuredData = () => {
 const Benefits = () => {
     return (
         <>
-            <Head>
-                <meta
-                    property="og:title"
-                    content="Benefits of Professional Basement Finishing in Northern Utah | JS ProFinish"
-                />
-                <meta
-                    property="og:description"
-                    content="Discover why homeowners in Davis and Weber Counties choose JS ProFinish for basement remodeling, including increased home value, additional living space, and custom design options."
-                />
-                <meta
-                    property="og:image"
-                    content="https://www.jsprofinish.com/assets/home/img/image8.png"
-                />
-                <meta property="og:type" content="website" />
-                <meta name="twitter:card" content="summary_large_image" />
-            </Head>
-
             <Box
                 component="section"
                 id="basement-finishing-benefits"

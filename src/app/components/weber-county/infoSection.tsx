@@ -3,7 +3,6 @@ import { MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
 import img from "@/app/assets/county/img1.png";
 import Link from "next/link";
-import Head from "next/head";
 import { FaCheckCircle } from "react-icons/fa";
 
 interface InfoSectionProps {
@@ -122,23 +121,12 @@ const InfoSection = ({ county }: InfoSectionProps) => {
 
     return (
         <>
-            <Head>
-                <meta
-                    name="description"
-                    content={countyInfo[county].metaDescription}
-                />
-                <meta
-                    name="keywords"
-                    content={`basement finishing ${county} County, ${countyInfo[county].cities.join(", ")} basement remodeling, local basement contractors, custom basement design Utah`}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(serviceAreaSchema),
-                    }}
-                />
-            </Head>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(serviceAreaSchema),
+                }}
+            />
             <Container
                 maxWidth={false}
                 className={"primary-background"}

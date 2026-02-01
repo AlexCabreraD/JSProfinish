@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Image from "next/image";
 import img7 from "../../assets/home/img/image7.png";
 import { FaRegCheckCircle } from "react-icons/fa";
-import Head from "next/head";
 
 const serviceBenefits = [
     {
@@ -212,13 +211,6 @@ const FeatureStructuredData = () => {
 const Feature = () => {
     return (
         <>
-            <Head>
-                <meta
-                    name="description"
-                    content="Expert basement finishing services in Northern Utah by JS ProFinish. Professional craftsmanship, custom designs, and affordable solutions for your basement remodeling project."
-                />
-            </Head>
-
             <Box
                 component="section"
                 id="basement-finishing-services"

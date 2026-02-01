@@ -5,7 +5,6 @@ import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import { getCityBySlug, getAllCitySlugs } from "@/app/data/cities";
 import Contact from "@/app/components/global/contact";
 import img from "@/app/assets/county/img1.png";
@@ -59,6 +58,12 @@ export async function generateMetadata({
         },
         alternates: {
             canonical: `https://www.jsprofinish.com/cities/${city}`,
+        },
+        other: {
+            "geo.region": "US-UT",
+            "geo.placename": cityData.name,
+            "geo.position": `${cityData.coordinates.latitude};${cityData.coordinates.longitude}`,
+            "ICBM": `${cityData.coordinates.latitude}, ${cityData.coordinates.longitude}`,
         },
     };
 }
@@ -236,19 +241,6 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
 
     return (
         <>
-            <Head>
-                <meta name="geo.region" content="US-UT" />
-                <meta name="geo.placename" content={cityData.name} />
-                <meta
-                    name="geo.position"
-                    content={`${cityData.coordinates.latitude};${cityData.coordinates.longitude}`}
-                />
-                <meta
-                    name="ICBM"
-                    content={`${cityData.coordinates.latitude}, ${cityData.coordinates.longitude}`}
-                />
-            </Head>
-
             <Box component="main">
                 {/* Hero Section */}
                 <Container

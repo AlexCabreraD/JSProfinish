@@ -1,5 +1,4 @@
 import { Container, Grid, Typography, Box } from "@mui/material";
-import Head from "next/head";
 
 interface HeaderProps {
     county: "Weber" | "Davis";
@@ -83,45 +82,12 @@ const Header = ({ county }: HeaderProps) => {
 
     return (
         <>
-            <Head>
-                <title>{countyData[county].metaTitle}</title>
-                <meta
-                    name="description"
-                    content={countyData[county].metaDescription}
-                />
-                <meta
-                    name="keywords"
-                    content={`basement finishing ${county} County, basement remodeling ${county} County, ${countyData[county].cities} basement contractors, custom basement design Utah`}
-                />
-                <meta
-                    property="og:title"
-                    content={countyData[county].metaTitle}
-                />
-                <meta
-                    property="og:description"
-                    content={countyData[county].metaDescription}
-                />
-                <meta property="og:type" content="website" />
-                <meta
-                    property="og:url"
-                    content={`https://www.jsprofinish.com/${county.toLowerCase()}-county`}
-                />
-                <meta
-                    property="og:image"
-                    content="https://www.jsprofinish.com/images/basement-remodel.jpg"
-                />
-                <link
-                    rel="canonical"
-                    href={`https://www.jsprofinish.com/${county.toLowerCase()}-county`}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(countySchemaData),
-                    }}
-                />
-            </Head>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(countySchemaData),
+                }}
+            />
             <Container
                 maxWidth={false}
                 className={"secondary-background"}

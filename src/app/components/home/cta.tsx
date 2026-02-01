@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Box, Button, Container, Typography } from "@mui/material";
 import Link from "next/link";
 import img9 from "../../assets/home/img/image9.png";
-import Head from "next/head";
 
 const ctaStructuredData = {
     "@context": "https://schema.org",
@@ -42,15 +41,12 @@ const ctaStructuredData = {
 const Cta = () => {
     return (
         <>
-            <Head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(ctaStructuredData),
-                    }}
-                />
-            </Head>
-
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(ctaStructuredData),
+                }}
+            />
             <Box
                 component="section"
                 id="basement-finishing-consultation"

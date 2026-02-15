@@ -7,7 +7,7 @@ interface TransformedSitemapEntry {
 
 const config = {
     siteUrl:
-        process.env.NEXT_PUBLIC_SITE_URL || "https://www.jsprofinish.com/",
+        process.env.NEXT_PUBLIC_SITE_URL || "https://jsprofinish.com/",
 
     generateRobotsTxt: true,
 

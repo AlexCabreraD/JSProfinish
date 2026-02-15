@@ -48,11 +48,11 @@ const TestimonialsStructuredData = () => {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://www.jsprofinish.com/#testimonials-business",
+        "@id": "https://jsprofinish.com/#testimonials-business",
         name: "JS ProFinish",
         description:
             "Northern Utah's premier basement finishing experts with exceptional customer reviews",
-        url: "https://www.jsprofinish.com/",
+        url: "https://jsprofinish.com/",
         telephone: "+1-385-626-3514",
         email: "jsprofinish@gmail.com",
         address: {

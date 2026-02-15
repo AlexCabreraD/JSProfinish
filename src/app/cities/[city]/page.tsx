@@ -38,11 +38,11 @@ export async function generateMetadata({
         openGraph: {
             title: `${cityData.name} Basement Finishing & Remodeling | JS ProFinish`,
             description: cityData.metaDescription,
-            url: `https://www.jsprofinish.com/cities/${city}`,
+            url: `/cities/${city}`,
             siteName: "JS ProFinish",
             images: [
                 {
-                    url: "https://www.jsprofinish.com/assets/images/basement-remodel.jpg",
+                    url: "/assets/images/basement-remodel.jpg",
                     width: 1200,
                     height: 630,
                     alt: `${cityData.name} Basement Remodeling by JS ProFinish`,
@@ -57,7 +57,7 @@ export async function generateMetadata({
             description: cityData.metaDescription,
         },
         alternates: {
-            canonical: `https://www.jsprofinish.com/cities/${city}`,
+            canonical: `/cities/${city}`,
         },
         other: {
             "geo.region": "US-UT",
@@ -80,11 +80,11 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": `https://www.jsprofinish.com/cities/${city}#business`,
+        "@id": `https://jsprofinish.com/cities/${city}#business`,
         name: `JS ProFinish - ${cityData.name} Basement Finishing`,
-        url: `https://www.jsprofinish.com/cities/${city}`,
-        logo: "https://www.jsprofinish.com/logo.png",
-        image: "https://www.jsprofinish.com/assets/images/basement-remodel.jpg",
+        url: `https://jsprofinish.com/cities/${city}`,
+        logo: "https://jsprofinish.com/logo.png",
+        image: "https://jsprofinish.com/assets/images/basement-remodel.jpg",
         description: `Expert basement finishing and remodeling services in ${cityData.name}, ${cityData.county} County. Specialized in ${cityData.name}'s unique building requirements with over 15 years of local experience.`,
         telephone: "(385) 626-3514",
         email: "jsprofinish@gmail.com",
@@ -147,7 +147,7 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
         provider: {
             "@type": "LocalBusiness",
             name: "JS ProFinish",
-            "@id": `https://www.jsprofinish.com/cities/${city}#business`,
+            "@id": `https://jsprofinish.com/cities/${city}#business`,
         },
         areaServed: {
             "@type": "City",
@@ -209,19 +209,19 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://www.jsprofinish.com/",
+                item: "https://jsprofinish.com/",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: `${cityData.county} County`,
-                item: `https://www.jsprofinish.com/${cityData.county.toLowerCase()}-county`,
+                item: `https://jsprofinish.com/${cityData.county.toLowerCase()}-county`,
             },
             {
                 "@type": "ListItem",
                 position: 3,
                 name: cityData.name,
-                item: `https://www.jsprofinish.com/cities/${city}`,
+                item: `https://jsprofinish.com/cities/${city}`,
             },
         ],
     };

@@ -19,7 +19,7 @@ const galleryStructuredData = {
     name: "JS ProFinish Basement Renovation Gallery",
     description:
         "Browse our collection of completed basement remodeling projects in Weber County and Davis County, Utah. See examples of entertainment rooms, home theaters, bars, and more.",
-    url: "https://www.jsprofinish.com/gallery",
+    url: "https://jsprofinish.com/gallery",
     provider: {
         "@type": "LocalBusiness",
         name: "JS ProFinish",

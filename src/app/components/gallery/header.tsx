@@ -6,11 +6,11 @@ const galleryStructuredData = {
     name: "Basement Remodeling Gallery - JS ProFinish",
     description:
         "Explore our gallery of stunning basement renovation projects in Northern Utah. View our completed basement finishing work in Weber County and Davis County.",
-    url: "https://www.jsprofinish.com/gallery",
+    url: "https://jsprofinish.com/gallery",
     isPartOf: {
         "@type": "WebSite",
         name: "JS ProFinish",
-        url: "https://www.jsprofinish.com",
+        url: "https://jsprofinish.com",
     },
     about: {
         "@type": "Service",

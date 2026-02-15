@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     title: "Davis County Basement Finishing & Remodeling | JS ProFinish",
     description:
         "Expert basement finishing in Clearfield, Layton, Kaysville and throughout Davis County. Trust JS ProFinish for customized designs, quality construction and exceptional results.",
+    alternates: {
+        canonical: "/davis-county",
+    },
 };
 
 const DavisCounty = () => {

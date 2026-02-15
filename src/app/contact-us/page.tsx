@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     keywords:
         "basement remodeling Utah, basement finishing consultation, Davis County basement contractor, Weber County basement renovation, free basement estimate, basement transformation Clearfield, basement remodeling Ogden, basement finishing Layton",
     alternates: {
-        canonical: "https://www.jsprofinish.com/contact-us",
+        canonical: "/contact-us",
     },
     openGraph: {
         title: "Contact Utah's Premier Basement Finishing Experts | JS ProFinish",
         description:
             "Get in touch with JS ProFinish for expert basement finishing services in Northern Utah. Free consultations and estimates for homeowners in Davis County and Weber County.",
-        url: "https://www.jsprofinish.com/contact-us",
+        url: "https://jsprofinish.com/contact-us",
         siteName: "JS ProFinish",
         locale: "en_US",
         type: "website",
@@ -41,7 +41,7 @@ const contactPageSchema = {
     name: "Contact JS ProFinish Basement Remodeling",
     description:
         "Contact page for JS ProFinish, Northern Utah's premier basement finishing company serving Davis County and Weber County.",
-    url: "https://www.jsprofinish.com/contact-us",
+    url: "https://jsprofinish.com/contact-us",
     mainEntity: {
         "@type": "LocalBusiness",
         name: "JS ProFinish",

@@ -66,19 +66,19 @@ export const metadata: Metadata = {
     keywords:
         "basement remodeling Clearfield UT, basement contractors Utah, Davis County basement finishing, Weber County basement experts, Northern Utah basement renovation",
     alternates: {
-        canonical: "https://www.jsprofinish.com/about-us",
+        canonical: "/about-us",
     },
     openGraph: {
         title: "Northern Utah's Premier Basement Finishing Experts | About JS ProFinish",
         description:
             "Learn about JS ProFinish's 15+ years of basement remodeling experience in Davis & Weber Counties. Meet our team and discover our commitment to quality craftsmanship.",
-        url: "https://www.jsprofinish.com/about-us",
+        url: "https://jsprofinish.com/about-us",
         siteName: "JS ProFinish",
         locale: "en_US",
         type: "website",
         images: [
             {
-                url: "https://www.jsprofinish.com/images/team-photo.jpg",
+                url: "https://jsprofinish.com/images/team-photo.jpg",
                 width: 1200,
                 height: 630,
                 alt: "JS ProFinish basement remodeling team in Clearfield, Utah",
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
         title: "Northern Utah's Premier Basement Finishing Experts | About JS ProFinish",
         description:
             "Meet our expert team with 15+ years experience transforming basements in Davis & Weber Counties, Utah",
-        images: ["https://www.jsprofinish.com/images/team-photo.jpg"],
+        images: ["https://jsprofinish.com/images/team-photo.jpg"],
     },
 };
 

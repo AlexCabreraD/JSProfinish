@@ -304,7 +304,7 @@ export const aboutHeaderStructuredData = {
         "JS ProFinish has been transforming basements and bringing dreams to life for over 15 years in Davis and Weber Counties. Based in Clearfield, UT, we take pride in our exceptional craftsmanship and customer service.",
     mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "https://www.jsprofinish.com/about-us",
+        "@id": "https://jsprofinish.com/about-us",
     },
 };
 

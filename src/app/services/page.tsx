@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     title: "Professional Basement Finishing Services in Utah | JS ProFinish",
     description:
         "Complete basement remodeling services including framing, drywall, carpentry, and painting. JS ProFinish delivers custom solutions for Northern Utah homeowners since 2019.",
+    alternates: {
+        canonical: "/services",
+    },
 };
 
 const Services = () => {

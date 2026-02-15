@@ -35,7 +35,7 @@ const ctaStructuredData = {
         availability: "https://schema.org/InStock",
     },
     serviceType: "Basement Finishing",
-    url: "https://www.jsprofinish.com/contact-us",
+    url: "https://jsprofinish.com/contact-us",
 };
 
 const Cta = () => {

@@ -34,7 +34,7 @@ const Header = ({ county }: HeaderProps) => {
         "@type": "LocalBusiness",
         name: `JS ProFinish Basement Remodeling - ${county} County`,
         description: `Professional basement finishing and remodeling services in ${county} County, Utah. Over 15 years of experience transforming basements into beautiful living spaces.`,
-        url: `https://www.jsprofinish.com/${county.toLowerCase()}-county`,
+        url: `https://jsprofinish.com/${county.toLowerCase()}-county`,
         sameAs: [
             "https://www.facebook.com/jsprofinish",
             "https://www.instagram.com/jsprofinish",

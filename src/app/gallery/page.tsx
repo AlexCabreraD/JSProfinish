@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     title: "Basement Finishing Project Gallery | JS ProFinish Utah",
     description:
         "Browse our portfolio of stunning basement transformations across Northern Utah. Get inspired by our custom designs, quality workmanship, and attention to detail in every project.",
+    alternates: {
+        canonical: "/gallery",
+    },
 };
 
 const Gallery = () => {

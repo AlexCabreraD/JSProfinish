@@ -57,7 +57,7 @@ const BenefitsStructuredData = () => {
         ],
         mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": "https://www.jsprofinish.com/services#benefits",
+            "@id": "https://jsprofinish.com/services#benefits",
         },
     };
 

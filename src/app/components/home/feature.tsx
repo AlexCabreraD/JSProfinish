@@ -27,13 +27,13 @@ const FeatureStructuredData = () => {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Service",
-        "@id": "https://www.jsprofinish.com/services#basement-finishing",
+        "@id": "https://jsprofinish.com/services#basement-finishing",
         name: "Professional Basement Finishing Services in Northern Utah",
         description:
             "Expert basement finishing and remodeling services in Davis and Weber Counties. We transform your unfinished basement into a comfortable, stylish living space with custom designs, quality materials, and meticulous craftsmanship. Serving Clearfield, Layton, Ogden and surrounding areas.",
         provider: {
             "@type": "LocalBusiness",
-            "@id": "https://www.jsprofinish.com/#business",
+            "@id": "https://jsprofinish.com/#business",
             name: "JS ProFinish",
             telephone: "+1-385-626-3514",
             email: "jsprofinish@gmail.com",
@@ -92,11 +92,11 @@ const FeatureStructuredData = () => {
                 "https://www.facebook.com/jsprofinish",
                 "https://www.instagram.com/jsprofinish",
             ],
-            url: "https://www.jsprofinish.com/",
+            url: "https://jsprofinish.com/",
         },
         serviceType: "Basement Finishing and Remodeling",
         serviceOutput: "Professionally finished basement spaces",
-        termsOfService: "https://www.jsprofinish.com/terms-of-service",
+        termsOfService: "https://jsprofinish.com/terms-of-service",
         audience: {
             "@type": "Audience",
             audienceType: "Homeowners in Northern Utah",
